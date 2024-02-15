@@ -1,14 +1,12 @@
 /*!
 Theme Name: Atomic Improv
 Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
+Author: Code Bears Design
+Description: Bespoke theme for Atomic Improv Co.'s new website.
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
-License URI: LICENSE
 Text Domain: atomic-improv
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
@@ -86,6 +84,25 @@ body {
  */
 main {
 	display: block;
+}
+
+header {
+	padding: 1rem;
+}
+
+
+/**
+* Constrain width of main content while allowing backgrounds to stretch full width
+*/
+div.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+div.header-flex {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
 }
 
 /**
@@ -495,8 +512,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -647,10 +664,10 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
-.main-navigation {
+/* .main-navigation {
 	display: block;
 	width: 100%;
-}
+} */
 
 .main-navigation ul {
 	display: none;
@@ -673,8 +690,8 @@ textarea {
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:hover>ul,
+.main-navigation ul ul li.focus>ul {
 	display: block;
 	left: auto;
 }
@@ -683,13 +700,14 @@ textarea {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover>ul,
+.main-navigation ul li.focus>ul {
 	left: auto;
 }
 
 .main-navigation li {
 	position: relative;
+	margin:1rem;
 }
 
 .main-navigation a {
@@ -715,10 +733,8 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
+.site-main .posts-navigation,
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 }
 
