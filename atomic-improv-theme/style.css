@@ -79,8 +79,6 @@ body {
 	margin: 0;
 }
 
-/* kayla testing github desktop! */
-
 /**
  * Render the `main` element consistently in IE.
  */
@@ -666,10 +664,9 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
-/* .main-navigation {
+.main-navigation {
 	display: block;
-	width: 100%;
-} */
+}
 
 .main-navigation ul {
 	display: none;
@@ -729,8 +726,12 @@ textarea {
 		display: none;
 	}
 
-	.main-navigation ul {
+	.main-navigation ul.nav-menu {
 		display: flex;
+	}
+
+	.main-navigation ul ul {
+		display:block;
 	}
 }
 
