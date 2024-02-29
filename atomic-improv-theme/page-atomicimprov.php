@@ -22,8 +22,7 @@ get_header();
 
       <h1><?php echo get_the_title(); ?></h1>
 
-      <p>generic page</p>
-      <p>Dynamically pulls the title using a function.</p>
+      <p>Social Media page</p>
     </div><!-- .container -->
   </section>
 </main><!-- #main -->
