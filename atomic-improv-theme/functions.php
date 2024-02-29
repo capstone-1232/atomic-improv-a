@@ -12,6 +12,10 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+// queries for actual posts
+
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *

@@ -86,10 +86,6 @@ main {
 	display: block;
 }
 
-header {
-	padding: 1rem;
-}
-
 
 /**
 * Constrain width of main content while allowing backgrounds to stretch full width
@@ -97,6 +93,7 @@ header {
 div.container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 1rem;
 }
 
 div.header-flex {
