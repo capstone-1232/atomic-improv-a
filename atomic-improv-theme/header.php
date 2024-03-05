@@ -41,13 +41,14 @@
 					<nav id="site-navigation" class="main-navigation">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 							<svg width="80px" height="80px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
+                
 
 								<g id="SVGRepo_bgCarrier" stroke-width="0" />
 
 								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
 								<g id="SVGRepo_iconCarrier">
-									<path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2.04" stroke-linecap="round"
+									<path class="shadow" d="M4 6H20M4 12H20M4 18H20" stroke="#1CD6CE" stroke-width="1.5" stroke-linecap="round"
 										stroke-linejoin="round" />
 								</g>
 

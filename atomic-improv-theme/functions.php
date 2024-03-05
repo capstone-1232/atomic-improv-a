@@ -35,6 +35,9 @@ function atomic_improv_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
+  // hide admin bar so it doesn't break layout
+  add_filter( 'show_admin_bar', '__return_false');
+
 	/*
 		* Let WordPress manage the document title.
 		* By adding theme support, we declare that this theme does not use a
@@ -54,6 +57,7 @@ function atomic_improv_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'atomic-improv' ),
+      'menu-2' => esc_html__( 'Secondary', 'footer-menu'),
 		)
 	);
 
@@ -152,6 +156,12 @@ function atomic_improv_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'atomic_improv_scripts' );
+
+// add google fonts
+function add_google_fonts() {
+  wp_enqueue_style( "add_google_fonts", "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap", false);
+}
+add_action( "wp_enqueue_scripts", "add_google_fonts");
 
 /**
  * Implement the Custom Header feature.

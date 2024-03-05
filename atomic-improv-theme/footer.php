@@ -11,14 +11,29 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="container">
-			<p>This is the footer</p>
-		</div><!-- .container -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+  <div class="container">
+
+
+    <?php
+    wp_nav_menu(
+      array(
+        'theme_location' => 'menu-2',
+        'menu_id' => 'footer-menu',
+      )
+    );
+    ?>
+    <div class="site-branding">
+      <?php
+      the_custom_logo();
+      ?>
+    </div><!-- .site-branding -->
+  </div><!-- .container -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

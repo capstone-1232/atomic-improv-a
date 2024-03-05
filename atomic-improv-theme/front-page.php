@@ -10,23 +10,39 @@ get_header();
 <main id="primary" class="site-main">
   <section class="frontpage-top">
     <div class="container">
-      <h1>
-        <?php echo get_the_title(); ?>
-      </h1>
-      <!-- video goes here -->
+      <!-- video / gif goes here -->
       <p>Hilariously<br>interactive</p>
-      <a href="/contact-us">Book us today!</a>
+      <a href="contact-us">Book us</a>
       <!-- horizontal scroll thing goes here -->
     </div><!-- .container -->
   </section>
   <section class="about-atomic-improv">
     <div class="container">
-      <h2>About Atomic Improv</h2>
+      <!-- <h2>About Atomic Improv</h2> -->
       <!-- image goes here -->
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, maiores obcaecati ipsum numquam enim
-        praesentium nemo voluptas consequatur in assumenda aperiam dignissimos dolores unde fuga deserunt repellendus
-        nesciunt pariatur hic.</p>
-      <a href="/about-us">Learn More...</a>
+      <p>Atomic Improv has been performing its groundbreaking improv comedy shows all over the world for almost 30
+        years.</p>
+      <a href="/about-us">About Us</a>
+    </div>
+  </section>
+  <section class="shows">
+    <div class="container">
+      <h2>Shows</h2>
+      <!-- maybe a link button? or maybe the image can be the link. -->
+    </div>
+  </section>
+  <section class="corporate">
+    <div class="container">
+      <!-- image goes here -->
+      <h2>Corporate</h2>
+      <!-- maybe a link button? or maybe the image can be the link. -->
+    </div>
+  </section>
+  <section class="socialmedia">
+    <div class="container">
+      <!-- image goes here -->
+      <h2>#atomicimprov</h2>
+      <!-- maybe a link button? or maybe the image can be the link. -->
     </div>
   </section>
 </main><!-- #main -->
