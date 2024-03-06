@@ -17,6 +17,18 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+/* FONTS */
+@font-face {
+  font-family: Rift;
+  src: url(http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
+  font-weight:normal;
+}
+@font-face {
+  font-family: Rift;
+  src: url(http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
+  font-weight:bold;
+}
+
 
 /**
  * 1. Correct the line height in all browsers.
@@ -63,10 +75,8 @@ div.header-flex {
 }
 
 header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(112, 112, 112);
 }
-
-header .container {}
 
 header div.site-branding {
   width: 80px;
@@ -149,7 +159,7 @@ header button {
   text-decoration: none;
 }
 
-@media screen and (min-width:50rem) {
+@media screen and (min-width:40rem) {
 
   .menu-toggle {
     display: none;
@@ -165,6 +175,7 @@ header button {
 
   .main-navigation ul.nav-menu {
     display: flex;
+    padding:0;
   }
 
   .main-navigation ul li {
@@ -218,16 +229,6 @@ header button {
 
 /* HOMEPAGE */
 
-section a {
-  text-transform: uppercase;
-  text-align: center;
-  display: block;
-  font-weight: bold;
-  font-size: 2.25rem;
-  text-decoration: none;
-  padding: 1rem;
-}
-
 section.frontpage-top {
   p {
     color: #fbac39;
@@ -241,6 +242,13 @@ section.frontpage-top {
   a {
     color: #cc0033;
     text-shadow: 0 0 8px rgba(204, 0, 51, 0.7);
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    font-size: 2.25rem;
+    text-decoration: none;
+    padding: 1rem;
   }
 
   a:hover,
@@ -250,6 +258,13 @@ section.frontpage-top {
 }
 
 section.about-atomic-improv {
+
+
+  .container { 
+    background: url(http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/popout-donovan.webp) no-repeat;
+    padding-top:10rem;
+  }
+
   p {
     font-weight: 500;
     font-size: 1.5rem;
@@ -260,6 +275,12 @@ section.about-atomic-improv {
     color: #1cd6ce;
     text-shadow: 0 0 8px #1cd6ceb2;
     text-align:right;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    font-size: 2.25rem;
+    text-decoration: none;
+    padding: 1rem;
   }
 
   a:hover,
@@ -277,6 +298,7 @@ section.socialmedia {
     font-size:2rem;
     text-shadow: 0 0 8px #fbac39b2;
     border-bottom:1px #1cd6ce solid;
+    margin: 1rem 0;
   }
 }
 
@@ -646,6 +668,21 @@ textarea {
   line-height: 1.5;
 }
 
+a,
+h1,
+h2,
+h3 {
+  font-family:"Rift", sans-serif;
+}
+
+a,
+h1,
+h2,
+h3,
+p {
+  margin:0;
+}
+
 h1,
 h2,
 h3,
@@ -653,10 +690,6 @@ h4,
 h5,
 h6 {
   clear: both;
-}
-
-p {
-  margin-bottom: 1.5em;
 }
 
 dfn,

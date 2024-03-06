@@ -28,21 +28,25 @@ get_header();
   <section class="shows">
     <div class="container">
       <h2>Shows</h2>
-      <!-- maybe a link button? or maybe the image can be the link. -->
+      <a href="shows"><img
+          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/showsimg.webp"
+          alt="donovan and chris"></a>
     </div>
   </section>
   <section class="corporate">
     <div class="container">
-      <!-- image goes here -->
       <h2>Corporate</h2>
-      <!-- maybe a link button? or maybe the image can be the link. -->
+      <a href="corporate"><img
+          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/corporateimg.webp"
+          alt="corporate poster"></a>
     </div>
   </section>
   <section class="socialmedia">
     <div class="container">
-      <!-- image goes here -->
       <h2>#atomicimprov</h2>
-      <!-- maybe a link button? or maybe the image can be the link. -->
+      <a href="atomicimprov"><img
+          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/socialsimg.webp"
+          alt="corporate poster"></a>
     </div>
   </section>
 </main><!-- #main -->
