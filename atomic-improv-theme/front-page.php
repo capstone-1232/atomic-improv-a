@@ -18,11 +18,13 @@ get_header();
   </section>
   <section class="about-atomic-improv">
     <div class="container">
-      <!-- <h2>About Atomic Improv</h2> -->
-      <!-- image goes here -->
+      <h2>About</h2>
+      <a href="who-we-are"><img
+          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/aboutimg.webp"
+          alt="donovan posing"></a>
       <p>Atomic Improv has been performing its groundbreaking improv comedy shows all over the world for almost 30
         years.</p>
-      <a href="/about-us">About Us</a>
+      <!-- <a href="/about-us">About Us</a> -->
     </div>
   </section>
   <section class="shows">

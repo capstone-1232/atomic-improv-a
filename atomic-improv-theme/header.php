@@ -48,7 +48,7 @@
 								<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
 
 								<g id="SVGRepo_iconCarrier">
-									<path class="shadow" d="M4 6H20M4 12H20M4 18H20" stroke="#1CD6CE" stroke-width="1.5" stroke-linecap="round"
+									<path class="shadow" d="M4 6H20M4 12H20M4 18H20" stroke="#FFFCF5" stroke-width="1.5" stroke-linecap="round"
 										stroke-linejoin="round" />
 								</g>
 
