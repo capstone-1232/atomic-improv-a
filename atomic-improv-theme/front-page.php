@@ -12,7 +12,6 @@ get_header();
     <div class="container">
       <!-- video / gif goes here -->
       <p>Hilariously<br>interactive</p>
-      <a href="contact-us">Book us</a>
       <!-- horizontal scroll thing goes here -->
     </div><!-- .container -->
   </section>
