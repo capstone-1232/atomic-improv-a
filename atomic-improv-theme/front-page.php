@@ -19,7 +19,7 @@ get_header();
     <div class="container">
       <h2>About</h2>
       <a href="who-we-are"><img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/aboutimg.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/aboutimg.webp"
           alt="donovan posing"></a>
       <p>Atomic Improv has been performing its groundbreaking improv comedy shows all over the world for almost 30
         years.</p>
@@ -30,7 +30,7 @@ get_header();
     <div class="container">
       <h2>Shows</h2>
       <a href="shows"><img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/showsimg.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/showsimg.webp"
           alt="donovan and chris"></a>
     </div>
   </section>
@@ -38,7 +38,7 @@ get_header();
     <div class="container">
       <h2>Corporate</h2>
       <a href="corporate"><img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/corporateimg.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/corporateimg.webp"
           alt="corporate poster"></a>
     </div>
   </section>
@@ -46,7 +46,7 @@ get_header();
     <div class="container">
       <h2>#atomicimprov</h2>
       <a href="atomicimprov"><img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/socialsimg.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/socialsimg.webp"
           alt="corporate poster"></a>
     </div>
   </section>

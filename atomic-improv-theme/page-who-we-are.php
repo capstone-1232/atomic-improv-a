@@ -13,24 +13,24 @@ get_header();
 
       <h1>Who We Are</h1>
       <img
-        src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
+        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
         alt="donovan and chris posing">
       <p>Atomic Improv was founded in 1990, and emerged as a cornerstone of Edmonton's improv scene.</p>
-      <img src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/sidetrack.webp"
+      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/sidetrack.webp"
         alt="sidetrack cafe">
       <p>They began with a weekly residency at Sidetrack Café where they invented the Alberta Method - a faced paced
         style full of audience participation.</p>
-      <img src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/oldatomic.webp"
+      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/oldatomic.webp"
         alt="old atomic improv pic">
       <p>From nightclubs and bars to charming towns across Alberta, enriching the lives of audiences everywhere, Atomic
         Improv brought laughter to numerous venues. Their comedic talent transcended boundaries, propelling them on a
         whirlwind tour across Western Canada.</p>
       <div class="flex">
         <img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/justforlaughs.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/justforlaughs.webp"
           alt="just for laughs logo">
         <img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/canadiancomedyawards.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/canadiancomedyawards.webp"
           alt="canadian comedy awards logo">
       </div>
       <p>Throughout their career, Atomic Improv achieved numerous milestones. Including being the first improv group to
@@ -47,7 +47,7 @@ get_header();
       <h2>Donovan Workun</h2>
       <p class="socialhandle">@atomicimprov</p>
       <img
-        src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/donovantransparent.webp"
+        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/donovantransparent.webp"
         alt="donovan making a funny face">
       <p>Donovan is a world-renowned Improviser, and founding member of Atomic Improv with over 30 years of comedy under
         his belt. Donovan has toured all over Canada, the US, and Europe, amazing audiences with his brilliant comedic
@@ -61,17 +61,17 @@ get_header();
       </p>
       <div class="flex">
         <img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/justforlaughs.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/justforlaughs.webp"
           alt="just for laughs logo">
         <img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/theirrelevantshow.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/theirrelevantshow.webp"
           alt="irrelevant show logo">
         <img
-          src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/canadiancomedyawards.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/canadiancomedyawards.webp"
           alt="canadian comedy awards logo">
       </div>
       <p>Donovan is also the voice of the Edmonton Riverhawks during the summer and spends his winters in Banff as @thatfunnysanta  </p>
-      <img src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/santa.webp"
+      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/santa.webp"
         alt="santa">
         <p>In December 2023, a  heartwarming celebration unfolded when over 500 children and parents  from Ukraine had a special visit from Santa Claus. This was a significant moment for families who experienced the joy of Santa Claus for the first time.</p>
     </div>
@@ -80,7 +80,7 @@ get_header();
       <h2>Chris Borger</h2>
       <p class="socialhandle">@thecheeseborger</p>
       <img
-        src="http://kjolie3.dmitstudent.ca/capstonetest/wp-content/themes/atomic-improv-theme/images/chrisborger.webp"
+        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/chrisborger.webp"
         alt="chris borger headshot">
         <p>Chris Borger has worked as a professional improviser since 2011, and performs regularly with Atomic Improv, White Rhino, Rapid Fire Theatre, and the 11 o’ Clock Number.</p>
         <p>He has produced online video content for CBC Comedy, and Oilersnation, and educational videos for the University of Alberta.</p>

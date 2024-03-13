@@ -11,11 +11,12 @@ get_header();
     <section>
       <div class="container">
 
-        <h1>Public Shows</h1>
-        <p>Where you can see us LIVE!</p>
+        <h1>About Atomic Improv</h1>
+        <p>About us.</p>
       </div><!-- .container -->
     </section>
 	</main><!-- #main -->
 
 <?php
+get_sidebar();
 get_footer();

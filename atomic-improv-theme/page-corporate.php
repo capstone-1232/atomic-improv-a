@@ -11,9 +11,9 @@ get_header();
   <section class="corporate-events">
     <div class="container">
 
-      <h1>What We Do</h1>
+      <h1>Corporate Events</h1>
       <img
-        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/showsimg.webp"
+        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
         alt="donovan and chris posing">
       <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
       <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
