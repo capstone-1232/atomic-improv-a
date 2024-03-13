@@ -40,7 +40,10 @@
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+            <a href="contact-us"><button class="book-us">
+              Book Now
+            </button></a>
+						<button class="menu-toggle" id="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 							<svg width="80px" height="80px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg">
                 
 
