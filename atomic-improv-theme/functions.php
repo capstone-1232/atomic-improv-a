@@ -12,6 +12,10 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+// queries for actual posts
+
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -30,6 +34,9 @@ function atomic_improv_setup() {
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
+
+  // hide admin bar so it doesn't break layout
+  add_filter( 'show_admin_bar', '__return_false');
 
 	/*
 		* Let WordPress manage the document title.
@@ -50,6 +57,7 @@ function atomic_improv_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'atomic-improv' ),
+      'menu-2' => esc_html__( 'Secondary', 'footer-menu'),
 		)
 	);
 
@@ -149,6 +157,12 @@ function atomic_improv_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'atomic_improv_scripts' );
 
+// add google fonts
+function add_google_fonts() {
+  wp_enqueue_style( "add_google_fonts", "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap", false);
+}
+add_action( "wp_enqueue_scripts", "add_google_fonts");
+
 /**
  * Implement the Custom Header feature.
  */
@@ -176,3 +190,23 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// https://codeastrology.com/how-to-add-meta-descriptions-in-wordpress-without-plugin/#How_to_Add_Meta_Descriptions_in_WordPress_Without_Plugin
+// This code, copied from above, should give meta descriptions to all pages and posts.
+// function codeastrology_meta_description() {
+//     global $post;
+//     if ( is_singular() ) {
+//         $des_post = strip_tags( $post->post_content );
+//         $des_post = strip_shortcodes( $post->post_content );
+//         $des_post = str_replace( array("\n", "\r", "\t"), ' ', $des_post );
+//         $des_post = mb_substr( $des_post, 0, 300, 'utf8' );
+//         echo '<meta name="description" content="' . $des_post . '" />' . "\n";
+//     }
+//     if ( is_home() ) {
+//         echo '<meta name="description" content="' . get_bloginfo( "description" ) . '" />' . "\n";
+//     }
+//     if ( is_category() ) {
+//         $des_cat = strip_tags(category_description());
+//         echo '<meta name="description" content="' . $des_cat . '" />' . "\n";
+//     }
+// }
+// add_action( 'wp_head', 'codeastrology_meta_description');
