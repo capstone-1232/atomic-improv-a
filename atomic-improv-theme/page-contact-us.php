@@ -19,7 +19,7 @@ get_header();
   <section class="get-in-touch">
     <div class="container">
       <h2>Get in Touch</h2>
-      <form action="http://atomic-improv-a.web.dmitcapstone.ca/success" method="POST">
+      <form action="http://atomic-improv-a.web.dmitcapstone.ca/confirmation" method="POST">
         <div>
           <input type="text" id="name" name="name">
           <label for="name">Name</label>

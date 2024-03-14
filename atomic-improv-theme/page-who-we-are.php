@@ -64,7 +64,7 @@ get_header();
           src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/justforlaughs.webp"
           alt="just for laughs logo">
         <img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/theirrelevantshow.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/irrelevantshow.webp"
           alt="irrelevant show logo">
         <img
           src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/canadiancomedyawards.webp"
