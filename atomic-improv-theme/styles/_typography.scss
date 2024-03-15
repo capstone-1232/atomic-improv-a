@@ -1,0 +1,39 @@
+@import "variables";
+
+@font-face {
+  font-family: "Rift";
+  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Rift";
+  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: $text-white;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: "Rift", sans-serif;
+  font-weight:bold;
+}
