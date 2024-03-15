@@ -12,7 +12,7 @@
 		return;
 	}
 
-	const button = siteNavigation.getElementsById( 'menu-toggle' )[ 0 ];
+	const button = siteNavigation.getElementsByTagName( 'a' )[ 0 ];
 
 	// Return early if the button doesn't exist.
 	if ( 'undefined' === typeof button ) {
@@ -33,7 +33,7 @@
 
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
 	button.addEventListener( 'click', function() {
-		siteNavigation.classList.toggle("toggled")
+		siteNavigation.classList.toggle( 'toggled' );
 
 		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
 			button.setAttribute( 'aria-expanded', 'false' );

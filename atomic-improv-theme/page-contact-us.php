@@ -19,31 +19,7 @@ get_header();
   <section class="get-in-touch">
     <div class="container">
       <h2>Get in Touch</h2>
-      <form action="http://kjolie3.dmitstudent.ca/capstonetest/success" method="POST">
-        <div>
-          <input type="text" id="name" name="name">
-          <label for="name">Name</label>
-        </div>
-        <div>
-          <input type="text" id="email" name="email">
-          <label for="email">Email</label>
-        </div>
-        <div>
-          <input type="text" id="phone" name="phone">
-          <label for="phone">Phone</label>
-        </div>
-        <div>
-          <input type="text" id="date" name="date">
-          <label for="date">Date</label>
-        </div>
-        <div>
-          <textarea name="comments" id="comments"></textarea>
-          <label for="comments">Comments</label>
-        </div>
-        <div>
-          <input type="submit" value="Submit">
-        </div>
-      </form>
+      <?php echo do_shortcode('[forminator_form id="69"]'); ?>
     </div>
   </section>
 </main><!-- #main -->

@@ -11,8 +11,8 @@ get_header();
     <section>
       <div class="container">
 
-        <h1>Public Shows</h1>
-        <p>Where you can see us LIVE!</p>
+        <h1>Corporate Events</h1>
+        <p>Hire us to perform a private show for your organization.</p>
       </div><!-- .container -->
     </section>
 	</main><!-- #main -->
