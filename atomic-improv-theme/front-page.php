@@ -11,7 +11,7 @@ get_header();
   <section class="frontpage-top">
     <div class="container">
       <!-- video / gif goes here -->
-      <h1>Atomic<br><span>Improv</span></h1>
+      <h1><span>Atomic</span><br>Improv</h1>
       <p>Edmonton's premiere improv comedy team</p>
       <a href="contact-us">Book Us</a>
     </div><!-- .container -->
@@ -19,7 +19,7 @@ get_header();
   <section class="about-atomic-improv">
     <div class="container">
       <a href="who-we-are"><img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/aboutimg.webp"
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
           alt="donovan posing"></a>
       <h2>Who We Are</h2>
       <p>We are Atomic Improv, a cornerstone of Edmonton’s improv scene for over 30 years.</p>
