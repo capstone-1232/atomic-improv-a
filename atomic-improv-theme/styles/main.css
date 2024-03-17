@@ -13,15 +13,18 @@ body {
   src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
   font-weight: normal;
 }
+
 @font-face {
   font-family: "Rift";
   src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
   font-weight: bold;
 }
+
 @font-face {
   font-family: "Montserrat";
   src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 }
+
 body,
 button,
 input,
@@ -85,12 +88,14 @@ header svg {
   border: 2px red solid;
   border-radius: 8px;
 }
+
 .main-navigation li:last-of-type a {
   color: #fffcf5;
 }
+
 .main-navigation li:last-of-type a:hover {
   -webkit-text-decoration: underline #fffcf5;
-          text-decoration: underline #fffcf5;
+  text-decoration: underline #fffcf5;
 }
 
 .main-navigation a {
@@ -111,7 +116,7 @@ a.menu-toggle {
 .main-navigation a:hover {
   display: block;
   -webkit-text-decoration: underline #fead39;
-          text-decoration: underline #fead39;
+  text-decoration: underline #fead39;
 }
 
 .main-navigation.toggled ul {
@@ -123,9 +128,11 @@ a.menu-toggle {
   .header-flex {
     align-items: center;
   }
+
   a.menu-toggle {
     display: none;
   }
+
   .main-navigation ul {
     display: flex;
     position: static;
@@ -137,6 +144,7 @@ a.menu-toggle {
     transition: none;
     align-items: center;
   }
+
   .main-navigation li {
     position: static;
     text-align: left;
@@ -144,12 +152,16 @@ a.menu-toggle {
     margin-top: 0;
     margin-left: 1rem;
   }
+
   .main-navigation li:last-of-type a {
     color: #fffcf5;
     padding: 0 0.5rem;
   }
+
   .main-navigation li:last-of-type a:hover {
     -webkit-text-decoration: underline #fffcf5;
-            text-decoration: underline #fffcf5;
+    text-decoration: underline #fffcf5;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
