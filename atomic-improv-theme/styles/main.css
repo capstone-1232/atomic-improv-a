@@ -1,9 +1,10 @@
 body {
   background: #131313;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  padding: 1rem;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -13,18 +14,15 @@ body {
   src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
   font-weight: normal;
 }
-
 @font-face {
   font-family: "Rift";
   src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
   font-weight: bold;
 }
-
 @font-face {
   font-family: "Montserrat";
   src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 }
-
 body,
 button,
 input,
@@ -54,7 +52,7 @@ nav {
 }
 
 header svg {
-  width: 112px;
+  max-width: 113px;
 }
 
 .main-navigation {
@@ -88,14 +86,12 @@ header svg {
   border: 2px red solid;
   border-radius: 8px;
 }
-
 .main-navigation li:last-of-type a {
   color: #fffcf5;
 }
-
 .main-navigation li:last-of-type a:hover {
   -webkit-text-decoration: underline #fffcf5;
-  text-decoration: underline #fffcf5;
+          text-decoration: underline #fffcf5;
 }
 
 .main-navigation a {
@@ -116,7 +112,7 @@ a.menu-toggle {
 .main-navigation a:hover {
   display: block;
   -webkit-text-decoration: underline #fead39;
-  text-decoration: underline #fead39;
+          text-decoration: underline #fead39;
 }
 
 .main-navigation.toggled ul {
@@ -128,11 +124,9 @@ a.menu-toggle {
   .header-flex {
     align-items: center;
   }
-
   a.menu-toggle {
     display: none;
   }
-
   .main-navigation ul {
     display: flex;
     position: static;
@@ -144,7 +138,6 @@ a.menu-toggle {
     transition: none;
     align-items: center;
   }
-
   .main-navigation li {
     position: static;
     text-align: left;
@@ -152,16 +145,38 @@ a.menu-toggle {
     margin-top: 0;
     margin-left: 1rem;
   }
-
   .main-navigation li:last-of-type a {
     color: #fffcf5;
     padding: 0 0.5rem;
   }
-
   .main-navigation li:last-of-type a:hover {
     -webkit-text-decoration: underline #fffcf5;
-    text-decoration: underline #fffcf5;
+            text-decoration: underline #fffcf5;
   }
 }
+.full-screen-video-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
 
-/*# sourceMappingURL=main.css.map */
+video {
+  z-index: -1;
+  position: absolute;
+  height: 70%;
+  min-height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+}
+
+.full-screen-video-content p {
+  position: absolute;
+  z-index: 2;
+  background-color: red;
+  font-size: 3rem;
+  width: 80%;
+  left: 60px;
+  top: 3em;
+}/*# sourceMappingURL=main.css.map */

@@ -9,8 +9,37 @@ get_header();
 
 <main id="primary" class="site-main">
   <section class="frontpage-top">
+
+
+    <div class="full-screen-video-container">
+      <video autoplay loop muted>
+        <source
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-ad-2.mp4"
+          type="video/mp4">
+      </video>
+      <!-- <div class="vid">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/Vkwthc6cyBY" title="Atomic Ad"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div> -->
+
+      <!-- <div class="full-screen-video-content">
+          <p>Testing video0.9<a href="https://www.youtube.com/@donovan725">Youtube link</a></p>
+
+        </div> -->
+
+    </div>
+
+
     <div class="container">
       <!-- video / gif goes here -->
+
+
+
+
+
+
       <h1><span>Atomic</span><br>Improv</h1>
       <p>Edmonton's premiere improv comedy team</p>
       <a href="contact-us">Book Us</a>
@@ -29,8 +58,8 @@ get_header();
   <section class="what-we-do">
     <div class="container">
       <img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whatwedoimg.webp"
-          alt="corporate poster">
+        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whatwedoimg.webp"
+        alt="corporate poster">
       <h2>What We Do</h2>
       <p>Customized shows for your events</p>
       <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. Fast, funny and tailored to
@@ -41,7 +70,8 @@ get_header();
         <a href="what-we-do"><img
             src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/powerofyeslogo.webp"
             alt="Power of Yes Logo"></a>
-        <p>Unlock your teams full potential with the Power of Yes! our customizable corporate workshop that can help teams
+        <p>Unlock your teams full potential with the Power of Yes! our customizable corporate workshop that can help
+          teams
           boost their creativity and communication skills.</p>
         <a href="what-we-do#power-of-yes">Learn More</a>
       </section>

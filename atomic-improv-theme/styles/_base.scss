@@ -2,10 +2,11 @@
 
 body {
   background: $bg;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  padding: 1rem;
   max-width: 960px;
   margin: 0 auto;
 }

@@ -1,5 +1,6 @@
 @import "variables";
 
+
 .header-flex {
   display: flex;
   justify-content: space-between;
@@ -8,7 +9,7 @@
 }
 
 header svg {
-  width: 110px;
+  max-width: 113px;
 }
 
 .main-navigation {
