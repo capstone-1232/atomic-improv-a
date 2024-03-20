@@ -44,6 +44,11 @@ nav {
   font-weight: bold;
 }
 
+body {
+  background-color: #131313;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
 .header-flex {
   display: flex;
   justify-content: space-between;
@@ -83,7 +88,9 @@ header svg {
 }
 
 .main-navigation li:last-of-type {
-  border: 2px red solid;
+  border: 2px solid #AE2012;
+  background-color: #cc0033;
+  box-shadow: 0 5px 5px #cc0033;
   border-radius: 8px;
 }
 .main-navigation li:last-of-type a {
@@ -96,6 +103,8 @@ header svg {
 
 .main-navigation a {
   padding: 0.75rem;
+  color: white;
+  text-decoration: none;
 }
 
 div.site-branding,
@@ -116,8 +125,13 @@ a.menu-toggle {
 }
 
 .main-navigation.toggled ul {
+  margin-top: 1.55rem;
   max-height: 25.25rem;
   padding: 1rem;
+  background-color: #131313;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: left;
+  border-top: 2px solid #242424;
 }
 
 @media screen and (min-width: 52.5rem) {
