@@ -16,16 +16,6 @@ get_header();
       <a href="contact-us">Book Us</a>
     </div><!-- .container -->
   </section>
-  <section class="about-atomic-improv">
-    <div class="container">
-      <a href="who-we-are"><img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
-          alt="donovan posing"></a>
-      <h2>Who We Are</h2>
-      <p>We are Atomic Improv, a cornerstone of Edmonton’s improv scene for over 30 years.</p>
-      <a href="who-we-are">More About Us</a>
-    </div>
-  </section>
   <section class="what-we-do">
     <div class="container">
       <img
@@ -33,8 +23,11 @@ get_header();
           alt="corporate poster">
       <h2>What We Do</h2>
       <p>Customized shows for your events</p>
-      <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. Fast, funny and tailored to
-        the crowd, Atomic Improv is always a hit.</p>
+      <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
+      creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+      <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your event from humdrum to hilarious!</p>
+
+
       <a href="what-we-do">Learn More</a>
       <section class="power-of-yes">
         <h3>Corporate Workshops</h3>
@@ -42,10 +35,21 @@ get_header();
             src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/powerofyeslogo.webp"
             alt="Power of Yes Logo"></a>
         <p>Unlock your teams full potential with the Power of Yes! our customizable corporate workshop that can help teams
-          boost their creativity and communication skills.</p>
+        boost their creativity and communication skills.</p>
         <a href="what-we-do#power-of-yes">Learn More</a>
       </section>
 
+    </div>
+  </section>
+  <section class="about-atomic-improv">
+    <div class="container">
+      <a href="who-we-are"><img
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
+          alt="donovan posing"></a>
+      <h2>Who We Are</h2>
+      <p>We are Atomic Improv, a cornerstone of Edmonton's improv scene for over 30 years.</p>
+      <p>Improv legends Donovan Workun and Chris Borger bring their signature fast paced humour to any event.</p>
+      <a href="who-we-are">More About Us</a>
     </div>
   </section>
   <section class="socialmedia">
