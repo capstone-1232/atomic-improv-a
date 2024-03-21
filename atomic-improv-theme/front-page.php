@@ -12,7 +12,7 @@ get_header();
     <div class="container">
       <!-- video / gif goes here -->
       <h1><span>Atomic</span><br>Improv</h1>
-      <p>Edmonton's premiere improv comedy team</p>
+      <p>Canada's premiere improv comedy team</p>
       <a href="contact-us">Book Us</a>
     </div><!-- .container -->
   </section>
