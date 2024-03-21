@@ -20,7 +20,7 @@ get_header();
       <p>You’re not just watching the show … you’re a part of it!</p>
     </div><!-- .container -->
   </section>
-  <section class="power-of-yes">
+  <section class="power-of-yes" id="power-of-yes">
     <div class="container">
       <h2>Power of Yes</h2>
       <img
