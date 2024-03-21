@@ -34,7 +34,6 @@ header svg {
     position: relative;
     z-index: 4;
     top: 20%;
-    left: 65%;
 
 }
 
@@ -42,13 +41,12 @@ header svg {
 //nav container
 .main-navigation {
     display: block;
-    max-height: auto;
     padding: 1rem;
     margin: 1rem 0;
-    position: absolute;
+    position: static;
     z-index: 4;
-    width: 100%;
-
+    max-width: 10rem;
+    left: 90%;
 
 }
 

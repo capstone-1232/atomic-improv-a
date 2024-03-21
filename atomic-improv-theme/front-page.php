@@ -27,6 +27,7 @@ get_header();
       <div class="full-screen-video-content">
         <h2>Atomic <span>Improv</span></h2>
         <p>Canada's premier improv comedy team</p>
+        <a href="contact-us">Book Now</a>
 
       </div>
 
@@ -34,16 +35,8 @@ get_header();
 
 
     <div class="container">
-      <!-- video / gif goes here -->
 
 
-
-
-
-
-      <h1><span>Atomic</span><br>Improv</h1>
-      <p>Edmonton's premiere improv comedy team</p>
-      <a href="contact-us">Book Us</a>
     </div><!-- .container -->
   </section>
   <section class="about-atomic-improv">

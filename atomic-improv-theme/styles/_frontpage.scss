@@ -40,10 +40,29 @@ video {
 
 .full-screen-video-content p {
     color: #fead39;
+    font-weight: 700;
     position: absolute;
     z-index: 1;
     width: 250px;
     text-align: center;
     top: 55%;
+    left: 12%;
+    text-shadow: 0 0 10px black;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contact-us a {
+    border: 2px solid #AE2012;
+    background-color: #cc0033;
+    box-shadow: 0 0 10px #cc0033;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    text-align: center;
+    top: 70%;
     left: 12%;
 }
