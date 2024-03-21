@@ -33,15 +33,28 @@ textarea {
   font-family: "Montserrat", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-nav {
-  font-family: "Rift", sans-serif;
+@font-face {
+  font-family: "Rift";
+  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Rift";
+  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
   font-weight: bold;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+}
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #fffcf5;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -50,20 +63,35 @@ body {
 }
 
 .header-flex {
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
-  max-height: 112px;
+  max-height: 7rem;
   align-items: center;
+  border-bottom: 2px solid #AE2012;
+}
+
+div.site-branding {
+  padding-left: 1rem;
 }
 
 header svg {
   max-width: 113px;
+  position: relative;
+  z-index: 4;
+  top: 20%;
+  left: 65%;
 }
 
 .main-navigation {
   display: block;
-  width: -moz-min-content;
-  width: min-content;
+  max-height: auto;
+  padding: 1rem;
+  margin: 1rem 0;
+  position: absolute;
+  z-index: 4;
+  width: 100%;
 }
 
 .main-navigation ul {
@@ -76,21 +104,20 @@ header svg {
   max-height: 0;
   overflow: hidden;
   background: #131313;
-  width: 100%;
+  max-width: 20rem;
   transition: all 0.5s ease-in-out;
-  padding: 0;
 }
 
 .main-navigation li {
   text-align: center;
-  font-size: 2.5rem;
   margin-top: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 .main-navigation li:last-of-type {
   border: 2px solid #AE2012;
   background-color: #cc0033;
-  box-shadow: 0 5px 5px #cc0033;
+  box-shadow: 0 0 10px #cc0033;
   border-radius: 8px;
 }
 .main-navigation li:last-of-type a {
@@ -102,7 +129,12 @@ header svg {
 }
 
 .main-navigation a {
-  padding: 0.75rem;
+  font-size: 1.75rem;
+  font-family: "rift", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.5rem;
   color: white;
   text-decoration: none;
 }
@@ -125,13 +157,11 @@ a.menu-toggle {
 }
 
 .main-navigation.toggled ul {
-  margin-top: 1.55rem;
-  max-height: 25.25rem;
-  padding: 1rem;
+  margin-top: 1.25rem;
+  max-height: 30rem;
+  padding: 1.15rem;
   background-color: #131313;
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-position: left;
-  border-top: 2px solid #242424;
 }
 
 @media screen and (min-width: 52.5rem) {
@@ -185,12 +215,32 @@ video {
   transform: translate(-60%, -60%);
 }
 
-.full-screen-video-content p {
+.full-screen-video-content h2 {
+  margin: 0 auto;
   position: absolute;
-  z-index: 2;
-  background-color: red;
+  z-index: 1;
+  color: #fead39;
   font-size: 3rem;
-  width: 80%;
-  left: 60px;
-  top: 3em;
+  width: 50%;
+  top: 15%;
+  left: 25%;
+  line-height: 2rem;
+  text-shadow: 0 0 5px black;
+  text-align: center;
+  font-family: "rift", sans-serif;
+  font-weight: 700;
+}
+
+.full-screen-video-content span {
+  font-size: 2rem;
+}
+
+.full-screen-video-content p {
+  color: #fead39;
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  text-align: center;
+  top: 55%;
+  left: 12%;
 }/*# sourceMappingURL=main.css.map */

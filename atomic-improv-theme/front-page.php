@@ -24,10 +24,11 @@ get_header();
             allowfullscreen></iframe>
         </div> -->
 
-      <!-- <div class="full-screen-video-content">
-          <p>Testing video0.9<a href="https://www.youtube.com/@donovan725">Youtube link</a></p>
+      <div class="full-screen-video-content">
+        <h2>Atomic <span>Improv</span></h2>
+        <p>Canada's premier improv comedy team</p>
 
-        </div> -->
+      </div>
 
     </div>
 

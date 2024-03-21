@@ -167,6 +167,7 @@ add_action('wp_enqueue_scripts', 'atomic_improv_scripts');
 function add_google_fonts()
 {
 	wp_enqueue_style("add_google_fonts", "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap", false);
+	wp_enqueue_style("add_google_fonts", "https://fonts.googleapis.com/css2?family=Rift:ital,wght@0,100..900;1,100..900&display=swap", false);
 }
 add_action("wp_enqueue_scripts", "add_google_fonts");
 

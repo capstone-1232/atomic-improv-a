@@ -17,6 +17,8 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://use.typekit.net/cpc0wpe.css">
+
 
 	<?php wp_head(); ?>
 </head>
@@ -41,7 +43,7 @@
 						<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 								viewBox="0,0,256,256" width="50px" height="50px">
-								<g fill="#fead39" fill-rule="nonzero" stroke="none" stroke-width="1"
+								<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
 									stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
 									stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
 									font-size="none" text-anchor="none" style="mix-blend-mode: normal">

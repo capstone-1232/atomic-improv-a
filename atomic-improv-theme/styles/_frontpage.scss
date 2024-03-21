@@ -16,12 +16,34 @@ video {
     transform: translate(-60%, -60%);
 }
 
-.full-screen-video-content p {
+
+
+.full-screen-video-content h2 {
+    margin: 0 auto;
     position: absolute;
-    z-index: 2;
-    background-color: red;
+    z-index: 1;
+    color: #fead39;
     font-size: 3rem;
-    width: 80%;
-    left: 60px;
-    top: 3em;
+    width: 50%;
+    top: 15%;
+    left: 25%;
+    line-height: 2rem;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    font-family: "rift", sans-serif;
+    font-weight: 700;
+}
+
+.full-screen-video-content span {
+    font-size: 2rem;
+}
+
+.full-screen-video-content p {
+    color: #fead39;
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    text-align: center;
+    top: 55%;
+    left: 12%;
 }
