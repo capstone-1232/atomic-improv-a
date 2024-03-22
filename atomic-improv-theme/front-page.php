@@ -19,8 +19,8 @@ get_header();
   <section class="what-we-do">
     <div class="container">
       <img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whatwedoimg.webp"
-          alt="corporate poster">
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/donovan-chris-brick-sm.webp"
+          alt="Donovan and Chris in front of a brick wall with a rubber chicken">
       <h2>What We Do</h2>
       <p>Customized shows for your events</p>
       <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
@@ -32,7 +32,7 @@ get_header();
       <section class="power-of-yes">
         <h3>Corporate Workshops</h3>
         <a href="what-we-do"><img
-            src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/powerofyeslogo.webp"
+            src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/power-of-yes-sm.webp"
             alt="Power of Yes Logo"></a>
         <p>Unlock your teams full potential with the Power of Yes! our customizable corporate workshop that can help teams
         boost their creativity and communication skills.</p>
@@ -44,8 +44,8 @@ get_header();
   <section class="about-atomic-improv">
     <div class="container">
       <a href="who-we-are"><img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
-          alt="donovan posing"></a>
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/donovan-chris-adidas-small.webp"
+          alt="donovan and chris posing in adidas tracksuits"></a>
       <h2>Who We Are</h2>
       <p>We are Atomic Improv, a cornerstone of Edmonton's improv scene for over 30 years.</p>
       <p>Improv legends Donovan Workun and Chris Borger bring their signature fast paced humour to any event.</p>
