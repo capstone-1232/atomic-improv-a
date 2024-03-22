@@ -54,15 +54,17 @@ img {
     max-width: 100%;
 }
 
-.contact-us a {
+.full-screen-video-content a {
+    font-family: "rift", sans-serif;
     border: 2px solid #AE2012;
     background-color: #cc0033;
     box-shadow: 0 0 10px #cc0033;
     border-radius: 8px;
     position: absolute;
     z-index: 1;
-    width: 250px;
+    width: 5rem;
+    padding: 1rem;
     text-align: center;
-    top: 70%;
-    left: 12%;
+    top: 80%;
+    left: 30%;
 }
