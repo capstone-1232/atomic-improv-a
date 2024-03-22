@@ -28,7 +28,9 @@ get_header();
       <!-- start loop -->
       <?php
       $args = array(
-        'post_type' => 'post'
+        "post_type" => "post",
+        "category_name" => "facebook, instagram, youtube",
+        "posts_per_page" => 10
       );
       $the_query = new WP_Query($args);
       // Tests if there even are any posts
@@ -39,18 +41,11 @@ get_header();
           $the_query->the_post();
           ?>
           <h2>
-            <a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
               <?php the_title(); ?>
-            </a>
           </h2>
-          <p>Hi I am a post</p>
           <?php the_content(); ?>
 
-        <?php endwhile; else: ?>
-        <!-- shows this if there are no posts -->
-        <p>
-          <?php esc_html_e("Sorry, no posts matched your criteria."); ?>
-        </p>
+        <?php endwhile; ?>
         <!-- end loop -->
       <?php
       endif;

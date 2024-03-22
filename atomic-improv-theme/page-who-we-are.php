@@ -12,9 +12,19 @@ get_header();
     <div class="container">
 
       <h1>Who We Are</h1>
-      <img
-        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
-        alt="donovan and chris posing">
+      <?php
+        $whoweare_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "who-we-are"));
+      ?>
+      <?php if ($whoweare_query->have_posts()) : ?>
+        <?php 
+          while ($whoweare_query->have_posts()) : 
+          $whoweare_query->the_post();
+          $whoweare_url = get_field("image");
+        ?>
+          <a href="who-we-are"><img src="<?php echo $whoweare_url ?>"></a>
+        <?php endwhile; 
+        wp_reset_postdata(); ?>
+      <?php endif; ?>
       <p>Atomic Improv was founded in 1990, and emerged as a cornerstone of Edmonton's improv scene.</p>
       <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/sidetrack.webp"
         alt="sidetrack cafe">
