@@ -10,7 +10,7 @@ get_header();
 <main id="primary" class="site-main">
   <section class="who-we-are">
     <div class="container">
-      <h1>Who We Are</h1>
+      <h2>Who We Are</h2>
       <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/donovan-chris-70s.webp" alt="Donovan and Chris posing">
       <p>Atomic Improv has performed all across North America & Europe showcasing at Montreal's “Just for Laughs” festival winning the first annual International Improv Tournament.</p>
       <div class="flex">
@@ -29,7 +29,7 @@ get_header();
   </section>
   <section class="donovan">
     <div class="container">
-      <h2>Donovan Workun</h2>
+      <h3>Donovan Workun</h3>
       <p class="socialhandle">@atomicimprov</p>
       <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/donovanbio.webp" alt="donovan making a funny face">
       <p>Donovan is a world-renowned Improviser, and founding member of Atomic Improv with over 30 years of comedy under
@@ -47,7 +47,7 @@ get_header();
     </div>
   </section>
   <section class="chris">
-    <h2>Chris Borger</h2>
+    <h3>Chris Borger</h3>
     <p class="socialhandle">@thecheeseborger</p>
     <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/chrisbio.webp" alt="chris borger headshot">
     <p>Chris Borger has worked as a professional improviser since 2011, and performs regularly with Atomic Improv, White Rhino, Rapid Fire Theatre, and the 11 o’ Clock Number.</p>

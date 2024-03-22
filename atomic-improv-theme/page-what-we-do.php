@@ -11,7 +11,7 @@ get_header();
   <section class="corporate-events">
     <div class="container">
 
-      <h1>What We Do</h1>
+      <h2>What We Do</h2>
       <img
         src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/showsimg.webp"
         alt="donovan and chris posing">

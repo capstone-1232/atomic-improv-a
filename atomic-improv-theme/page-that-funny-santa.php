@@ -9,7 +9,7 @@ get_header();
 
 <main id="primary" class="site-main">
     <section class="santa">
-        <h3>The Funny Santa</h3>
+        <h2>The Funny Santa</h2>
         <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/santa.webp" alt="santa">
 
         <p></p>
