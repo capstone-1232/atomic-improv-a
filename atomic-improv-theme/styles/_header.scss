@@ -1,116 +1,180 @@
 @import "variables";
+@import "typography";
 
+
+
+// mobile screen
+
+body {
+    background-color: #131313;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+
+//header container
 .header-flex {
-  display: flex;
-  justify-content: space-between;
-  max-height: 112px;
-  align-items: center;
+    margin: 1rem 0;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-height: 7rem;
+    align-items: center;
+    border-bottom: 2px solid #AE2012;
+
 }
 
+
+// A.I logo
+div.site-branding {
+    padding-left: 1rem;
+}
+
+
+
+
+// menu svg
 header svg {
-  width: 112px;
+    max-width: 113px;
+    position: relative;
+    z-index: 4;
+    top: 20%;
+
 }
 
+
+//nav container
 .main-navigation {
-  display: block;
-  width: min-content;
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    position: static;
+    z-index: 4;
+    max-width: 10rem;
+    left: 90%;
+
 }
 
+
+// nav link list container transition
 .main-navigation ul {
-  display: block;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  position: absolute;
-  left: 0;
-  max-height: 0;
-  overflow: hidden;
-  background: $bg;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-  padding: 0;
+    display: block;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    max-height: 0;
+    overflow: hidden;
+    // background: $bg;
+    max-width: 100%;
+    // margin-top: 1.5rem;
+    // padding: 1.15rem;
+    width: 100%;
+    background-color: #131313;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    transition: all 0.5s ease-in-out;
+    // background-color: red;
 }
 
 .main-navigation li {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 0.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
 }
 
+
+// book now button
 .main-navigation li:last-of-type {
-  border: 2px red solid;
-  border-radius: 8px;
-  a {
-    color: $text-white;
-  }
+    border: 2px solid #AE2012;
+    background-color: #cc0033;
+    box-shadow: 0 0 10px #cc0033;
+    border-radius: 8px;
 
-  a:hover {
-    text-decoration: underline $text-white;
-  }
+    a {
+        color: $text-white;
+    }
+
+    a:hover {
+        text-decoration: underline $text-white;
+    }
 }
 
+// nav links
 .main-navigation a {
-  padding: 0.75rem;
+    font-size: 1.75rem;
+    font-family: "rift", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
 }
 
-div.site-branding,
-a.custom-logo-link {
-  height:112px;
-}
 
-a.menu-toggle {
-  padding: 0;
-	display: block;
-  max-height:112px;
-}
 
+// this needs to be moved to the bigger screen cause on mobile there is no hover
 .main-navigation a:hover {
-  display: block;
-  text-decoration: underline #fead39;
+    display: block;
+    text-decoration: underline #fead39;
 }
 
+// nav ul container when toggled on.
 .main-navigation.toggled ul {
-	max-height: 25.25rem;
-	padding: 1rem;
+    margin-top: 1.5rem;
+    max-height: 30rem;
+    padding: 1.15rem;
+    width: 100%;
+    background-color: #131313;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 52.5rem) {
 
-	.header-flex {
-		align-items:center;
-	}
+    .header-flex {
+        align-items: center;
+    }
 
-	a.menu-toggle {
-    display: none;
-	}
-  
-	.main-navigation ul {
-		display: flex;
-		position: static;
-		max-height: min-content;
-		background-color:unset;
-		width: max-content;
-		transition: none;
-		align-items:center;
-	}
+    a.menu-toggle {
+        display: none;
+    }
 
-	.main-navigation li {
-		position: static;
-		text-align: left;
-		font-size: 2rem;
-		margin-top: 0;
-		margin-left:1rem;
-	}
+    .main-navigation ul {
+        display: flex;
+        position: static;
+        max-height: min-content;
+        background-color: unset;
+        width: max-content;
+        transition: none;
+        align-items: center;
+    }
 
-	.main-navigation li:last-of-type {
-		a {
-			color: $text-white;
-			padding:0 0.5rem;
-		}
+    .main-navigation li {
+        position: static;
+        text-align: left;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
 
-		a:hover {
-			text-decoration: underline $text-white;
-		}
-	}
+    .main-navigation li:last-of-type {
+        a {
+            color: $text-white;
+            padding: 0 0.5rem;
+        }
+
+        a:hover {
+            text-decoration: underline $text-white;
+        }
+    }
 }
