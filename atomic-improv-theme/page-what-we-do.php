@@ -12,9 +12,19 @@ get_header();
     <div class="container">
 
       <h1>What We Do</h1>
-      <img
-        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/showsimg.webp"
-        alt="donovan and chris posing">
+      <?php
+        $whatwedo_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "what-we-do"));
+      ?>
+      <?php if ($whatwedo_query->have_posts()) : ?>
+        <?php 
+          while ($whatwedo_query->have_posts()) : 
+          $whatwedo_query->the_post();
+          $whatwedo_url = get_field("image");
+        ?>
+          <a href="what-we-do"><img src="<?php echo $whatwedo_url ?>"></a>
+        <?php endwhile; 
+        wp_reset_postdata(); ?>
+      <?php endif; ?>
       <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
       <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
       <p>You’re not just watching the show … you’re a part of it!</p>
@@ -23,9 +33,18 @@ get_header();
   <section class="power-of-yes" id="power-of-yes">
     <div class="container">
       <h2>Power of Yes</h2>
-      <img
-        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/powerofyeslogo.webp"
-        alt="Power of Yes Logo">
+        $powerofyes_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
+      ?>
+      <?php if ($powerofyes_query->have_posts()) : ?>
+        <?php 
+          while ($powerofyes_query->have_posts()) : 
+          $powerofyes_query->the_post();
+          $powerofyes_url = get_field("image");
+        ?>
+          <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>"></a>
+        <?php endwhile; 
+        wp_reset_postdata(); ?>
+      <?php endif; ?>
       <p>At Power of Yes!, we believe in the transformative power of improv. Our workshop is designed to unlock your
         team's full potential. </p>
       <p>Starting with simple exercises, participants will collaborate in teams, building trust and camaraderie as they

@@ -19,16 +19,16 @@ get_header();
   <section class="about-atomic-improv">
     <div class="container">
       <?php
-        $whoweare_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "who-we-are"));
+      $whoweare_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "who-we-are"));
       ?>
-      <?php if ($whoweare_query->have_posts()) : ?>
-        <?php 
-          while ($whoweare_query->have_posts()) : 
+      <?php if ($whoweare_query->have_posts()): ?>
+        <?php
+        while ($whoweare_query->have_posts()):
           $whoweare_query->the_post();
           $whoweare_url = get_field("image");
-        ?>
+          ?>
           <a href="who-we-are"><img src="<?php echo $whoweare_url ?>"></a>
-        <?php endwhile; 
+        <?php endwhile;
         wp_reset_postdata(); ?>
       <?php endif; ?>
       <h2>Who We Are</h2>
@@ -39,16 +39,16 @@ get_header();
   <section class="what-we-do">
     <div class="container">
       <?php
-        $whatwedo_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "what-we-do"));
+      $whatwedo_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "what-we-do"));
       ?>
-      <?php if ($whatwedo_query->have_posts()) : ?>
-        <?php 
-          while ($whatwedo_query->have_posts()) : 
+      <?php if ($whatwedo_query->have_posts()): ?>
+        <?php
+        while ($whatwedo_query->have_posts()):
           $whatwedo_query->the_post();
           $whatwedo_url = get_field("image");
-        ?>
+          ?>
           <a href="what-we-do"><img src="<?php echo $whatwedo_url ?>"></a>
-        <?php endwhile; 
+        <?php endwhile;
         wp_reset_postdata(); ?>
       <?php endif; ?>
       <h2>What We Do</h2>
@@ -58,23 +58,21 @@ get_header();
       <a href="what-we-do">Learn More</a>
       <section class="power-of-yes">
         <h3>Corporate Workshops</h3>
-      <?php
+        <?php
         $powerofyes_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
-      ?>
-      <?php if ($powerofyes_query->have_posts()) : ?>
-        <?php 
-          while ($powerofyes_query->have_posts()) : 
-          $powerofyes_query->the_post();
-          $powerofyes_url = get_field("image");
         ?>
-          <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>"></a>
-        <?php endwhile; 
-        wp_reset_postdata(); ?>
-      <?php endif; ?>
-        <a href="what-we-do"><img
-            src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/powerofyeslogo.webp"
-            alt="Power of Yes Logo"></a>
-        <p>Unlock your teams full potential with the Power of Yes! our customizable corporate workshop that can help teams
+        <?php if ($powerofyes_query->have_posts()): ?>
+          <?php
+          while ($powerofyes_query->have_posts()):
+            $powerofyes_query->the_post();
+            $powerofyes_url = get_field("image");
+            ?>
+            <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>"></a>
+          <?php endwhile;
+          wp_reset_postdata(); ?>
+        <?php endif; ?>
+        <p>Unlock your teams full potential with the Power of Yes! our customizable corporate workshop that can help
+          teams
           boost their creativity and communication skills.</p>
         <a href="what-we-do">Learn More</a>
       </section>
@@ -88,15 +86,90 @@ get_header();
       <div class="socialflex">
         <section>
           <h3>Instagram</h3>
-          <p>(Insert most recent Insta post here)</p>
+          <!-- start loop -->
+          <?php
+          $instagram_args = array(
+            "post_type" => "post",
+            "category_name" => "instagram",
+            "posts_per_page" => 1
+          );
+          $instagram_query = new WP_Query($instagram_args);
+          // Tests if there even are any posts
+          if ($instagram_query->have_posts()):
+            // As long as there are new posts...
+            while ($instagram_query->have_posts()):
+              // Select the next post
+              $instagram_query->the_post();
+              ?>
+              <h4>
+                <?php the_title(); ?>
+              </h4>
+              <?php the_content(); ?>
+
+            <?php endwhile; ?>
+            <!-- end loop -->
+            <?php
+          endif;
+          wp_reset_postdata();
+          ?>
         </section>
         <section>
           <h3>Facebook</h3>
-          <p>(Insert most recent FB post here)</p>
+          <!-- start loop -->
+          <?php
+          $facebook_args = array(
+            "post_type" => "post",
+            "category_name" => "facebook",
+            "posts_per_page" => 1
+          );
+          $facebook_query = new WP_Query($facebook_args);
+          // Tests if there even are any posts
+          if ($facebook_query->have_posts()):
+            // As long as there are new posts...
+            while ($facebook_query->have_posts()):
+              // Select the next post
+              $facebook_query->the_post();
+              ?>
+              <h4>
+                <?php the_title(); ?>
+              </h4>
+              <?php the_content(); ?>
+
+            <?php endwhile; ?>
+            <!-- end loop -->
+            <?php
+          endif;
+          wp_reset_postdata();
+          ?>
         </section>
         <section>
           <h3>Youtube</h3>
-          <p>(Insert most recent Youtube post here)</p>
+          <!-- start loop -->
+          <?php
+          $youtube_args = array(
+            "post_type" => "post",
+            "category_name" => "youtube",
+            "posts_per_page" => 1
+          );
+          $youtube_query = new WP_Query($youtube_args);
+          // Tests if there even are any posts
+          if ($youtube_query->have_posts()):
+            // As long as there are new posts...
+            while ($youtube_query->have_posts()):
+              // Select the next post
+              $youtube_query->the_post();
+              ?>
+              <h4>
+                <?php the_title(); ?>
+              </h4>
+              <?php the_content(); ?>
+
+            <?php endwhile; ?>
+            <!-- end loop -->
+            <?php
+          endif;
+          wp_reset_postdata();
+          ?>
         </section>
       </div>
     </div>
