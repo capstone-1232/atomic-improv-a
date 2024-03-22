@@ -10,7 +10,6 @@ get_header();
 <main id="primary" class="site-main">
   <section class="corporate-events">
     <div class="container">
-
       <h1>What We Do</h1>
       <?php
         $whatwedo_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "what-we-do"));
@@ -27,7 +26,7 @@ get_header();
       <?php endif; ?>
       <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
       <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
-      <p>You’re not just watching the show … you’re a part of it!</p>
+      <p>You're not just watching the show … you're a part of it!</p>
     </div><!-- .container -->
   </section>
   <section class="power-of-yes" id="power-of-yes">
@@ -60,11 +59,7 @@ get_header();
         <li>Professional MC's: Corporate, Conference, and Special Events</li>
         <li>Special Package Pricing when booking Professional MC's PLUS Power of Yes! workshop</li>
       </ul>
-      <section class="santa">
-        <h3>The Funny Santa</h3>
-        <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/santa.webp"
-          alt="santa">
-      </section>
+      
     </div>
   </section>
 </main><!-- #main -->

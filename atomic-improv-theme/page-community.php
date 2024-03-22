@@ -19,6 +19,16 @@ get_header();
 <main id="primary" class="site-main">
   <section>
     <div class="container">
+      <h2>In the community</h2>
+
+      <div><a href="https://worldjrfootballchampionships.com/"><img src="" alt="football alberta logo"></a> <p></p></div>
+      <div><a href="https://greatoutdoorscomedyfestival.com/"><img src="" alt="great outdoor comedy fest"></a> <p></p></div>
+      <div><a href="https://icedistrict.com/event/oktoberfest-2023/"><img src="" alt="oktoberfest logo"></a> <p></p></div>
+      <div><a href="https://riverhawksbaseball.com/"><img src="" alt="edmonton riverhawks logo"></a> <p></p></div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
 
       <h1>
         <?php echo get_the_title(); ?>
