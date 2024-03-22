@@ -8,6 +8,10 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 @font-face {
   font-family: "Rift";
   src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
@@ -152,4 +156,7 @@ a.menu-toggle {
     -webkit-text-decoration: underline #fffcf5;
             text-decoration: underline #fffcf5;
   }
+}
+iframe {
+  height: unset;
 }/*# sourceMappingURL=main.css.map */
