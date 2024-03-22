@@ -64,8 +64,25 @@ textarea {
 body {
   background-color: #131313;
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+h1 {
+  display: none;
+}
+
+h2,
+h4 {
+  margin: 0;
+}
+
+/* //header container */
 .header-flex {
   margin: 1rem 0;
   padding-bottom: 0.5rem;
@@ -76,10 +93,12 @@ body {
   border-bottom: 2px solid #AE2012;
 }
 
+/* // A.I logo */
 div.site-branding {
   padding-left: 1rem;
 }
 
+/* // menu svg */
 header svg {
   max-width: 113px;
   position: relative;
@@ -87,6 +106,7 @@ header svg {
   top: 20%;
 }
 
+/* //nav container */
 .main-navigation {
   display: block;
   padding: 1rem;
@@ -97,6 +117,7 @@ header svg {
   left: 90%;
 }
 
+/* // nav link list container transition */
 .main-navigation ul {
   display: block;
   list-style: none;
@@ -104,11 +125,15 @@ header svg {
   left: 0;
   max-height: 0;
   overflow: hidden;
+  /* background: $bg; */
   max-width: 100%;
+  /* // margin-top: 1.5rem;
+  // padding: 1.15rem; */
   width: 100%;
   background-color: #131313;
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   transition: all 0.5s ease-in-out;
+  /* // background-color: red; */
 }
 
 .main-navigation li {
@@ -117,6 +142,7 @@ header svg {
   padding: 0.5rem 0;
 }
 
+/* // book now button */
 .main-navigation li:last-of-type {
   border: 2px solid #AE2012;
   background-color: #cc0033;
@@ -131,6 +157,7 @@ header svg {
           text-decoration: underline #fffcf5;
 }
 
+/* // nav links */
 .main-navigation a {
   font-size: 1.75rem;
   font-family: "rift", sans-serif;
@@ -142,12 +169,14 @@ header svg {
   text-decoration: none;
 }
 
+/* // this needs to be moved to the bigger screen cause on mobile there is no hover */
 .main-navigation a:hover {
   display: block;
   -webkit-text-decoration: underline #fead39;
           text-decoration: underline #fead39;
 }
 
+/* // nav ul container when toggled on. */
 .main-navigation.toggled ul {
   margin-top: 1.5rem;
   max-height: 30rem;
@@ -157,67 +186,45 @@ header svg {
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-@media screen and (min-width: 52.5rem) {
-  .header-flex {
-    align-items: center;
-  }
-  a.menu-toggle {
-    display: none;
-  }
-  .main-navigation ul {
-    display: flex;
-    position: static;
-    max-height: -moz-min-content;
-    max-height: min-content;
-    background-color: unset;
-    width: -moz-max-content;
-    width: max-content;
-    transition: none;
-    align-items: center;
-  }
-  .main-navigation li {
-    position: static;
-    text-align: left;
-    font-size: 2rem;
-    margin-top: 0;
-    margin-left: 1rem;
-  }
-  .main-navigation li:last-of-type a {
-    color: #fffcf5;
-    padding: 0 0.5rem;
-  }
-  .main-navigation li:last-of-type a:hover {
-    -webkit-text-decoration: underline #fffcf5;
-            text-decoration: underline #fffcf5;
-  }
-}
-
+/* -------------frontpage---------- */
+/* bg video */
 .full-screen-video-container {
   position: relative;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-video {
+.full-screen-video-container img {
+  margin-top: 2rem;
+  max-width: none;
   z-index: -1;
   position: absolute;
-  height: 70%;
-  min-height: 70%;
+  min-height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-60%, -60%);
 }
 
+.content-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.full-screen-video-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  text-align: center;
+}
+
 .full-screen-video-content h2 {
-  margin: 0 auto;
-  position: absolute;
-  z-index: 1;
   color: #fead39;
   font-size: 3rem;
-  width: 50%;
-  top: 15%;
-  left: 25%;
   line-height: 2rem;
   text-shadow: 0 0 5px black;
   text-align: center;
@@ -231,34 +238,165 @@ video {
 
 .full-screen-video-content p {
   color: #fead39;
-  font-weight: 700;
-  position: absolute;
-  z-index: 1;
-  width: 250px;
-  text-align: center;
-  top: 55%;
-  left: 12%;
-  text-shadow: 0 0 10px black;
-}
-
-img {
-  max-width: 100%;
+  font-weight: 500;
+  text-shadow: 0 0 20px black;
 }
 
 .full-screen-video-content a {
   font-family: "rift", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
   border: 2px solid #AE2012;
   background-color: #cc0033;
   box-shadow: 0 0 10px #cc0033;
-  border-radius: 8px;
-  position: absolute;
-  z-index: 1;
-  width: 5rem;
-  padding: 1rem;
-  text-align: center;
-  top: 80%;
-  left: 30%;
+  border-radius: 3px;
+  padding: 0.25rem 1rem;
+}
 
+/* end of bg */
+/* --------main content---------- */
+.poster {
+  position: relative;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+}
+
+.section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-title {
+  position: absolute;
+  font-family: "rift", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  color: #fead39;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 3px;
+  background-color: #131313;
+  top: 90%;
+  padding: 0.25rem 1rem;
+}
+
+.section-content {
+  max-height: 100%;
+  padding-bottom: 1rem;
+}
+
+.section-content p:first-of-type {
+  color: white;
+  margin: 3rem 1.25rem 2rem 1.25rem;
+}
+
+.section-content h3 {
+  width: 250px;
+  margin: 3rem auto 0 auto;
+  color: white;
+  font-family: "rift", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.section-content p {
+  color: white;
+  margin: 0 1rem;
+}
+
+.section-content a {
+  margin: 2rem auto 3rem auto;
+  display: block;
+  width: 190px;
+  padding: 0.25rem;
+  font-family: "rift", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #AE2012;
+  background-color: #cc0033;
+  box-shadow: 0 0 10px #cc0033;
+  border-radius: 3px;
+}
+
+.power-of-yes h3 {
+  color: white;
+  font-family: "rift", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.social-media-title-container {
+  margin: 2rem;
+}
+
+.social-media-title {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 3px;
+  background-color: #131313;
+}
+
+.social-media-title h2 {
+  text-align: center;
+  font-family: "rift", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fead39;
+}
+
+.socialmedia h4 {
+  color: #fead39;
+  font-family: "rift", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+  padding-top: 0.5rem;
+}
+
+.socialflex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* padding: 1rem; */
+}
+
+/* for tablet view */
+/* .socialflex :nth-of-type(2) {
+    padding: 1rem;
+} */
+.socialflex h3 {
+  color: #ffffff;
+  font-family: "rift", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.socialflex p {
+  color: #ffffff;
+}
+
+/* .power-of-yes img {
+    width: 100%;
+} */
 iframe {
   height: unset;
 }/*# sourceMappingURL=main.css.map */
