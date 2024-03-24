@@ -29,6 +29,10 @@ get_header();
 <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/mr-mrs-claus-up-close-sm.webp" alt="A close up of Santa and Mrs. Claus">
 <p>In December 2023, over 500 children and parents from Ukraine experienced  a heartwarming celebration with Santa Claus for the first time. Lillia  Vovk, a mother who fled the war in Ukraine with her three children,  expressed how Santa brought warmth and joy to their new home in Canada,  creating magical moments for the kids. Janice Krissa, co-founder of the  FreeStore for Ukrainian Newcomers, praised "ThatFunnySanta" for his  ability to turn a difficult time into a magical visit, making hundreds  feel important and cherished with memories that will endure forever.</p>
 </section>
+<section>
+    <p>Contact his elf helper Donovan for more information</p>
+    <a href="contact-us">Book Us</a>
+</section>
 </main><!-- #main -->
 
 <?php
