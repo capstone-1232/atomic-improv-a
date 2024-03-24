@@ -21,10 +21,18 @@ get_header();
     <div class="container">
       <h2>In the community</h2>
 
-      <div><a href="https://worldjrfootballchampionships.com/"><img src="" alt="football alberta logo"></a> <p></p></div>
-      <div><a href="https://greatoutdoorscomedyfestival.com/"><img src="" alt="great outdoor comedy fest"></a> <p></p></div>
-      <div><a href="https://icedistrict.com/event/oktoberfest-2023/"><img src="" alt="oktoberfest logo"></a> <p></p></div>
-      <div><a href="https://riverhawksbaseball.com/"><img src="" alt="edmonton riverhawks logo"></a> <p></p></div>
+      <div><a href="https://worldjrfootballchampionships.com/"><img src="" alt="football alberta logo"></a>
+        <p></p>
+      </div>
+      <div><a href="https://greatoutdoorscomedyfestival.com/"><img src="" alt="great outdoor comedy fest"></a>
+        <p></p>
+      </div>
+      <div><a href="https://icedistrict.com/event/oktoberfest-2023/"><img src="" alt="oktoberfest logo"></a>
+        <p></p>
+      </div>
+      <div><a href="https://riverhawksbaseball.com/"><img src="" alt="edmonton riverhawks logo"></a>
+        <p></p>
+      </div>
     </div>
   </section>
   <section>
@@ -50,14 +58,17 @@ get_header();
           // Select the next post
           $the_query->the_post();
           ?>
-          <h2>
+          <div class="post">
+            <h2>
               <?php the_title(); ?>
-          </h2>
-          <?php the_content(); ?>
+            </h2>
+            <?php the_content(); ?>
+
+          </div>
 
         <?php endwhile; ?>
         <!-- end loop -->
-      <?php
+        <?php
       endif;
       wp_reset_postdata();
       ?>
