@@ -25,7 +25,7 @@ get_header();
         </div> -->
 
       <div class="full-screen-video-content">
-        <h2>Atomic <span>Improv</span></h2>
+        <h1>Atomic<br><span>Improv</span></h1>
         <p>Canada's premier improv comedy team</p>
         <a href="contact-us">Book Now</a>
 
@@ -96,17 +96,6 @@ get_header();
         <a href="what-we-do">Learn More</a>
       </section>
 
-    </div>
-  </section>
-  <section class="about-atomic-improv">
-    <div class="container">
-      <a href="who-we-are"><img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/whoweareimg.webp"
-          alt="donovan posing"></a>
-      <h2>Who We Are</h2>
-      <p>We are Atomic Improv, a cornerstone of Edmonton's improv scene for over 30 years.</p>
-      <p>Improv legends Donovan Workun and Chris Borger bring their signature fast paced humour to any event.</p>
-      <a href="who-we-are">More About Us</a>
     </div>
   </section>
   <section class="socialmedia">

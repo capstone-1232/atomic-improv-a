@@ -1,6 +1,7 @@
 @import "variables";
 
 footer {
+  background: $bg;
   div.footerflex {
     display: flex;
     justify-content:space-between;
