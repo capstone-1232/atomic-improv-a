@@ -9,30 +9,33 @@ get_header();
 
 <main id="primary" class="site-main">
 
-    <div class="full-screen-video-container">
-      <video autoplay loop muted>
-        <source
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-ad-2.mp4"
-          type="video/mp4">
-      </video>
-      <!-- <div class="vid">
+  <div class="full-screen-video-container">
+    <video autoplay loop muted>
+      <source
+        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-ad-2.mp4"
+        type="video/mp4">
+    </video>
+    <!-- <div class="vid">
           <iframe width="1280" height="720" src="https://www.youtube.com/embed/Vkwthc6cyBY" title="Atomic Ad"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
         </div> -->
 
-      <div class="full-screen-video-content">
-        <h1>Atomic<br><span>Improv</span></h1>
-        <p>Canada's premier improv comedy team</p>
-        <a href="contact-us">Book Now</a>
+    <div class="full-screen-video-content">
+      <h1>Atomic<br><span>Improv</span></h1>
+      <p>Canada's premier improv comedy team</p>
+      <a href="contact-us">Book Now</a>
+    </div>
+  </div>
 
   <section class="frontpage-top">
     <h1>Atomic Improv!</h1>
     <!-- background video -->
     <div class="full-screen-video-container">
       <!-- bg-gif -->
-      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif" class="bg-gif" alt="5 second video of Donovan Workun and Chris Borger">
+      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif"
+        class="bg-gif" alt="5 second video of Donovan Workun and Chris Borger">
       <!-- bg content -->
       <div class="content-flex">
         <div class="full-screen-video-content">
@@ -80,10 +83,11 @@ get_header();
       <div class="section-content">
         <h3>Customized shows for your events</h3>
         <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
-      creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-      <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your event from humdrum to hilarious!</p>
+          creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+        <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your
+          event from humdrum to hilarious!</p>
 
-          
+
         <a href="what-we-do">Learn More</a>
       </div>
 
@@ -152,9 +156,10 @@ get_header();
         </div>
       </div>
       <div class="section-content">
-      <p>Atomic Improv is Canada's premier two man improv troupe that has been
-      creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-      <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn your event from humdrum to hilarious!</p>
+        <p>Atomic Improv is Canada's premier two man improv troupe that has been
+          creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+        <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn your
+          event from humdrum to hilarious!</p>
 
         <a href="who-we-are">More About Us</a>
       </div>

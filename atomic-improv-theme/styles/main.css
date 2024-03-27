@@ -8,6 +8,7 @@ body {
   background-size: auto 24px;
   /*typographic scale*/
   /* 12, 14, 16, 18, 21, 24, 36, 48, 60, 72*/
+  margin: 0;
 }
 
 img {
@@ -29,11 +30,13 @@ h4 {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 img,
-iframe {
+iframe,
+div,
+section {
   max-width: 100% !important;
 }
 
@@ -76,7 +79,7 @@ section.frontpage-top h1 {
 }
 section.frontpage-top h1 span {
   font-size: 2.5rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -86,12 +89,12 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  line-height: 4rem;
+  line-height: 4.5rem;
 }
 
 h3 {
-  font-size: 2.75rem;
-  line-height: 4rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
   color: #fffcf5;
 }
 
@@ -101,8 +104,8 @@ h4 {
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 nav {
@@ -122,17 +125,17 @@ header .header-flex {
 }
 header .header-flex div.site-branding a {
   display: block;
-  max-height: 112px;
+  max-height: 96px;
 }
 header .header-flex nav {
   z-index: 4;
 }
 header .header-flex nav a.menu-toggle {
   display: block;
-  max-height: 98px;
+  max-height: 82px;
 }
 header .header-flex nav a.menu-toggle svg {
-  padding: 24px;
+  padding: 16px;
 }
 header .header-flex nav a.menu-toggle:hover {
   cursor: pointer;
@@ -153,12 +156,11 @@ header .header-flex nav div.menu-navigation-container ul.menu {
 }
 header .header-flex nav div.menu-navigation-container ul.menu li {
   text-align: center;
-  margin-bottom: 0.5rem;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 header .header-flex nav div.menu-navigation-container ul.menu li a {
   display: block;
-  padding: 0.5rem;
+  padding: 0.75rem 0;
   color: #fffcf5;
   text-decoration: none;
 }
@@ -170,15 +172,15 @@ header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type {
   background-color: #cc0033;
   box-shadow: 0 0 10px #cc0033;
   border-radius: 8px;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
 }
 header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type a:hover {
   -webkit-text-decoration: underline #fffcf5;
           text-decoration: underline #fffcf5;
 }
 header .header-flex nav.toggled div.menu-navigation-container ul.menu {
-  max-height: 28.5rem;
-  padding: 1rem 0;
+  max-height: 40rem;
+  padding: 1.5rem 0;
 }
 
 @media screen and (min-width: 52.5rem) {
@@ -469,14 +471,13 @@ footer div.footerflex ul.menu {
   padding: 0;
   margin: 0;
 }
-footer div.footerflex ul.menu li {
-  margin-bottom: 1rem;
-}
 footer div.footerflex ul.menu li a {
   color: #fffcf5;
   text-decoration: none;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 0;
 }
 footer div.footerflex ul.menu li a:hover {
   text-decoration: underline;
