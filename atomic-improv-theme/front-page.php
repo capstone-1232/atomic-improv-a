@@ -71,8 +71,9 @@ get_header();
       <h2>What We Do</h2>
       <p>Customized shows for your events</p>
       <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
-      creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-      <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your event from humdrum to hilarious!</p>
+        creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+      <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your
+        event from humdrum to hilarious!</p>
 
 
       <a href="what-we-do">Learn More</a>
@@ -91,8 +92,9 @@ get_header();
           <?php endwhile;
           wp_reset_postdata(); ?>
         <?php endif; ?>
-        <p>Unlock your teams full potential with the Power of Yes! our customizable corporate workshop that can help teams
-        boost their creativity and communication skills.</p>
+        <p>Unlock your teams full potential with the Power of Yes! our customizable corporate workshop that can help
+          teams
+          boost their creativity and communication skills.</p>
         <a href="what-we-do">Learn More</a>
       </section>
 
