@@ -27,6 +27,7 @@ get_header();
       <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
       <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
       <p>You're not just watching the show … you're a part of it!</p>
+      <a href="contact-us">Book Now</a>
     </div><!-- .container -->
   </section>
   <section class="power-of-yes" id="power-of-yes">
@@ -67,8 +68,6 @@ get_header();
     </div>
     <div>
       <!-- insert YouTube video -->
-    </div>
-      
     </div>
   </section>
 </main><!-- #main -->

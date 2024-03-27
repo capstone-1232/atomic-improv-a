@@ -75,7 +75,6 @@ get_header();
       <section class="power-of-yes">
         <!-- Power of Yes poster-->
         <h3>Corporate Workshops</h3>
-
         <?php
         $powerofyes_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
         ?>
@@ -137,9 +136,9 @@ get_header();
         </div>
       </div>
       <div class="section-content">
-      <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
+      <p>Atomic Improv is Canada's premier two man improv troupe that has been
       creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-      <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your event from humdrum to hilarious!</p>
+      <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn your event from humdrum to hilarious!</p>
 
         <a href="who-we-are">More About Us</a>
       </div>
