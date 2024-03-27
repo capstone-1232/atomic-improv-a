@@ -1,6 +1,6 @@
 <?php
 
-// This is the template for the About Us page.
+// This is the template for confirming sent email.
 
 // @package Atomic_Improv
 

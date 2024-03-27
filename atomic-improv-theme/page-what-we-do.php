@@ -27,6 +27,7 @@ get_header();
       <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
       <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
       <p>You're not just watching the show … you're a part of it!</p>
+      <a href="contact-us">Book Now</a>
     </div><!-- .container -->
   </section>
   <section class="power-of-yes" id="power-of-yes">
@@ -55,12 +56,19 @@ get_header();
       <p>Whether you have a team of 10 or an audience of 1,000, our workshop adapts to fit your needs. Choose from a
         hands-on session for intimate teams or turn it into an interactive and entertaining keynote address for a larger
         crowd.</p>
-      <p>Additional Booking Options for Donovan and Chris:</p>
+        <a href="contact-us">Book Now</a>
+      
+      
+    </div>
+    <div>
+    <p>Additional Booking Options for Donovan and Chris:</p>
       <ul>
         <li>Professional MC's: Corporate, Conference, and Special Events</li>
         <li>Special Package Pricing when booking Professional MC's PLUS Power of Yes! workshop</li>
       </ul>
-      
+    </div>
+    <div>
+      <!-- insert YouTube video -->
     </div>
   </section>
 </main><!-- #main -->

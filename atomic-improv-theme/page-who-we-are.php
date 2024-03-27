@@ -59,13 +59,9 @@ get_header();
         and 1995. by the Canadian Organization of Campus Activities. They were also the first non-
         musical act to be nominated for Entertainer of the year.
       </p>
-      <img src="whoweareimg.webp" alt="">
-      <p>~THERE IS SUPPOSED TO BE AN IMAGE HERE, IDK WHAT THOUGH~</p>
-      <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their
-        groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their
-        unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to
-        any organizations function.</p>
-
+      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/d-c-blue-sm.webp" alt="Donovan holding Chris up">
+      <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to any organizations function.</p>
+      
     </div><!-- .container -->
   </section>
   <section class="donovan">
