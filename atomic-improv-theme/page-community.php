@@ -1,4 +1,5 @@
 <?php
+// this is the social media page
 /**
  * The template for displaying all pages
  *

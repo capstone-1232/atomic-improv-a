@@ -1,5 +1,10 @@
 /* -------------frontpage---------- */
 
+
+.frontpage-top {
+    background-color: rebeccapurple;
+}
+
 /* bg video */
 .full-screen-video-container {
     position: relative;
@@ -14,7 +19,7 @@
 // background gif
 .full-screen-video-container img {
     margin-top: 2rem;
-    max-width: 100;
+    max-width: 320px;
     z-index: -1;
     position: absolute;
     min-height: 100%;
@@ -33,7 +38,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 200px;
     text-align: center;
 }
 
@@ -50,7 +55,6 @@
 .full-screen-video-content span {
     font-size: 2rem;
 }
-
 
 .full-screen-video-content p {
     color: #fead39;

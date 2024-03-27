@@ -63,9 +63,11 @@ get_header();
       <!-- W.W.E content -->
       <div class="section-content">
         <h3>Customized shows for your events</h3>
-        <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. Fast, funny
-          and tailored to
-          the crowd, Atomic Improv is always a hit.</p>
+        <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
+      creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+      <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your event from humdrum to hilarious!</p>
+
+          
         <a href="what-we-do">Learn More</a>
       </div>
 
@@ -135,7 +137,10 @@ get_header();
         </div>
       </div>
       <div class="section-content">
-        <p>We are Atomic Improv, a cornerstone of Edmonton’s improv scene for over 30 years.</p>
+      <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
+      creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+      <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your event from humdrum to hilarious!</p>
+
         <a href="who-we-are">More About Us</a>
       </div>
     </div>

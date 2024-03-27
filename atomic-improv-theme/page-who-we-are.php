@@ -22,7 +22,7 @@ get_header();
         and 1995. by the Canadian Organization of Campus Activities. They were also the first non-
         musical act to be nominated for Entertainer of the year.
       </p>
-      <img src="whoweareimg.webp" alt="">
+      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/d-c-blue-sm.webp" alt="Donovan holding Chris up">
       <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to any organizations function.</p>
       
     </div><!-- .container -->
@@ -31,7 +31,7 @@ get_header();
     <div class="container">
       <h3>Donovan Workun</h3>
       <p class="socialhandle">@atomicimprov</p>
-      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/donovanbio.webp" alt="donovan making a funny face">
+      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/donovan-bio-sm.webp" alt="donovan making a funny face">
       <p>Donovan is a world-renowned Improviser, and founding member of Atomic Improv with over 30 years of comedy under
         his belt. Donovan has toured all over Canada, the US, and Europe, amazing audiences with his brilliant comedic
         timing, wit, and hilarious characters. </p>
@@ -49,7 +49,7 @@ get_header();
   <section class="chris">
     <h3>Chris Borger</h3>
     <p class="socialhandle">@thecheeseborger</p>
-    <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/chrisbio.webp" alt="chris borger headshot">
+    <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/chris-bio-sm.webp" alt="chris borger headshot">
     <p>Chris Borger has worked as a professional improviser since 2011, and performs regularly with Atomic Improv, White Rhino, Rapid Fire Theatre, and the 11 o’ Clock Number.</p>
     <p>He has produced online video content for CBC Comedy, and Oilersnation, and educational videos for the University of Alberta.</p>
     <p>Borger also has experience as an educational consultant working with post-secondary instructors from the University of Alberta, NAIT, and Pixel Blue College.</p>
