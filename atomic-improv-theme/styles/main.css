@@ -32,11 +32,7 @@ iframe {
   src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/montserrat.woff);
 }
 body,
-button,
-input,
-select,
-optgroup,
-textarea {
+button {
   color: #fffcf5;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -379,6 +375,16 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 } */
 iframe {
   height: unset;
+}
+
+input,
+select,
+optgroup,
+textarea {
+  color: #131313 !important;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 footer {
