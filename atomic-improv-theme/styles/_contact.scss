@@ -1,0 +1,11 @@
+@import "variables";
+
+input,
+select,
+optgroup,
+textarea {
+  color: $bg !important;
+  font-family: "Montserrat", sans-serif;
+  line-height:1.5;
+  letter-spacing:1px;
+}

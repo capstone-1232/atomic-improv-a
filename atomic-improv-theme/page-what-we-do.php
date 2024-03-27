@@ -20,7 +20,7 @@ get_header();
           $whatwedo_query->the_post();
           $whatwedo_url = get_field("image");
         ?>
-          <a href="what-we-do"><img src="<?php echo $whatwedo_url ?>"></a>
+          <img src="<?php echo $whatwedo_url ?>">
         <?php endwhile; 
         wp_reset_postdata(); ?>
       <?php endif; ?>
@@ -33,6 +33,7 @@ get_header();
   <section class="power-of-yes" id="power-of-yes">
     <div class="container">
       <h2>Power of Yes</h2>
+      <?php
         $powerofyes_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
       ?>
       <?php if ($powerofyes_query->have_posts()) : ?>
@@ -41,7 +42,7 @@ get_header();
           $powerofyes_query->the_post();
           $powerofyes_url = get_field("image");
         ?>
-          <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>"></a>
+          <img src="<?php echo $powerofyes_url ?>">
         <?php endwhile; 
         wp_reset_postdata(); ?>
       <?php endif; ?>

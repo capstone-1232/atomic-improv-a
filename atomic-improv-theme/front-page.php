@@ -9,7 +9,23 @@ get_header();
 
 <main id="primary" class="site-main">
 
+    <div class="full-screen-video-container">
+      <video autoplay loop muted>
+        <source
+          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-ad-2.mp4"
+          type="video/mp4">
+      </video>
+      <!-- <div class="vid">
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/Vkwthc6cyBY" title="Atomic Ad"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div> -->
 
+      <div class="full-screen-video-content">
+        <h1>Atomic<br><span>Improv</span></h1>
+        <p>Canada's premier improv comedy team</p>
+        <a href="contact-us">Book Now</a>
 
   <section class="frontpage-top">
     <h1>Atomic Improv!</h1>
