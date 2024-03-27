@@ -58,7 +58,6 @@ textarea {
   letter-spacing: 1px;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -212,6 +211,10 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   }
 }
 /* -------------frontpage---------- */
+.frontpage-top {
+  background-color: rebeccapurple;
+}
+
 /* bg video */
 .full-screen-video-container {
   position: relative;
@@ -224,7 +227,7 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 
 .full-screen-video-container img {
   margin-top: 2rem;
-  max-width: 100;
+  max-width: 100%;
   z-index: -1;
   position: absolute;
   min-height: 100%;
@@ -243,7 +246,7 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 200px;
   text-align: center;
 }
 

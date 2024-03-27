@@ -1,0 +1,225 @@
+/* -------------frontpage---------- */
+
+
+.frontpage-top {
+    background-color: rebeccapurple;
+}
+
+/* bg video */
+.full-screen-video-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+// background gif
+.full-screen-video-container img {
+    margin-top: 2rem;
+    max-width: 320px;
+    z-index: -1;
+    position: absolute;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+}
+
+.content-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.full-screen-video-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+}
+
+.full-screen-video-content h2 {
+    color: #fead39;
+    font-size: 3rem;
+    line-height: 2rem;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    font-family: "rift", sans-serif;
+    font-weight: 700;
+}
+
+.full-screen-video-content span {
+    font-size: 2rem;
+}
+
+.full-screen-video-content p {
+    color: #fead39;
+    font-weight: 500;
+    text-shadow: 0 0 20px black;
+}
+
+.full-screen-video-content a {
+    font-family: "rift", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #AE2012;
+    background-color: #cc0033;
+    box-shadow: 0 0 10px #cc0033;
+    border-radius: 3px;
+    padding: 0.25rem 1rem;
+}
+
+/* end of bg */
+/* --------main content---------- */
+.poster {
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+
+}
+
+.section-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.section-title {
+    position: absolute;
+    font-family: "rift", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    color: #fead39;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 3px;
+    background-color: #131313;
+    top: 90%;
+    padding: 0.25rem 1rem;
+
+}
+
+.section-content {
+    max-height: 100%;
+    padding-bottom: 1rem;
+}
+
+.section-content p:first-of-type {
+    color: white;
+    margin: 3rem 1.25rem 2rem 1.25rem;
+}
+
+.section-content h3 {
+    width: 250px;
+    margin: 3rem auto 0 auto;
+    color: white;
+    font-family: "rift", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.section-content p {
+    color: white;
+    margin: 0 1rem;
+}
+
+
+
+.section-content a {
+    margin: 2rem auto 3rem auto;
+    display: block;
+    width: 190px;
+    padding: 0.25rem;
+    font-family: "rift", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #AE2012;
+    background-color: #cc0033;
+    box-shadow: 0 0 10px #cc0033;
+    border-radius: 3px;
+}
+
+.power-of-yes h3 {
+    color: white;
+    font-family: "rift", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.social-media-title-container {
+    margin: 2rem;
+}
+
+.social-media-title {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 3px;
+    background-color: #131313;
+}
+
+.social-media-title h2 {
+    text-align: center;
+    font-family: "rift", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fead39;
+}
+
+.socialmedia h4 {
+    color: #fead39;
+    font-family: "rift", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+}
+
+.socialflex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* padding: 1rem; */
+}
+
+/* for tablet view */
+/* .socialflex :nth-of-type(2) {
+    padding: 1rem;
+} */
+
+.socialflex h3 {
+    color: #ffffff;
+    font-family: "rift", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+
+.socialflex p {
+    color: #ffffff;
+}
+
+/* .power-of-yes img {
+    width: 100%;
+} */
