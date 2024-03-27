@@ -1,6 +1,6 @@
 <?php
 
-// This is the template for the About Us page.
+// This is the template for the contact page. It will have the form
 
 // @package Atomic_Improv
 

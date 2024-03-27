@@ -1,141 +1,142 @@
 @import "variables";
-@import "typography";
 
 
 
 // mobile screen
 
-body {
-    background-color: #131313;
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-
 
 //header container
-.header-flex {
-    margin: 1rem 0;
-    padding-bottom: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    max-height: 7rem;
-    align-items: center;
-    border-bottom: 2px solid #AE2012;
+header {
+    // border-bottom: 2px solid $red;
 
+    .header-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div.site-branding {
+            a {
+                display: block;
+                max-height: 112px;
+            }
+        }
+
+        nav {
+            z-index: 4;
+
+            a.menu-toggle {
+                display: block;
+                max-height: 98px;
+
+                svg {
+                    padding: 24px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            div.menu-navigation-container {
+                ul.menu {
+                    list-style: none;
+                    position: absolute;
+                    left: 0;
+                    top: 144px;
+                    max-height: 0;
+                    overflow: hidden;
+                    background: $bg url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    transition: all 0.5s ease-in-out;
+                    border-bottom: 2px solid $red;
+
+                    li {
+                        text-align: center;
+                        margin-bottom: 0.5rem;
+                        padding: 0 1rem;
+
+                        a {
+                            display: block;
+                            padding: 0.5rem;
+                            color: $text-white;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline $orange;
+
+                            }
+                        }
+
+                        &:last-of-type {
+                            background-color: $red;
+                            box-shadow: 0 0 10px $red;
+                            border-radius: 8px;
+                            margin: 0 1rem;
+
+                            a {
+                                &:hover {
+                                    text-decoration: underline $text-white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.toggled {
+                div.menu-navigation-container {
+                    ul.menu {
+                        max-height: 28.5rem;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 // A.I logo
-div.site-branding {
-    padding-left: 1rem;
-}
 
 
 
 
-// menu svg
-header svg {
-    max-width: 113px;
-    position: relative;
-    z-index: 4;
-    top: 20%;
+// // menu svg
+// header //nav container
 
-}
+// .main-navigation {}
 
 
-//nav container
-.main-navigation {
-    display: block;
-    padding: 1rem;
-    margin: 1rem 0;
-    position: static;
-    z-index: 4;
-    max-width: 10rem;
-    left: 90%;
+// // nav link list container transition
+// .main-navigation ul {}
 
-}
+// .main-navigation li {}
 
 
-// nav link list container transition
-.main-navigation ul {
-    display: block;
-    list-style: none;
-    position: absolute;
-    left: 0;
-    max-height: 0;
-    overflow: hidden;
-    // background: $bg;
-    max-width: 100%;
-    // margin-top: 1.5rem;
-    // padding: 1.15rem;
-    width: 100%;
-    background-color: #131313;
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    transition: all 0.5s ease-in-out;
-    // background-color: red;
-}
+// // book now button
+// .main-navigation li:last-of-type {
 
-.main-navigation li {
-    text-align: center;
-    margin-top: 0.5rem;
-    padding: 0.5rem 0;
-}
+//   a {
+//   }
 
+//   a:hover {
+//   }
+// }
 
-// book now button
-.main-navigation li:last-of-type {
-    border: 2px solid #AE2012;
-    background-color: #cc0033;
-    box-shadow: 0 0 10px #cc0033;
-    border-radius: 8px;
-
-    a {
-        color: $text-white;
-    }
-
-    a:hover {
-        text-decoration: underline $text-white;
-    }
-}
-
-// nav links
-.main-navigation a {
-    font-size: 1.75rem;
-    font-family: "rift", sans-serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding: 0.5rem;
-    color: white;
-    text-decoration: none;
-}
+// // nav links
+// .main-navigation a {
+// }
 
 
 
 // this needs to be moved to the bigger screen cause on mobile there is no hover
-.main-navigation a:hover {
-    display: block;
-    text-decoration: underline #fead39;
-}
+// .main-navigation a:hover {}
 
 // nav ul container when toggled on.
-.main-navigation.toggled ul {
-    margin-top: 1.5rem;
-    max-height: 30rem;
-    padding: 1.15rem;
-    width: 100%;
-    background-color: #131313;
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-
-
-
-
-
-
-
-
+// .main-navigation.toggled ul {
+// }
 
 
 
