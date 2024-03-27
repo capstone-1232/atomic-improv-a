@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/montserrat.woff);
 }
 
 body,
@@ -25,16 +25,60 @@ optgroup,
 textarea {
   color: $text-white;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// nav,
-// a {
-//   font-family: "Rift", sans-serif;
-//   font-weight: bold;
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rift", sans-serif;
+  font-weight: bold;
+  color: $orange;
+}
+
+section.frontpage-top h1 {
+  font-size: 4rem;
+  line-height: 3rem;
+
+  span {
+    font-size: 2.5rem;
+    line-height: 1rem;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+h3 {
+  font-size: 2.75rem;
+  line-height: 4rem;
+  color: $text-white;
+}
+
+h4 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+nav {
+  font-size: 2.25rem;
+  font-family: "Rift", sans-serif;
+  font-weight: bold;
+  line-height: 3rem;
+}

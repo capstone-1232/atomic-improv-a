@@ -16,7 +16,7 @@ get_header();
     <!-- background video -->
     <div class="full-screen-video-container">
       <!-- bg-gif -->
-      <img src="images/atomic-bg.gif" class="bg-gif" alt="5 second video of Donovan Workun and Chris Borger">
+      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif" class="bg-gif" alt="5 second video of Donovan Workun and Chris Borger">
       <!-- bg content -->
       <div class="content-flex">
         <div class="full-screen-video-content">
