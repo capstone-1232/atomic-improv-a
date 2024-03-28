@@ -1,5 +1,5 @@
 body {
-  background: #131313;
+  background: #fffcf5;
   font-size: 100%;
   line-height: 1.5;
   /*16 x 1.5 = 24px*/
@@ -296,10 +296,6 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   box-shadow: 0 0 10px #cc0033;
   border-radius: 3px;
   padding: 0.25rem 1rem;
-}
-
-.full-screen-video-content a:hover {
-  box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
 }
 
 /* end of bg */

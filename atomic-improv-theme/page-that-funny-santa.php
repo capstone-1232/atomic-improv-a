@@ -32,7 +32,7 @@ get_header();
         </div>
         <div>
             <p>Contact his elf helper Donovan for more information</p>
-            <a href="contact-us">Book Us</a>
+            <a href="contact-us" class="button-style">Book Us</a>
         </div>
     </section>
 

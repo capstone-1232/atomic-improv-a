@@ -25,7 +25,7 @@ get_header();
       <div class="full-screen-video-content">
         <h1>Atomic<br><span>Improv</span></h1>
         <p>Canada's premier improv comedy team</p>
-        <a href="contact-us">Book Now</a>
+        <a href="contact-us" >Book Now</a>
 
   <section class="frontpage-top">
     <h1>Atomic Improv!</h1>
@@ -38,7 +38,7 @@ get_header();
         <div class="full-screen-video-content">
           <h2>Atomic <span>Improv</span></h2>
           <p>Canada's premier improv comedy team</p>
-          <a href="contact-us">Book Now</a>
+          <a href="contact-us" >Book Now</a>
         </div>
       </div>
     </div>

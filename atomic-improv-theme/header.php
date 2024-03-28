@@ -54,7 +54,12 @@
 									</g>
 								</g>
 							</svg>
+							
 						</a>
+						<!-- <svg>
+							<filter id='shadow' color-interpolation-filters="sRGB">
+								<feDropShadow dx="2" dy="2" stdDeviation="3" flood-opactity="0.5"/></filter>
+						</svg> -->
 						<?php
 						wp_nav_menu(
 							array(
