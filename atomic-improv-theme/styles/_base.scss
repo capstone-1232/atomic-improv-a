@@ -47,3 +47,21 @@ div,
 section {
   max-width:100% !important;
 }
+
+.button-style{
+  font-family: "rift", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #AE2012;
+  background-color: #cc0033;
+  box-shadow: 0 0 10px #cc0033;
+  border-radius: 3px;
+  padding: 0.25rem 1rem;
+}
+
+.button-style:hover{
+  box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
+}

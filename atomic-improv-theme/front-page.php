@@ -26,6 +26,8 @@ get_header();
         <h1>Atomic<br><span>Improv</span></h1>
         <p>Canada's premier improv comedy team</p>
         <a href="contact-us" >Book Now</a>
+      </div>
+    </div>
 
   <section class="frontpage-top">
     <h1>Atomic Improv!</h1>

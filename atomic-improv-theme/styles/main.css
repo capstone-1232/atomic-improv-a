@@ -34,6 +34,24 @@ section {
   max-width: 100% !important;
 }
 
+.button-style {
+  font-family: "rift", sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #AE2012;
+  background-color: #cc0033;
+  box-shadow: 0 0 10px #cc0033;
+  border-radius: 3px;
+  padding: 0.25rem 1rem;
+}
+
+.button-style:hover {
+  box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
+}
+
 @font-face {
   font-family: "Rift";
   src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
@@ -296,10 +314,6 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   box-shadow: 0 0 10px #cc0033;
   border-radius: 3px;
   padding: 0.25rem 1rem;
-}
-
-.full-screen-video-content a:hover {
-  box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
 }
 
 /* end of bg */
