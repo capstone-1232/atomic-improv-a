@@ -2,12 +2,11 @@ body {
   background: #131313;
   margin: 0;
   padding: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   font-size: 100%;
   line-height: 1.5rem;
   /*16 x 1.5 = 24px*/
   /*visual grid;*/
-  background-image: linear-gradient(#0ff 1px, transparent 1px);
-  background-size: auto 24px;
   /*typographic scale*/
   /* 12, 14, 16, 18, 21, 24, 36, 48, 60, 72*/
 }
@@ -16,22 +15,8 @@ img {
   max-width: 100%;
 }
 
-h2,
-h4 {
-  margin: 0;
-  padding: 0;
-  background-color: #131313;
-  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
 .container {
   max-width: 960px;
-  padding: 1rem;
-}
-
-img,
-iframe {
-  max-width: 100% !important;
 }
 
 @font-face {
@@ -63,6 +48,8 @@ h6 {
   font-family: "Rift", sans-serif;
   font-weight: bold;
   color: #fead39;
+  margin: 0;
+  padding: 0;
 }
 
 section.frontpage-top h1 {
@@ -76,28 +63,29 @@ section.frontpage-top h1 span {
 
 h1 {
   font-size: 4rem;
-  line-height: 6rem;
+  line-height: 4.5rem;
 }
 
 h2 {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 2.25rem;
+  line-height: 3.75rem;
 }
 
 h3 {
-  font-size: 2.75rem;
-  line-height: 4rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
   color: #fffcf5;
 }
 
 h4 {
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }
 
 p {
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fffcf5;
 }
 
 nav {
@@ -108,7 +96,7 @@ nav {
 }
 
 header {
-  border-bottom: 2px solid #cc0033;
+  padding: 1rem;
 }
 header .header-flex {
   display: flex;
@@ -125,9 +113,6 @@ header .header-flex nav {
 header .header-flex nav a.menu-toggle {
   display: block;
   max-height: 98px;
-}
-header .header-flex nav a.menu-toggle svg {
-  padding: 24px;
 }
 header .header-flex nav a.menu-toggle:hover {
   cursor: pointer;
@@ -148,12 +133,11 @@ header .header-flex nav div.menu-navigation-container ul.menu {
 }
 header .header-flex nav div.menu-navigation-container ul.menu li {
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   padding: 0 1rem;
 }
 header .header-flex nav div.menu-navigation-container ul.menu li a {
   display: block;
-  padding: 0.5rem;
   color: #fffcf5;
   text-decoration: none;
 }
@@ -212,6 +196,10 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 }
 /* -------------frontpage---------- */
 /* bg video */
+.frontpage-top {
+  margin-bottom: 2rem;
+}
+
 .full-screen-video-container {
   position: relative;
   height: 100vh;
@@ -223,7 +211,7 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 
 .full-screen-video-container img {
   margin-top: 2rem;
-  max-width: 320px;
+  max-width: none;
   z-index: -1;
   position: absolute;
   min-height: 100%;
@@ -242,35 +230,12 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 250px;
   text-align: center;
 }
 
-.full-screen-video-content h2 {
-  color: #fead39;
-  font-size: 3rem;
-  line-height: 2rem;
-  text-shadow: 0 0 5px black;
-  text-align: center;
-  font-family: "rift", sans-serif;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  color: #ffffff;
-  text-decoration: none;
-  border: 2px solid #AE2012;
-  background-color: #cc0033;
-  box-shadow: 0 0 10px #cc0033;
-  border-radius: 3px;
-  padding: 0.25rem 1rem;
-}
-
-/* end of bg */
-/* --------main content---------- */
-.poster {
-  position: relative;
-  border-bottom: 2px solid #ffffff;
-  box-shadow: 0 0 10px #ffffff;
+.full-screen-video-content span {
+  font-size: 2rem;
 }
 
 .full-screen-video-content p {
@@ -291,6 +256,7 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   box-shadow: 0 0 10px #cc0033;
   border-radius: 3px;
   padding: 0.25rem 1rem;
+  margin-bottom: 5rem;
 }
 
 /* end of bg */
@@ -334,13 +300,9 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 
 .section-content h3 {
   width: 250px;
-  margin: 3rem auto 0 auto;
-  color: white;
-  font-family: "rift", sans-serif;
-  font-weight: 600;
-  letter-spacing: 2px;
+  margin: 3.5rem auto 0 auto;
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 2.25rem;
   text-align: center;
 }
 
