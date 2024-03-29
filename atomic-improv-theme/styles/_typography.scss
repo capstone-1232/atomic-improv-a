@@ -19,10 +19,11 @@
 
 body,
 button {
-  color: $text-white;
+
+  // color: $text-white; // during inspect this element didn't work
   font-family: "Montserrat", sans-serif;
-  line-height:1.5;
-  letter-spacing:1px;
+  // line-height: 1.5; // during inspect this element didn't work
+  letter-spacing: 1px;
 }
 
 
@@ -70,12 +71,14 @@ h4 {
 
 p {
   font-size: 1.25rem;
-  line-height:2rem;
+  line-height: 2rem;
 }
 
 nav {
-  font-size:2.25rem;
+
+  font-size: 1.75rem; //2.25rem is too big for 320px mobile screen - 28px
   font-family: "Rift", sans-serif;
   font-weight: bold;
-  line-height:3rem;
+  line-height: 2.25rem;
+  // 36px
 }
