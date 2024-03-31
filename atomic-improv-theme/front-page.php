@@ -76,7 +76,7 @@ get_header();
         <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn your event from humdrum to hilarious!</p>
 
 
-        <a href="what-we-do">Learn More</a>
+        <a href="what-we-do" class="button-style">Learn More</a>
       </div>
 
       <!-- Power Of Yes -->
@@ -104,19 +104,12 @@ get_header();
               that can help
               teams
               boost their creativity and communication skills.</p>
-            <a href="what-we-do#power-of-yes">Learn More</a>
+            <a href="what-we-do#power-of-yes" class="button-style">Learn More</a>
           </div>
         </div>
       </section><!-- end of Power of Yes -->
     </div> <!-- end of container -->
   </section><!-- end of What We Do section -->
-
-
-
-
-
-
-
 
   <!-- About -->
   <section class="about-atomic-improv">
@@ -148,7 +141,7 @@ get_header();
           creating comedy on the spot based entirely on audience suggestion since 1990.</p>
         <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn your event from humdrum to hilarious!</p>
 
-        <a href="who-we-are">More About Us</a>
+        <a href="who-we-are" class="button-style">More About Us</a>
       </div>
     </div>
   </section><!-- end of About section -->
