@@ -85,14 +85,14 @@
     text-decoration: none;
     border: 2px solid #AE2012;
     background-color: #cc0033;
-    box-shadow: 0 0 10px #cc0033;
+    box-shadow: 0 0 5px #cc0033;
     border-radius: 3px;
     padding: 0.25rem 1rem;
 }
 
-// .full-screen-video-content a:hover {
-//     box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
-// }
+.full-screen-video-content a:hover {
+    box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
+}
 
 /* end of bg */
 /* --------main content---------- */
