@@ -41,7 +41,10 @@ footer {
         height: 4rem;
         margin-bottom: 1rem;
       }
-      
+      &>a:hover {
+        background-color: #efcf93;
+        
+      }
     }
   }
 

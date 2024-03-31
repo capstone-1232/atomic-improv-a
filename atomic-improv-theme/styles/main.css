@@ -510,6 +510,9 @@ footer div.footerflex div.footerlinks > a {
   height: 4rem;
   margin-bottom: 1rem;
 }
+footer div.footerflex div.footerlinks > a:hover {
+  background-color: #efcf93;
+}
 footer div.site-branding {
   padding: 0;
 }
