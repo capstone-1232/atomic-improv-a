@@ -60,8 +60,9 @@ section {
   box-shadow: 0 0 5px #cc0033;
   border-radius: 3px;
   padding: 0.25rem 1rem;
+
+  &:hover{
+    box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
+  }
 }
 
-.button-style:hover{
-  box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
-}
