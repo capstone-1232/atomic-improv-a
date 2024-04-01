@@ -137,9 +137,8 @@ get_header();
         </div>
       </div>
       <div class="section-content">
-        <p>Atomic Improv is Canada's premier two man improv troupe that has been
-          creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-        <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn your event from humdrum to hilarious!</p>
+        <p>We are Atomic Improv, a cornerstone of Edmonton’s improv scene for over 30 years.</p>
+        <p>Improv legends Donovan Workun and Chris Borger bring their signature fast paced humour to any event.</p>
 
         <a href="who-we-are" class="button-style">More About Us</a>
       </div>
