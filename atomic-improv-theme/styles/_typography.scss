@@ -41,21 +41,26 @@ h6 {
 }
 
 
-h1 {
+h1,
+.who-we-are h2 {
   font-size: 4rem;
   line-height: 4.5rem;
   text-align: center;
+  text-shadow: 0 0 10px #c97d12;
+  padding-bottom: 1rem;
 }
 
 h2 {
   font-size: 2.5rem;
   line-height: 3.75rem;
+  text-align: center;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 3rem;
   color: $text-white;
+  text-align: center;
 }
 
 h4 {
@@ -70,18 +75,22 @@ p {
   margin: 1rem;
 }
 
-li {
+
+nav {
+
+  font-size: 2rem;
+  font-family: "Rift", sans-serif;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.booking-options li {
   font-size: 1.25rem;
   line-height: 1.875rem;
   color: $text-white;
   margin: 1rem;
 }
 
-nav {
-
-  font-size: 1.75rem; //2.25rem is too big for 320px mobile screen - 28px
-  font-family: "Rift", sans-serif;
-  font-weight: bold;
-  line-height: 2.25rem;
-  // 36px
+.pos {
+  font-weight: 600;
 }

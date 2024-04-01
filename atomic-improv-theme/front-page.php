@@ -87,7 +87,8 @@ get_header();
 
         <div class="section-flex">
           <div class="section-content">
-            <p>Unlock your teams full potential with the Power of Yes! our customizable corporate
+            <p>Unlock your teams full potential with the <span class="pos">Power of Yes!</span> our customizable
+              corporate
               workshop
               that can help
               teams

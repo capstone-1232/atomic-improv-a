@@ -22,11 +22,14 @@ img {
 }
 
 
-
+.nav-container {
+  max-width: 960px;
+}
 
 
 .container {
   max-width: 960px;
+  padding-top: 1rem;
 
   // padding: 1rem;
 }
