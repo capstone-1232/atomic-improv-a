@@ -12,38 +12,41 @@ get_header();
     <div class="container">
       <h1>What We Do</h1>
       <?php
-        $whatwedo_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "what-we-do"));
+      $whatwedo_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "what-we-do"));
       ?>
-      <?php if ($whatwedo_query->have_posts()) : ?>
-        <?php 
-          while ($whatwedo_query->have_posts()) : 
+      <?php if ($whatwedo_query->have_posts()): ?>
+        <?php
+        while ($whatwedo_query->have_posts()):
           $whatwedo_query->the_post();
           $whatwedo_url = get_field("image");
-        ?>
+          ?>
           <img src="<?php echo $whatwedo_url ?>">
-        <?php endwhile; 
+        <?php endwhile;
         wp_reset_postdata(); ?>
       <?php endif; ?>
       <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
       <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
       <p>You're not just watching the show … you're a part of it!</p>
-      <a href="contact-us">Book Now</a>
+      <div class="button">
+        <a href="contact-us">Book Now</a>
+      </div>
+
     </div><!-- .container -->
   </section>
   <section class="power-of-yes" id="power-of-yes">
     <div class="container">
       <h2>Power of Yes</h2>
       <?php
-        $powerofyes_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
+      $powerofyes_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
       ?>
-      <?php if ($powerofyes_query->have_posts()) : ?>
-        <?php 
-          while ($powerofyes_query->have_posts()) : 
+      <?php if ($powerofyes_query->have_posts()): ?>
+        <?php
+        while ($powerofyes_query->have_posts()):
           $powerofyes_query->the_post();
           $powerofyes_url = get_field("image");
-        ?>
+          ?>
           <img src="<?php echo $powerofyes_url ?>">
-        <?php endwhile; 
+        <?php endwhile;
         wp_reset_postdata(); ?>
       <?php endif; ?>
       <p>At Power of Yes!, we believe in the transformative power of improv. Our workshop is designed to unlock your
@@ -56,12 +59,14 @@ get_header();
       <p>Whether you have a team of 10 or an audience of 1,000, our workshop adapts to fit your needs. Choose from a
         hands-on session for intimate teams or turn it into an interactive and entertaining keynote address for a larger
         crowd.</p>
+      <div class="button">
         <a href="contact-us">Book Now</a>
-      
-      
+      </div>
+
+
     </div>
     <div>
-    <p>Additional Booking Options for Donovan and Chris:</p>
+      <p>Additional Booking Options for Donovan and Chris:</p>
       <ul>
         <li>Professional MC's: Corporate, Conference, and Special Events</li>
         <li>Special Package Pricing when booking Professional MC's PLUS Power of Yes! workshop</li>

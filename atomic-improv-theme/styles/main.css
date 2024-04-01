@@ -6,7 +6,6 @@ body {
   font-size: 100%;
   line-height: 1.5rem;
   /*16 x 1.5 = 24px*/
-  /*visual grid;*/
   /*typographic scale*/
   /* 12, 14, 16, 18, 21, 24, 36, 48, 60, 72*/
 }
@@ -52,28 +51,20 @@ h6 {
   padding: 0;
 }
 
-section.frontpage-top h1 {
-  font-size: 4rem;
-  line-height: 3rem;
-}
-section.frontpage-top h1 span {
-  font-size: 2.5rem;
-  line-height: 1rem;
-}
-
 h1 {
   font-size: 4rem;
   line-height: 4.5rem;
+  text-align: center;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 3.75rem;
 }
 
 h3 {
   font-size: 2rem;
-  line-height: 2.25rem;
+  line-height: 3rem;
   color: #fffcf5;
 }
 
@@ -83,9 +74,17 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   color: #fffcf5;
+  margin: 1rem;
+}
+
+li {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #fffcf5;
+  margin: 1rem;
 }
 
 nav {
@@ -230,12 +229,17 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 250px;
+  width: 350px;
   text-align: center;
 }
 
+.full-screen-video-content h1 {
+  text-align: center;
+  width: 250px;
+}
+
 .full-screen-video-content span {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .full-screen-video-content p {
@@ -265,6 +269,8 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   position: relative;
   border-bottom: 2px solid #ffffff;
   box-shadow: 0 0 10px #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .section-flex {
@@ -275,11 +281,6 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 
 .section-title {
   position: absolute;
-  font-family: "rift", sans-serif;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 1.25rem;
-  color: #fead39;
   border: 2px solid #ffffff;
   box-shadow: 0 0 10px #ffffff;
   border-radius: 3px;
@@ -294,25 +295,17 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 }
 
 .section-content p:first-of-type {
-  color: white;
-  margin: 3rem 1.25rem 2rem 1.25rem;
+  margin: 1rem;
 }
 
 .section-content h3 {
-  width: 250px;
   margin: 3.5rem auto 0 auto;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
   text-align: center;
-}
-
-.section-content p {
-  color: white;
-  margin: 0 1rem;
+  max-width: 350px;
 }
 
 .section-content a {
-  margin: 2rem auto 3rem auto;
+  margin: 2rem auto;
   display: block;
   width: 190px;
   padding: 0.25rem;
@@ -330,33 +323,28 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 }
 
 .power-of-yes h3 {
-  color: white;
-  font-family: "rift", sans-serif;
+  margin: 0 auto;
   text-align: center;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
+  max-width: 350px;
 }
 
-.social-media-title-container {
-  margin: 2rem;
+.social-content {
+  background-color: purple;
+  width: 100% !important;
 }
 
 .social-media-title {
   display: block;
   margin: 0 auto;
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 10px #ffffff;
-  border-radius: 3px;
   background-color: #131313;
+  max-width: 350px;
 }
 
 .social-media-title h2 {
   text-align: center;
-  font-family: "rift", sans-serif;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #fead39;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 3px;
 }
 
 .socialmedia h4 {
@@ -396,6 +384,28 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 /* .power-of-yes img {
     width: 100%;
 } */
+.button a {
+  margin: 2rem auto;
+  display: block;
+  width: 190px;
+  padding: 0.25rem;
+  font-family: "rift", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #AE2012;
+  background-color: #cc0033;
+  box-shadow: 0 0 10px #cc0033;
+  border-radius: 3px;
+}
+
+.power-of-yes h2 {
+  text-align: center;
+}
+
 iframe {
   height: unset;
 }
