@@ -18,7 +18,8 @@ body {
 
 img,
 iframe,
-section {
+section,
+div.social-content div {
   max-width: 100% !important;
 }
 
