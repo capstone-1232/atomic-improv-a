@@ -397,6 +397,58 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 /* .power-of-yes img {
     width: 100%;
 } */
+@media screen and (min-width: 630px) {
+  .poster {
+    position: relative;
+    border-bottom: none;
+    box-shadow: none;
+    margin: 4rem 0 2rem 0;
+  }
+  .wwd-flex {
+    border-top: 2px solid #fffcf5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .poster img {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+  .section-title:first-of-type {
+    position: absolute;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 3px;
+    background-color: #131313;
+    top: -35%;
+    left: auto;
+    padding: 0.25rem 1rem;
+  }
+  .events,
+  .power-of-yes {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .power-of-yes img {
+    margin: 2rem 0;
+  }
+  .about {
+    border-top: 2px solid #fffcf5;
+  }
+  .section-title:last-of-type {
+    position: absolute;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+    border-radius: 3px;
+    background-color: #131313;
+    top: -40%;
+    left: auto;
+    padding: 0.25rem 1rem;
+  }
+}
 .flex-title {
   position: relative;
   height: 100vh;
@@ -415,6 +467,10 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 
 .flex-title h1 {
   padding: 1rem 0;
+}
+
+.events {
+  margin: 3rem 0 2rem 0;
 }
 
 .button a {
@@ -437,6 +493,10 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 
 .power-of-yes h2 {
   text-align: center;
+}
+
+.booking-options {
+  padding-bottom: 2rem;
 }
 
 .flex {
@@ -488,12 +548,38 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   margin: 0 auto;
 }
 
-.poster-donovan {
+.about-title {
   text-align: center;
+}
+
+.info {
+  text-align: left;
+}
+
+.chris {
+  margin: 2rem 0;
+}
+
+.vid {
+  margin: 2rem 0;
+}
+
+.vid iframe {
+  width: 100%;
+  height: 100%;
 }
 
 iframe {
   height: unset;
+}
+
+.card {
+  margin: 3rem 0;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
 }
 
 input,
