@@ -35,14 +35,16 @@ footer {
       align-items: flex-end;
       gap:0.75rem;
       & > a {
-        background-color: $orange;
-        border-radius: 3rem;
         display: block;
-        height: 4rem;
-        margin-bottom: 1rem;
+        height: 3rem;
+        padding:1rem;
 
-        &:hover {
+        &:hover svg {
           background-color: #efcf93;
+        }
+        svg {
+          background-color: $orange;
+          border-radius: 3rem;
         }
       }
     }

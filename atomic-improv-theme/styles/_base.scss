@@ -29,7 +29,9 @@ body {
 
 
 img,
-iframe {
+iframe,
+div.social-content > div,
+div.social-content > div > iframe {
   max-width:100%;
 }
 
