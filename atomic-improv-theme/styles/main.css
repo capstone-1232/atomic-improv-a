@@ -427,6 +427,10 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 /* .power-of-yes img {
     width: 100%;
 } */
+a.sbi_photo {
+  max-height: 20rem !important;
+}
+
 iframe {
   height: unset;
 }
