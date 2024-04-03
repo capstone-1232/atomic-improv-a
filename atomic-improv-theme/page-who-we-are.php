@@ -8,25 +8,24 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-  <section class="who-we-are">
-    <div class="container">
-      <!-- section -->
-      <div class="flex-title">
-        <h2>Who We Are</h2>
-        <?php
-        $whoweare_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "who-we-are"));
-        ?>
-        <?php if ($whoweare_query->have_posts()): ?>
-          <?php
-          while ($whoweare_query->have_posts()):
-            $whoweare_query->the_post();
-            $whoweare_url = get_field("image");
-            ?>
-            <img src="<?php echo $whoweare_url ?>">
-          <?php endwhile;
-          wp_reset_postdata(); ?>
-        <?php endif; ?>
-      </div>
+  <?php
+  $whoweare_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "who-we-are"));
+  ?>
+  <?php if ($whoweare_query->have_posts()): ?>
+    <?php
+    while ($whoweare_query->have_posts()):
+      $whoweare_query->the_post();
+      $whoweare_url = get_field("image");
+      ?>
+      <section class="who-we-are">
+        <div class="container">
+          <!-- section -->
+          <div class="flex-title">
+            <h2>Who We Are</h2>
+          </div>
+        <?php endwhile;
+    wp_reset_postdata(); ?>
+      <?php endif; ?>
       <!-- history -->
       <div class="history">
         <p>Atomic Improv has performed all across North America & Europe showcasing at Montreal's “Just for Laughs”
@@ -43,7 +42,7 @@ get_header();
               $justforlaughs_url = get_field("image");
               ?>
               <img src="<?php echo $justforlaughs_url ?>">
-            <?php endwhile;
+            <?php endwhile; 
             wp_reset_postdata(); ?>
           <?php endif; ?>
 
@@ -68,17 +67,18 @@ get_header();
         </p>
 
       </div><!-- end of history -->
+    </div>
 
-      <!-- current history -->
-      <div class="current-history">
-        <img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/d-c-blue-sm.webp"
-          alt="Donovan holding Chris up">
-        <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their
-          groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their
-          unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to
-          any organizations function.</p>
-      </div> <!-- end of current history -->
+    <!-- current history -->
+    <div class="current-history">
+      <img
+        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/d-c-blue-sm.webp"
+        alt="Donovan holding Chris up">
+      <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their
+        groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their
+        unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to
+        any organizations function.</p>
+    </div> <!-- end of current history -->
 
     </div><!-- .container -->
 
