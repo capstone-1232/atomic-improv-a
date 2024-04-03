@@ -53,7 +53,6 @@ get_header();
               </div>
             </div>
           </div>
-          <!--  content -->
           <div class="section-content">
             <h3>Customized shows for your events</h3>
             <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
@@ -150,6 +149,9 @@ get_header();
         <section>
           <div class="social-content">
             <h3>Instagram</h3>
+            <?php
+            echo do_shortcode('[instagram-feed feed=1]');
+            ?>
           </div>
 
         </section>

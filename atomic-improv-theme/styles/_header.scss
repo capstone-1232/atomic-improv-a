@@ -89,7 +89,7 @@ header {
       &.toggled {
         div.menu-navigation-container {
           ul.menu {
-            max-height: 40rem;
+            max-height: 25.625rem;
             padding: 1.5rem 0;
           }
         }
@@ -101,42 +101,60 @@ header {
 
 
 
-@media screen and (min-width: 52.5rem) {
+@media screen and (min-width: 58rem) {
+  header {
 
   .header-flex {
-    align-items: center;
-  }
 
-  a.menu-toggle {
-    display: none;
-  }
+    nav {
 
-  .main-navigation ul {
-    display: flex;
-    position: static;
-    max-height: min-content;
-    background-color: unset;
-    width: max-content;
-    transition: none;
-    align-items: center;
-  }
+      a.menu-toggle {
+        display: none;
+      }
 
-  .main-navigation li {
-    position: static;
-    text-align: left;
-    font-size: 2rem;
-    margin-top: 0;
-    margin-left: 1rem;
-  }
+      div.menu-navigation-container {
+        ul.menu {
+          position: static;
+          max-height: unset;
+          background: unset;
+          width: unset;
+          border-bottom: none;
+          display:flex;
+          gap:1.5rem;
+          align-items:center;
 
-  .main-navigation li:last-of-type {
-    a {
-      color: $text-white;
-      padding: 0 0.5rem;
+          li {
+            text-align: right;
+            padding: 0;
+
+            a {
+              font-size:1.5rem;
+              line-height: 3rem;
+              padding: 0;
+            }
+
+            &:last-of-type {
+              margin: 0;
+
+              a {
+                padding: 0 0.5rem;
+              }
+            }
+          }
+        }
+      }
+
+      &.toggled {
+        div.menu-navigation-container {
+          ul.menu {
+            max-height: 40rem;
+            padding: 1.5rem 0;
+          }
+        }
+      }
     }
-
-    a:hover {
-      text-decoration: underline $text-white;
-    }
   }
+}
+
+
 }
