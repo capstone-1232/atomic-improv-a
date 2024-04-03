@@ -187,31 +187,8 @@ get_header();
         <section>
           <div class="social-content">
             <h3>Instagram</h3>
-            <!-- start loop -->
             <?php
-            $instagram_args = array(
-              "post_type" => "post",
-              "category_name" => "instagram",
-              "posts_per_page" => 1
-            );
-            $instagram_query = new WP_Query($instagram_args);
-            // Tests if there even are any posts
-            if ($instagram_query->have_posts()):
-              // As long as there are new posts...
-              while ($instagram_query->have_posts()):
-                // Select the next post
-                $instagram_query->the_post();
-                ?>
-                <h4>
-                  <?php the_title(); ?>
-                </h4>
-                <?php the_content(); ?>
-
-              <?php endwhile; ?>
-              <!-- end loop -->
-              <?php
-            endif;
-            wp_reset_postdata();
+            echo do_shortcode('[instagram-feed feed=1]');
             ?>
           </div>
 
@@ -219,32 +196,6 @@ get_header();
         <section>
           <div class="social-content">
             <h3>Facebook</h3>
-            <!-- start loop -->
-            <?php
-            $facebook_args = array(
-              "post_type" => "post",
-              "category_name" => "facebook",
-              "posts_per_page" => 1
-            );
-            $facebook_query = new WP_Query($facebook_args);
-            // Tests if there even are any posts
-            if ($facebook_query->have_posts()):
-              // As long as there are new posts...
-              while ($facebook_query->have_posts()):
-                // Select the next post
-                $facebook_query->the_post();
-                ?>
-                <h4>
-                  <?php the_title(); ?>
-                </h4>
-                <?php the_content(); ?>
-
-              <?php endwhile; ?>
-              <!-- end loop -->
-              <?php
-            endif;
-            wp_reset_postdata();
-            ?>
           </div>
 
         </section>
