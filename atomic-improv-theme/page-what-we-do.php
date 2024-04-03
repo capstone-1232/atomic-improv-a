@@ -37,7 +37,7 @@ get_header();
           <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
           <p>You're not just watching the show … you're a part of it!</p>
           <div class="button">
-            <a href="contact-us">Book Now</a>
+      <a href="contact-us" class="button-style">Book Now</a>
           </div>
         </div>
       </div><!-- end of events -->
@@ -85,7 +85,7 @@ get_header();
             larger
             crowd.</p>
           <div class="button">
-            <a href="contact-us">Book Now</a>
+        <a href="contact-us" class="button-style">Book Now</a>
           </div>
         </div> <!-- end of info -->
       </div>

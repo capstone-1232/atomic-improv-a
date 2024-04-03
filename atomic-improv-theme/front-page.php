@@ -7,7 +7,6 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
-  <!-- hero banner -->
   <section class="frontpage-top">
     <!-- background video -->
     <div class="full-screen-video-container">
@@ -25,7 +24,6 @@ get_header();
       </div>
     </div>
   </section><!-- end of bg-video -->
-
 
 
   <!-- What We Do  -->
@@ -62,7 +60,7 @@ get_header();
               creating comedy on the spot based entirely on audience suggestion since 1990.</p>
             <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn
               your event from humdrum to hilarious!</p>
-            <a href="what-we-do">Learn More</a>
+            <a href="what-we-do" class="button-style">Learn More</a>
           </div>
         </div><!-- end of events section -->
         <!-- Power Of Yes -->
@@ -90,7 +88,7 @@ get_header();
                 that can help
                 teams
                 boost their creativity and communication skills.</p>
-              <a href="what-we-do#power-of-yes">Learn More</a>
+              <a href="what-we-do#power-of-yes" class="button-style">Learn More</a>
             </div>
           </div>
         </div><!-- end of Power of Yes -->
@@ -128,7 +126,7 @@ get_header();
             creating comedy on the spot based entirely on audience suggestion since 1990.</p>
           <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn
             your event from humdrum to hilarious!</p>
-          <a href="who-we-are">More About Us</a>
+        <a href="who-we-are" class="button-style">More About Us</a>
         </div>
       </div><!-- end of about section -->
 
@@ -152,16 +150,12 @@ get_header();
         <section>
           <div class="social-content">
             <h3>Instagram</h3>
-            <!-- start loop -->
-
           </div>
 
         </section>
         <section>
           <div class="social-content">
             <h3>Facebook</h3>
-            <!-- start loop -->
-
           </div>
 
         </section>
@@ -171,7 +165,33 @@ get_header();
 
             </div>
             <h3>Youtube</h3>
+            <!-- start loop -->
+            <?php
+            $youtube_args = array(
+              "post_type" => "post",
+              "category_name" => "youtube",
+              "posts_per_page" => 1
+            );
+            $youtube_query = new WP_Query($youtube_args);
+            // Tests if there even are any posts
+            if ($youtube_query->have_posts()) :
+              // As long as there are new posts...
+              while ($youtube_query->have_posts()) :
+                // Select the next post
+                $youtube_query->the_post();
+            ?>
+                <h4>
+                  <?php the_title(); ?>
+                </h4>
+                <?php the_content(); ?>
 
+              <?php endwhile; ?>
+              <!-- end loop -->
+            <?php
+            endif;
+            wp_reset_postdata();
+            ?>
+          </div>
 
         </section>
       </div>

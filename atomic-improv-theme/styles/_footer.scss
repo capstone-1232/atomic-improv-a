@@ -13,13 +13,13 @@ footer {
       margin: 0;
 
       li {
-        margin-bottom: 1rem;
-
         a {
           color: $text-white;
           text-decoration: none;
           display: block;
-          font-size: 1.5rem;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          padding: 0.75rem 0;
 
           &:hover {
             text-decoration: underline;
@@ -33,12 +33,16 @@ footer {
       flex-direction: column;
       align-items: flex-end;
 
-      &>a {
+      & > a {
         background-color: $orange;
         border-radius: 3rem;
         display: block;
         height: 4rem;
         margin-bottom: 1rem;
+
+        &:hover {
+          background-color: #efcf93;
+        }
       }
     }
   }
