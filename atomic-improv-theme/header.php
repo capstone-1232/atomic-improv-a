@@ -32,7 +32,7 @@
 		</a>
 
 		<header id="masthead" class="site-header">
-			<div class="container">
+			<div class="nav-container">
 				<div class="header-flex">
 
 					<div class="site-branding">

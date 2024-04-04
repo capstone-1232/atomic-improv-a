@@ -1,0 +1,71 @@
+.flex {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+}
+
+.flex img:first-of-type {
+    max-width: 200px;
+}
+
+.flex img:last-of-type {
+    margin-left: 1.5rem;
+    max-width: 150px;
+
+}
+
+.flex-title {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-title img {
+    max-width: none;
+    z-index: -1;
+    position: absolute;
+    min-height: 100%;
+}
+
+.flex-title h2 {
+    padding: 1rem 0;
+}
+
+
+.current-history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-history img {
+    margin: 0 auto;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.info {
+    text-align: left;
+}
+
+.chris {
+    margin: 2rem 0;
+}
+
+.vid {
+    margin: 2rem 0;
+}
+
+.vid iframe {
+    width: 100%;
+    height: 100%;
+}

@@ -1,5 +1,15 @@
 @import "variables";
 
 iframe {
-  height:unset;
+  height: unset;
+}
+
+
+.card {
+  margin: 3rem 0;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
 }
