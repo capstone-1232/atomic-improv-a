@@ -10,7 +10,7 @@ get_header();
 <main id="primary" class="site-main">
     <section class="santa">
         <h2>The Funny Santa</h2>
-        <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-dogs-sm.webp" alt="santa with 2 black dogs">
+        <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-mountain-sm" alt="Santa and Mrs. Claus greeting a crowd">
 
         <p></p>
     </section>
@@ -23,7 +23,8 @@ get_header();
         <div>
             <h3>Adventures in Banff</h3>
             <p>@thatfunnysanta can often be found visiting Banff at the Fairmont Banff Springs Hotel where he brings holiday cheers to guest and visitors alike. </p>
-            <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-mountain-sm.webp" alt="Santa and Mrs. Claus greeting a crowd"><img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-banff-sm.webp" alt="Santa speaking on stage">
+            
+            <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-banff-sm.webp" alt="Santa speaking on stage">
         </div>
         <div>
             <h3>In the Community</h3>
