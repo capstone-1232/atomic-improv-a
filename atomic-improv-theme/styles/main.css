@@ -22,7 +22,7 @@ img,
 iframe,
 div.social-content > div,
 div.social-content > div > iframe {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 .button-style {
@@ -399,18 +399,20 @@ section.socialmedia div.socialflex section div.social-content h3 {
   text-align: center;
   margin: 1.5rem 0;
 }
-section.socialmedia div.socialflex section div.social-content div#sb_instagram {
+section.socialmedia div.socialflex section div.social-content > div {
   background: #fffcf5;
   border-radius: 1rem;
+  padding: 0.75rem !important;
+  height: 600px;
+  overflow: auto;
 }
-section.socialmedia div.socialflex section div.social-content div#sb_instagram h3 {
+section.socialmedia div.socialflex section div.social-content > div a.sbi_photo {
+  margin-bottom: 0.75rem;
+}
+section.socialmedia div.socialflex section div.social-content > div h3 {
   color: #202020;
 }
-section.socialmedia div.socialflex section div.social-content div.cff-wrapper {
-  background: #fffcf5;
-  border-radius: 1rem;
-}
-section.socialmedia div.socialflex section div.social-content div.cff-wrapper div.cff-visual-header {
+section.socialmedia div.socialflex section div.social-content > div div.cff-visual-header {
   display: none;
 }
 

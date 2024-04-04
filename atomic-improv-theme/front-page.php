@@ -150,7 +150,7 @@ get_header();
           <div class="social-content">
             <h3>Instagram</h3>
             <?php
-            echo do_shortcode('[instagram-feed feed=1]');
+            echo do_shortcode("[instagram-feed feed=1]")
             ?>
           </div>
 
@@ -159,7 +159,7 @@ get_header();
           <div class="social-content">
             <h3>Facebook</h3>
             <?php
-            echo do_shortcode('[custom-facebook-feed feed=1]');
+            echo do_shortcode("[custom-facebook-feed feed=1]")
             ?>
           </div>
 
@@ -167,31 +167,8 @@ get_header();
         <section>
           <div class="social-content">
             <h3>Youtube</h3>
-            <!-- start loop -->
             <?php
-            $youtube_args = array(
-              "post_type" => "post",
-              "category_name" => "youtube",
-              "posts_per_page" => 1
-            );
-            $youtube_query = new WP_Query($youtube_args);
-            // Tests if there even are any posts
-            if ($youtube_query->have_posts()) :
-              // As long as there are new posts...
-              while ($youtube_query->have_posts()) :
-                // Select the next post
-                $youtube_query->the_post();
-            ?>
-                <h4>
-                  <?php the_title(); ?>
-                </h4>
-                <?php the_content(); ?>
-
-              <?php endwhile; ?>
-              <!-- end loop -->
-            <?php
-            endif;
-            wp_reset_postdata();
+            echo do_shortcode("[youtube-feed feed=3]")
             ?>
           </div>
 
