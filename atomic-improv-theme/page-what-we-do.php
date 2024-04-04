@@ -69,10 +69,7 @@ get_header();
         </div><!-- end of media -->
         <!-- info -->
         <div class="poy-info">
-          <p>At <span class="pos">Power of Yes!</span>, we believe in the transformative power of improv. Our workshop
-            is
-            designed to unlock your
-            team's full potential. </p>
+          <p>At <span class="pos">Power of Yes!</span>, we believe in the transformative power of improv. Our workshop is designed to unlock your team's full potential. </p>
           <p>Starting with simple exercises, participants will collaborate in teams, building trust and camaraderie as
             they
             navigate through challenges together.</p>
@@ -94,7 +91,8 @@ get_header();
     <div class="container">
       <p>Additional Booking Options for Donovan and Chris:</p>
       <ul class="booking-options">
-        <li>Professional MC's: Corporate, Conference, and Special Events</li>
+        <!-- <li>Think of us for </li> -->
+        <li>Professional MC's: Corporate, Conference, and Special Events</li> 
         <li>Special Package Pricing when booking Professional MC's PLUS Power of Yes! workshop</li>
       </ul>
     </div>
