@@ -208,7 +208,7 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   padding: 1.5rem 0;
 }
 
-@media screen and (min-width: 58rem) {
+@media screen and (min-width: 60rem) {
   header .header-flex nav a.menu-toggle {
     display: none;
   }
@@ -376,52 +376,42 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   max-width: 350px;
 }
 
-.social-media-title {
+section.socialmedia div.social-media-title-container div.social-media-title {
   display: block;
   margin: 0 auto;
   background-color: #131313;
   max-width: 350px;
 }
-
-.social-media-title h2 {
+section.socialmedia div.social-media-title-container div.social-media-title h2 {
   text-align: center;
   border: 2px solid #ffffff;
   box-shadow: 0 0 10px #ffffff;
   border-radius: 3px;
 }
-
-.socialmedia h4 {
-  color: #fead39;
-  font-family: "rift", sans-serif;
+section.socialmedia h4 {
   text-align: center;
-  font-weight: 600;
   letter-spacing: 2px;
   font-size: 1.25rem;
-  padding-top: 0.5rem;
+  margin-top: 1.5rem;
 }
-
-/* for tablet view */
-/* .socialflex :nth-of-type(2) {
-    padding: 1rem;
-} */
-.socialflex h3 {
-  color: #ffffff;
-  font-family: "rift", sans-serif;
+section.socialmedia div.socialflex section div.social-content h3 {
+  color: #fffcf5;
   text-align: center;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 1rem;
+  margin: 1.5rem 0;
 }
-
-.socialflex p {
-  color: #ffffff;
+section.socialmedia div.socialflex section div.social-content div#sb_instagram {
+  background: #fffcf5;
+  border-radius: 1rem;
 }
-
-/* .power-of-yes img {
-    width: 100%;
-} */
-div#sb_instagram {
-  width: 100%;
+section.socialmedia div.socialflex section div.social-content div#sb_instagram h3 {
+  color: #202020;
+}
+section.socialmedia div.socialflex section div.social-content div.cff-wrapper {
+  background: #fffcf5;
+  border-radius: 1rem;
+}
+section.socialmedia div.socialflex section div.social-content div.cff-wrapper div.cff-visual-header {
+  display: none;
 }
 
 @media screen and (min-width: 630px) {
@@ -475,13 +465,22 @@ div#sb_instagram {
     left: auto;
     padding: 0.25rem 1rem;
   }
+  .socialflex {
+    width: 400px;
+    /* padding: 1rem; */
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 60rem) {
   .socialflex {
     display: flex;
-    flex-wrap: wrap;
+    gap: 1.5rem;
     width: 100%;
     /* padding: 1rem; */
+  }
+  .socialflex section {
+    width: 0;
+    flex: 1 1 0px;
   }
 }
 .flex-title {

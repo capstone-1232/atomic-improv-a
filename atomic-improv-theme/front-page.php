@@ -158,14 +158,14 @@ get_header();
         <section>
           <div class="social-content">
             <h3>Facebook</h3>
+            <?php
+            echo do_shortcode('[custom-facebook-feed feed=1]');
+            ?>
           </div>
 
         </section>
         <section>
           <div class="social-content">
-            <div class="container">
-
-            </div>
             <h3>Youtube</h3>
             <!-- start loop -->
             <?php
