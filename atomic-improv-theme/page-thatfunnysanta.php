@@ -12,7 +12,6 @@ get_header();
         <h2>The Funny Santa</h2>
         <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-mountain-sm" alt="Santa and Mrs. Claus greeting a crowd">
 
-        <p></p>
     </section>
     <section>
         <div class="santa">
