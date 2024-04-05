@@ -12,9 +12,27 @@ get_header();
     <div class="container">
       <div class="flex-title">
         <h1>What We Do</h1>
+          <?php
+          $whatwedo_hero_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "whatwedo_hero"
+            )
+          );
+          if ($whatwedo_hero_query->have_posts()):
+            while ($whatwedo_hero_query->have_posts()):
+              $whatwedo_hero_query->the_post();
+              $whatwedo_hero_url = get_field("image");
+              ?>
         <img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/poy-donovan-chris-blue-md.webp"
+          src="<?php echo $whatwedo_hero_url ?>"
           alt="Donovan holding Chris up">
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
       </div>
       <!-- events -->
       <div class="events">

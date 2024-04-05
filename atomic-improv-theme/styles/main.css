@@ -73,6 +73,7 @@ h6 {
   color: #fead39;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 h1 {
@@ -101,14 +102,12 @@ h2 {
 h3 {
   font-size: 2.5rem;
   line-height: 3.75rem;
-  text-align: center;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 3rem;
   color: #fffcf5;
-  text-align: center;
 }
 
 h4 {
@@ -140,9 +139,6 @@ nav {
   font-weight: 600;
 }
 
-header {
-  padding: 1.5rem;
-}
 header .header-flex {
   display: flex;
   justify-content: space-between;
@@ -209,6 +205,9 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 }
 
 @media screen and (min-width: 60rem) {
+  header {
+    border-bottom: 2px solid #cc0033;
+  }
   header .header-flex nav a.menu-toggle {
     display: none;
   }

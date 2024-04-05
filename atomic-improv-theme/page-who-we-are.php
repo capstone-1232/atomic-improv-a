@@ -8,24 +8,31 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-  <?php
-  $whoweare_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "who-we-are"));
-  ?>
-  <?php if ($whoweare_query->have_posts()): ?>
-    <?php
-    while ($whoweare_query->have_posts()):
-      $whoweare_query->the_post();
-      $whoweare_url = get_field("image");
-      ?>
-      <section class="who-we-are">
-        <div class="container">
-          <!-- section -->
-          <div class="flex-title">
-            <h2>Who We Are</h2>
-          </div>
-        <?php endwhile;
-    wp_reset_postdata(); ?>
-      <?php endif; ?>
+  <section class="who-we-are">
+    <div class="container">
+      <!-- section -->
+      <div class="flex-title">
+        <h2>Who We Are</h2>
+        <?php
+        $whoweare_hero_query = new WP_Query(
+          array(
+            "post_type" => "image",
+            "posts_per_page" => 1,
+            "tag" => "whoweare_hero"
+          )
+        );
+        if ($whoweare_hero_query->have_posts()):
+          while ($whoweare_hero_query->have_posts()):
+            $whoweare_hero_query->the_post();
+            $whoweare_hero_url = get_field("image");
+            ?>
+            <img src="<?php echo $whoweare_hero_url ?>">
+            <?php
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
+      </div>
       <!-- history -->
       <div class="history">
         <p>Atomic Improv has performed all across North America & Europe showcasing at Montreal's “Just for Laughs”
@@ -33,7 +40,7 @@ get_header();
         <!-- icons -->
         <div class="flex">
           <?php
-          $justforlaughs_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "just-for-laughs"));
+          $justforlaughs_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "justforlaughs"));
           ?>
           <?php if ($justforlaughs_query->have_posts()): ?>
             <?php
@@ -42,12 +49,12 @@ get_header();
               $justforlaughs_url = get_field("image");
               ?>
               <img src="<?php echo $justforlaughs_url ?>">
-            <?php endwhile; 
+            <?php endwhile;
             wp_reset_postdata(); ?>
           <?php endif; ?>
 
           <?php
-          $canadiancomedyawards_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "canadian-comedy-awards"));
+          $canadiancomedyawards_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "canadiancomedyawards"));
           ?>
           <?php if ($canadiancomedyawards_query->have_posts()): ?>
             <?php
@@ -67,21 +74,37 @@ get_header();
         </p>
 
       </div><!-- end of history -->
+
+      <!-- current history -->
+      <div class="current-history">
+        <?php
+        $currenthistory_query = new WP_Query(
+          array(
+            "post_type" => "image",
+            "posts_per_page" => 1,
+            "tag" => "currenthistory"
+          )
+        );
+        if ($currenthistory_query->have_posts()):
+          while ($currenthistory_query->have_posts()):
+            $currenthistory_query->the_post();
+            $currenthistory_url = get_field("image");
+            ?>
+            <img
+              src="<?php echo $currenthistory_url ?>"
+              alt="Donovan holding Chris up">
+            <?php
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
+        <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their
+          groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their
+          unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to
+          any organizations function.</p>
+      </div> <!-- end of current history -->
+
     </div>
-
-    <!-- current history -->
-    <div class="current-history">
-      <img
-        src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/d-c-blue-sm.webp"
-        alt="Donovan holding Chris up">
-      <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their
-        groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their
-        unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to
-        any organizations function.</p>
-    </div> <!-- end of current history -->
-
-    </div><!-- .container -->
-
 
   </section>
 
@@ -101,18 +124,24 @@ get_header();
         <!-- info section 1 -->
         <div class="info-1">
           <?php
-          $donovanheadshot_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "donovan-headshot"));
-          ?>
-          <?php if ($donovanheadshot_query->have_posts()): ?>
-            <?php
+          $donovanheadshot_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "donovanheadshot"
+            )
+          );
+          if ($donovanheadshot_query->have_posts()):
             while ($donovanheadshot_query->have_posts()):
               $donovanheadshot_query->the_post();
               $donovanheadshot_url = get_field("image");
               ?>
               <img src="<?php echo $donovanheadshot_url ?>">
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-          <?php endif; ?>
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
         </div>
         <!-- end of section 1 -->
         <!-- section 2 -->
@@ -143,7 +172,7 @@ get_header();
         <!-- flexed icons -->
         <div class="flex">
           <?php
-          $justforlaughs_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "just-for-laughs"));
+          $justforlaughs_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "justforlaughs"));
           ?>
           <?php if ($justforlaughs_query->have_posts()): ?>
             <?php
@@ -156,7 +185,7 @@ get_header();
             wp_reset_postdata(); ?>
           <?php endif; ?>
           <?php
-          $irrelevantshow_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "the-irrelevant-show"));
+          $irrelevantshow_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "irrelevantshow"));
           ?>
           <?php if ($irrelevantshow_query->have_posts()): ?>
             <?php
@@ -169,7 +198,7 @@ get_header();
             wp_reset_postdata(); ?>
           <?php endif; ?>
           <?php
-          $canadiancomedyawards_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "canadian-comedy-awards"));
+          $canadiancomedyawards_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "canadiancomedyawards"));
           ?>
           <?php if ($canadiancomedyawards_query->have_posts()): ?>
             <?php
@@ -199,7 +228,7 @@ get_header();
         <!-- indo section 1 img -->
         <div class="info-1">
           <?php
-          $chrisheadshot_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "chris-headshot"));
+          $chrisheadshot_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "chrisheadshot"));
           ?>
           <?php if ($chrisheadshot_query->have_posts()): ?>
             <?php
