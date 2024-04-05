@@ -9,7 +9,7 @@ get_header();
 <main id="primary" class="site-main">
   <section class="frontpage-top">
     <!-- background video -->
-    <div class="full-screen-video-container">
+    <div class="full-screen-video-container" style="background-image: url('http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif');">
       <!-- bg content -->
       <div class="content-flex">
         <div class="full-screen-video-content">
