@@ -80,9 +80,7 @@ get_header();
           ?>
         </div> <!-- end of icons -->
         <p>Atomic Improv performed at numerous Universities and Colleges across
-          Canada, and were Voted Variety act of the year, and Comedy act of the year for both 1994,
-          and 1995. by the Canadian Organization of Campus Activities. They were also the first non-
-          musical act to be nominated for Entertainer of the year.
+          Canada, and were voted Variety Act of the Year, and Comedy Act of the Year for both 1994 and 1995 by the Canadian Organization of Campus Activities. They were also the first non-musical act to be nominated for Entertainer of the year.
         </p>
 
       </div><!-- end of history -->
@@ -107,11 +105,9 @@ get_header();
           endwhile;
           wp_reset_postdata();
         endif;
-        ?>
-        <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their
-          groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their
-          unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to
-          any organizations function.</p>
+        ?>        
+        <p>Since 1996 Atomic Improv has been focusing their talents on the corporate sector performing their groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their unique form of comedy allows them to tailor the show to any company's needs, making them a perfect addition to any organizations function.</p>
+
       </div> <!-- end of current history -->
 
     </div>

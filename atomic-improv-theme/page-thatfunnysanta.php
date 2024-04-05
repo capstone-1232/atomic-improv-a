@@ -11,16 +11,17 @@ get_header();
     <section class="santa">
         <h2>The Funny Santa</h2>
         <?php
-        $community_card_query = new WP_Query(
+        $thatfunnysanta_hero_query = new WP_Query(
           array(
             "post_type" => "community-card",
-            "posts_per_page" => 4
+            "posts_per_page" => 1,
+            "tag" => "thatfunnysanta_hero"
           )
         );
-        if ($community_card_query->have_posts()):
-          while ($community_card_query->have_posts()):
-            $community_card_query->the_post();
-            $link = get_field("link");
+        if ($thatfunnysanta_hero_query->have_posts()):
+          while ($thatfunnysanta_hero_query->have_posts()):
+            $thatfunnysanta_hero_query->the_post();
+            $thatfunnysanta_hero_url = get_field("image");
             ?>
             <div class="card" style="whatever">
         <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-dogs-sm.webp" alt="santa with 2 black dogs">
@@ -39,7 +40,8 @@ get_header();
         <div>
             <h3>Adventures in Banff</h3>
             <p>@thatfunnysanta can often be found visiting Banff at the Fairmont Banff Springs Hotel where he brings holiday cheers to guest and visitors alike. </p>
-            <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-mountain-sm.webp" alt="Santa and Mrs. Claus greeting a crowd"><img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-banff-sm.webp" alt="Santa speaking on stage">
+            
+            <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-banff-sm.webp" alt="Santa speaking on stage">
         </div>
         <div>
             <h3>In the Community</h3>

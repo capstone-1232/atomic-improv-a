@@ -32,27 +32,6 @@ get_header();
         endif;
         ?>
       </div>
-      <!-- events -->
-      <div class="events">
-        <?php
-        $whatwedo_query = new WP_Query(
-          array(
-            "post_type" => "image",
-            "posts_per_page" => 1,
-            "tag" => "what-we-do"
-          )
-        );
-        if ($whatwedo_query->have_posts()):
-          while ($whatwedo_query->have_posts()):
-            $whatwedo_query->the_post();
-            $whatwedo_url = get_field("image");
-            ?>
-            <img src="<?php echo $whatwedo_url ?>">
-            <?php
-          endwhile;
-          wp_reset_postdata();
-        endif;
-        ?>
         <!-- info -->
         <div class="events-info">
           <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
@@ -111,16 +90,17 @@ get_header();
           </div>
         </div> <!-- end of info -->
       </div>
-
     </div>
-    <div class="container">
-      <p>Additional Booking Options for Donovan and Chris:</p>
-      <ul class="booking-options">
+    <div>
+    <p>Additional Booking Options for Donovan and Chris:</p>
+      <ul>
         <li>Professional MC's: Corporate, Conference, and Special Events</li>
         <li>Special Package Pricing when booking Professional MC's PLUS Power of Yes! workshop</li>
       </ul>
     </div>
-
+    <div>
+      <!-- insert YouTube video -->
+    </div>
   </section>
 </main><!-- #main -->
 

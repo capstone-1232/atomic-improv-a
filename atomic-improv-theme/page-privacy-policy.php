@@ -21,9 +21,9 @@ get_header();
       <h1>
         <?php echo get_the_title(); ?>
       </h1>
-      <p>https://atomicimprov.com/ Privacy Policy</p>
+      <p>https://atomicimprov.com/ </p>
 
-      <p>Type of website: Blog</p>
+      <p>Type of website: Portfolio</p>
       <p>Effective date: 3rd day of April, 2024</p>
 
       <p>https://atomicimprov.com/ (the "Site") is owned and operated by Donovan Workun. Donovan Workun can be contacted

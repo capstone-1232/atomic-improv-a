@@ -46,7 +46,7 @@ get_header();
         <div class="full-screen-video-content">
           <!-- this h1 needs to be different than the other h1's -->
           <h1>Atomic <span>Improv</span></h1>
-          <p>Canada's premier improv comedy team</p>
+          <p>Canada's premier improv comedy duo</p>
           <a href="contact-us">Book Now</a>
         </div>
       </div>
@@ -91,8 +91,7 @@ get_header();
             <h3>Customized shows for your events</h3>
             <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
               creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-            <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn
-              your event from humdrum to hilarious!</p>
+            <p>3 time World Improv champions and headliners at Montreal's Just for Laughs can help turn your event from humdrum to hilarious!</p>
             <a href="what-we-do" class="button-style">Learn More</a>
           </div>
         </div><!-- end of events section -->
@@ -121,12 +120,8 @@ get_header();
           ?>
           <div class="section-flex">
             <div class="section-content">
-              <p>Unlock your teams full potential with the <span class="pos">Power of Yes!</span> our customizable
-                corporate
-                workshop
-                that can help
-                teams
-                boost their creativity and communication skills.</p>
+              <p>Unlock your teams full potential with the <span class="pos">Power of Yes!</span> our customizable corporate workshop that can help teams
+              boost their creativity and communication skills.</p>
               <a href="what-we-do#power-of-yes" class="button-style">Learn More</a>
             </div>
           </div>
@@ -167,11 +162,9 @@ get_header();
           </div>
         </div>
         <div class="section-content">
-          <p>Atomic Improv is Canada's premier two man improv troupe that has been
-            creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-          <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn
-            your event from humdrum to hilarious!</p>
-          <a href="who-we-are" class="button-style">More About Us</a>
+          <p>We are Atomic Improv, a cornerstone of Edmonton's improv scene for over 30 years.</p>
+          <p>Improv legends Donovan Workun and Chris Borger bring their signature fast paced humour to any event.</p>
+        <a href="who-we-are" class="button-style">More About Us</a>
         </div>
       </div><!-- end of about section -->
 
