@@ -22,7 +22,6 @@ get_header();
     <div class="container">
       <h1>In the community</h1>
       <div class="card-container">
-
         <?php
         $community_card_query = new WP_Query(
           array(
@@ -36,16 +35,14 @@ get_header();
             $link = get_field("link");
             ?>
             <div class="card">
-              <a href="<?php echo $link; ?>"><?php the_post_thumbnail(); ?></a>
+              <a href="<?php echo $link; ?>">
+                <?php the_post_thumbnail(); ?>
+              </a>
               <?php echo the_content(); ?>
             </div>
             <?php
           endwhile;
           wp_reset_postdata();
-        else:
-          ?>
-          <p>No posts found</p>
-          <?php
         endif;
         ?>
       </div><!-- end of card container -->

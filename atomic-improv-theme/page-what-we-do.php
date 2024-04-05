@@ -12,50 +12,54 @@ get_header();
     <div class="container">
       <div class="flex-title">
         <h1>What We Do</h1>
-          <?php
-          $whatwedo_hero_query = new WP_Query(
-            array(
-              "post_type" => "image",
-              "posts_per_page" => 1,
-              "tag" => "whatwedo_hero"
-            )
-          );
-          if ($whatwedo_hero_query->have_posts()):
-            while ($whatwedo_hero_query->have_posts()):
-              $whatwedo_hero_query->the_post();
-              $whatwedo_hero_url = get_field("image");
-              ?>
-        <img
-          src="<?php echo $whatwedo_hero_url ?>"
-          alt="Donovan holding Chris up">
-              <?php
-            endwhile;
-            wp_reset_postdata();
-          endif;
-          ?>
+        <?php
+        $whatwedo_hero_query = new WP_Query(
+          array(
+            "post_type" => "image",
+            "posts_per_page" => 1,
+            "tag" => "whatwedo_hero"
+          )
+        );
+        if ($whatwedo_hero_query->have_posts()):
+          while ($whatwedo_hero_query->have_posts()):
+            $whatwedo_hero_query->the_post();
+            $whatwedo_hero_url = get_field("image");
+            ?>
+            <img src="<?php echo $whatwedo_hero_url ?>" alt="Donovan holding Chris up">
+            <?php
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
       </div>
       <!-- events -->
       <div class="events">
         <?php
-        $whatwedo_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "what-we-do"));
-        ?>
-        <?php if ($whatwedo_query->have_posts()): ?>
-          <?php
+        $whatwedo_query = new WP_Query(
+          array(
+            "post_type" => "image",
+            "posts_per_page" => 1,
+            "tag" => "what-we-do"
+          )
+        );
+        if ($whatwedo_query->have_posts()):
           while ($whatwedo_query->have_posts()):
             $whatwedo_query->the_post();
             $whatwedo_url = get_field("image");
             ?>
             <img src="<?php echo $whatwedo_url ?>">
-          <?php endwhile;
-          wp_reset_postdata(); ?>
-        <?php endif; ?>
+            <?php
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
         <!-- info -->
         <div class="events-info">
           <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
           <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
           <p>You're not just watching the show … you're a part of it!</p>
           <div class="button">
-      <a href="contact-us" class="button-style">Book Now</a>
+            <a href="contact-us" class="button-style">Book Now</a>
           </div>
         </div>
       </div><!-- end of events -->
@@ -68,17 +72,17 @@ get_header();
         <div class="poy-media">
           <?php
           $powerofyes_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
-          ?>
-          <?php if ($powerofyes_query->have_posts()): ?>
-            <?php
+          if ($powerofyes_query->have_posts()):
             while ($powerofyes_query->have_posts()):
               $powerofyes_query->the_post();
               $powerofyes_url = get_field("image");
               ?>
               <img src="<?php echo $powerofyes_url ?>">
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-          <?php endif; ?>
+            <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
           <div class="vid">
             <iframe src="https://www.youtube.com/embed/WLpsNkCDZMA" title="Power of Yes" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -103,7 +107,7 @@ get_header();
             larger
             crowd.</p>
           <div class="button">
-        <a href="contact-us" class="button-style">Book Now</a>
+            <a href="contact-us" class="button-style">Book Now</a>
           </div>
         </div> <!-- end of info -->
       </div>

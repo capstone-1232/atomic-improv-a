@@ -9,30 +9,30 @@ get_header();
 
 <main id="primary" class="site-main">
   <section class="who-we-are">
+    <!-- section -->
+    <div class="flex-title">
+      <h2>Who We Are</h2>
+      <?php
+      $whoweare_hero_query = new WP_Query(
+        array(
+          "post_type" => "image",
+          "posts_per_page" => 1,
+          "tag" => "whoweare_hero"
+        )
+      );
+      if ($whoweare_hero_query->have_posts()):
+        while ($whoweare_hero_query->have_posts()):
+          $whoweare_hero_query->the_post();
+          $whoweare_hero_url = get_field("image");
+          ?>
+          <img src="<?php echo $whoweare_hero_url ?>">
+          <?php
+        endwhile;
+        wp_reset_postdata();
+      endif;
+      ?>
+    </div>
     <div class="container">
-      <!-- section -->
-      <div class="flex-title">
-        <h2>Who We Are</h2>
-        <?php
-        $whoweare_hero_query = new WP_Query(
-          array(
-            "post_type" => "image",
-            "posts_per_page" => 1,
-            "tag" => "whoweare_hero"
-          )
-        );
-        if ($whoweare_hero_query->have_posts()):
-          while ($whoweare_hero_query->have_posts()):
-            $whoweare_hero_query->the_post();
-            $whoweare_hero_url = get_field("image");
-            ?>
-            <img src="<?php echo $whoweare_hero_url ?>">
-            <?php
-          endwhile;
-          wp_reset_postdata();
-        endif;
-        ?>
-      </div>
       <!-- history -->
       <div class="history">
         <p>Atomic Improv has performed all across North America & Europe showcasing at Montreal's “Just for Laughs”
@@ -40,32 +40,44 @@ get_header();
         <!-- icons -->
         <div class="flex">
           <?php
-          $justforlaughs_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "justforlaughs"));
-          ?>
-          <?php if ($justforlaughs_query->have_posts()): ?>
-            <?php
+          $justforlaughs_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "justforlaughs"
+            )
+          );
+          if ($justforlaughs_query->have_posts()):
             while ($justforlaughs_query->have_posts()):
               $justforlaughs_query->the_post();
               $justforlaughs_url = get_field("image");
               ?>
               <img src="<?php echo $justforlaughs_url ?>">
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-          <?php endif; ?>
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
 
           <?php
-          $canadiancomedyawards_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "canadiancomedyawards"));
-          ?>
-          <?php if ($canadiancomedyawards_query->have_posts()): ?>
-            <?php
+          $canadiancomedyawards_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "canadiancomedyawards"
+            )
+          );
+          if ($canadiancomedyawards_query->have_posts()):
             while ($canadiancomedyawards_query->have_posts()):
               $canadiancomedyawards_query->the_post();
               $canadiancomedyawards_url = get_field("image");
               ?>
               <img src="<?php echo $canadiancomedyawards_url ?>">
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-          <?php endif; ?>
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
         </div> <!-- end of icons -->
         <p>Atomic Improv performed at numerous Universities and Colleges across
           Canada, and were Voted Variety act of the year, and Comedy act of the year for both 1994,
@@ -90,9 +102,7 @@ get_header();
             $currenthistory_query->the_post();
             $currenthistory_url = get_field("image");
             ?>
-            <img
-              src="<?php echo $currenthistory_url ?>"
-              alt="Donovan holding Chris up">
+            <img src="<?php echo $currenthistory_url ?>" alt="Donovan holding Chris up">
             <?php
           endwhile;
           wp_reset_postdata();
@@ -172,44 +182,62 @@ get_header();
         <!-- flexed icons -->
         <div class="flex">
           <?php
-          $justforlaughs_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "justforlaughs"));
-          ?>
-          <?php if ($justforlaughs_query->have_posts()): ?>
-            <?php
+          $justforlaughs_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "justforlaughs"
+            )
+          );
+          if ($justforlaughs_query->have_posts()):
             while ($justforlaughs_query->have_posts()):
               $justforlaughs_query->the_post();
               $justforlaughs_url = get_field("image");
               ?>
               <img src="<?php echo $justforlaughs_url ?>">
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-          <?php endif; ?>
-          <?php
-          $irrelevantshow_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "irrelevantshow"));
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
           ?>
-          <?php if ($irrelevantshow_query->have_posts()): ?>
-            <?php
+          <?php
+          $irrelevantshow_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "irrelevantshow"
+            )
+          );
+          if ($irrelevantshow_query->have_posts()):
             while ($irrelevantshow_query->have_posts()):
               $irrelevantshow_query->the_post();
               $irrelevantshow_url = get_field("image");
               ?>
               <img src="<?php echo $irrelevantshow_url ?>">
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-          <?php endif; ?>
-          <?php
-          $canadiancomedyawards_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "canadiancomedyawards"));
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
           ?>
-          <?php if ($canadiancomedyawards_query->have_posts()): ?>
-            <?php
+          <?php
+          $canadiancomedyawards_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "canadiancomedyawards"
+            )
+          );
+          if ($canadiancomedyawards_query->have_posts()):
             while ($canadiancomedyawards_query->have_posts()):
               $canadiancomedyawards_query->the_post();
               $canadiancomedyawards_url = get_field("image");
               ?>
               <img src="<?php echo $canadiancomedyawards_url ?>">
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-          <?php endif; ?>
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
         </div><!-- end of icons -->
       </div> <!-- end of info container -->
     </div> <!-- end of container -->
@@ -228,18 +256,24 @@ get_header();
         <!-- indo section 1 img -->
         <div class="info-1">
           <?php
-          $chrisheadshot_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "chrisheadshot"));
-          ?>
-          <?php if ($chrisheadshot_query->have_posts()): ?>
-            <?php
+          $chrisheadshot_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "chrisheadshot"
+            )
+          );
+          if ($chrisheadshot_query->have_posts()):
             while ($chrisheadshot_query->have_posts()):
               $chrisheadshot_query->the_post();
               $chrisheadshot_url = get_field("image");
               ?>
               <img src="<?php echo $chrisheadshot_url ?>">
-            <?php endwhile;
-            wp_reset_postdata(); ?>
-          <?php endif; ?>
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
         </div> <!-- end of section 1 -->
         <!-- section 2 -->
         <div class="info-2">
