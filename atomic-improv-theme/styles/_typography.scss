@@ -1,0 +1,108 @@
+@import "variables";
+
+@font-face {
+  font-family: "Rift";
+  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Rift";
+  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/montserrat.woff);
+}
+
+body,
+button {
+
+  // color: $text-white; // during inspect this element didn't work
+  font-family: "Montserrat", sans-serif;
+  // line-height: 1.5; // during inspect this element didn't work
+  letter-spacing: 1px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rift", sans-serif;
+  font-weight: bold;
+  color: $orange;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 3rem;
+
+  span {
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+h1,
+.who-we-are h2 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  text-align: center;
+  text-shadow: 0 0 10px #c97d12;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: $text-white;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: $text-white;
+}
+
+
+nav {
+
+  font-size: 2rem;
+  font-family: "Rift", sans-serif;
+  font-weight: bold;
+  line-height: 3rem;
+}
+
+.booking-options li {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: $text-white;
+  margin: 1rem;
+}
+
+.pos {
+  font-weight: 600;
+}

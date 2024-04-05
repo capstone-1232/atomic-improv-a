@@ -1,0 +1,148 @@
+@import "variables";
+
+// mobile screen
+
+//header container
+header {
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div.site-branding {
+      a {
+        display: block;
+        max-height: 96px;
+      }
+    }
+
+    nav {
+      z-index: 4;
+
+      a.menu-toggle {
+        display: block;
+        max-height: 82px;
+
+        svg {
+          padding: 16px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      div.menu-navigation-container {
+        ul.menu {
+          list-style: none;
+          position: absolute;
+          left: 0;
+
+          top: 144px; // changed it to 130px for 320px mobile screen and cause I shrunk the nav font
+          max-height: 0;
+          overflow: hidden;
+          background: $bg
+            url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          transition: all 0.5s ease-in-out;
+          border-bottom: 2px solid $red;
+
+          li {
+            text-align: center;
+            padding: 0 1.5rem;
+
+            a {
+              display: block;
+              padding: 0.75rem 0;
+              color: $text-white;
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline $orange;
+              }
+            }
+
+            &:last-of-type {
+              background-color: $red;
+              box-shadow: 0 0 10px $red;
+              border-radius: 8px;
+              margin: 0 1.5rem;
+
+              a {
+                &:hover {
+                  text-decoration: underline $text-white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.toggled {
+        div.menu-navigation-container {
+          ul.menu {
+            max-height: 25.625rem;
+            padding: 1.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  header {
+    border-bottom: 2px solid $red;
+
+    .header-flex {
+      nav {
+        a.menu-toggle {
+          display: none;
+        }
+
+        div.menu-navigation-container {
+          ul.menu {
+            position: static;
+            max-height: unset;
+            background: unset;
+            width: unset;
+            border-bottom: none;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+
+            li {
+              text-align: right;
+              padding: 0;
+
+              a {
+                font-size: 1.5rem;
+                line-height: 3rem;
+                padding: 0;
+              }
+
+              &:last-of-type {
+                margin: 0;
+
+                a {
+                  padding: 0 0.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        &.toggled {
+          div.menu-navigation-container {
+            ul.menu {
+              max-height: 40rem;
+              padding: 1.5rem 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
