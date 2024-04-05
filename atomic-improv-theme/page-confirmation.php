@@ -13,7 +13,7 @@ get_header();
       <h1>Thank you!</h1>
       <p>Your email has been sent!</p>
 
-      <p>Keep an eye on your inbox. You can expect a response in three business days.</p>
+      <p>Keep an eye on your inbox. You can expect a response in 24hours.</p>
     </div>
   </section>
 </main><!-- #main -->
