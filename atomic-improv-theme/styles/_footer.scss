@@ -6,6 +6,7 @@ footer {
   div.footerflex {
     display: flex;
     justify-content: space-between;
+    align-items:center;
 
     ul.menu {
       list-style-type: none;
@@ -32,16 +33,18 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-
+      gap:0.75rem;
       & > a {
-        background-color: $orange;
-        border-radius: 3rem;
         display: block;
-        height: 4rem;
-        margin-bottom: 1rem;
+        height: 3rem;
+        padding:1rem;
 
-        &:hover {
+        &:hover svg {
           background-color: #efcf93;
+        }
+        svg {
+          background-color: $orange;
+          border-radius: 3rem;
         }
       }
     }
@@ -49,6 +52,7 @@ footer {
 
   div.site-branding {
     padding: 0;
+    margin-top:1.5rem;
 
     a {
       display: block;

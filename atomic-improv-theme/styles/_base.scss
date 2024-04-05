@@ -29,8 +29,10 @@ body {
 
 
 img,
-iframe {
-  max-width:100%;
+iframe,
+div.social-content > div,
+div.social-content > div > iframe {
+  max-width:100% !important;
 }
 
 .button-style{

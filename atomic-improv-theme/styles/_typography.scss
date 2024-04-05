@@ -38,7 +38,10 @@ h6 {
   color: $orange;
   margin: 0;
   padding: 0;
+  text-align:center;
 }
+
+h1 {
   font-size: 4rem;
   line-height: 3rem;
 
@@ -65,14 +68,12 @@ h2 {
 h3 {
   font-size: 2.5rem;
   line-height: 3.75rem;
-  text-align: center;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 3rem;
   color: $text-white;
-  text-align: center;
 }
 
 h4 {
@@ -84,7 +85,6 @@ p {
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: $text-white;
-  margin: 1rem;
 }
 
 

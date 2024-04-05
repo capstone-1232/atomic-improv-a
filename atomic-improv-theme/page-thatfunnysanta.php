@@ -10,8 +10,26 @@ get_header();
 <main id="primary" class="site-main">
     <section class="santa">
         <h2>The Funny Santa</h2>
-        <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-mountain-sm" alt="Santa and Mrs. Claus greeting a crowd">
-
+        <?php
+        $thatfunnysanta_hero_query = new WP_Query(
+          array(
+            "post_type" => "community-card",
+            "posts_per_page" => 1,
+            "tag" => "thatfunnysanta_hero"
+          )
+        );
+        if ($thatfunnysanta_hero_query->have_posts()):
+          while ($thatfunnysanta_hero_query->have_posts()):
+            $thatfunnysanta_hero_query->the_post();
+            $thatfunnysanta_hero_url = get_field("image");
+            ?>
+            <div class="card" style="whatever">
+        <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/tfs-dogs-sm.webp" alt="santa with 2 black dogs">
+            <?php
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
     </section>
     <section>
         <div class="santa">
