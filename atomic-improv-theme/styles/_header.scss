@@ -4,6 +4,8 @@
 
 //header container
 header {
+  // padding: 1.5rem;
+
   .header-flex {
     display: flex;
     justify-content: space-between;
@@ -25,6 +27,7 @@ header {
 
         svg {
           padding: 16px;
+
         }
 
         &:hover {

@@ -18,7 +18,9 @@ get_header();
     <section>
         <div class="container">
 
-            <h1><?php echo get_the_title(); ?></h1>
+      <h1>
+        <?php echo get_the_title(); ?>
+      </h1>
 
             <h2>TERMS AND CONDITIONS</h2>
             <p>These terms and conditions (the "Terms and Conditions") govern the use of www.atomcimprov.com (the "Site"). This Site is owned and operated by Donovan Workun. This Site is a portfolio.</p>
@@ -64,3 +66,10 @@ get_header();
 
 <?php
 get_footer();
+
+
+
+/* Validation Check, Please Do Not Remove */
+/*-----------------------------------------
+HTML validated 04/05/24
+-----------------------------------------*/

@@ -110,28 +110,33 @@ get_header();
       <h3>How We Protect Your Personal Data</h3>
       <h4> Data from form is only accessible to owner of website</h4>
 
-      <p> While we take all reasonable precautions to ensure that user data is secure and that users are protected, there
+      <p> While we take all reasonable precautions to ensure that user data is secure and that users are protected,
+        there
         always remains the risk of harm. The Internet as a whole can be insecure at times and therefore we are unable to
         guarantee the security of user data beyond what is reasonably practical.</p>
 
       <h4>Children</h4>
 
       <p> We do not knowingly collect or use personal data from children under 13 years of age. If we learn that we have
-        collected personal data from a child under 13 years of age, the personal data will be deleted as soon as possible.
+        collected personal data from a child under 13 years of age, the personal data will be deleted as soon as
+        possible.
         If a child under 13 years of age has provided us with personal data their parent or guardian may contact our
         privacy officer.</p>
 
       <h4>How to Access, Modify, Delete, or Challenge the Data Collected</h4>
-      <p>If you would like to know if we have collected your personal data, how we have used your personal data, if we have
+      <p>If you would like to know if we have collected your personal data, how we have used your personal data, if we
+        have
         disclosed your personal data and to who we disclosed your personal data, or if you would like your data to be
         deleted or modified in any way, please contact our privacy officer here: </p>
 
       <p>donovan@atomicimprov.com</p>
 
       <h3>Cookie Policy</h3>
-      <p> A cookie is a small file, stored on a user's hard drive by a website. Its purpose is to collect data relating to
+      <p> A cookie is a small file, stored on a user's hard drive by a website. Its purpose is to collect data relating
+        to
         the user's browsing habits. You can choose to be notified each time a cookie is transmitted. You can also choose
-        to disable cookies entirely in your internet browser, but this may decrease the quality of your user experience.</p>
+        to disable cookies entirely in your internet browser, but this may decrease the quality of your user experience.
+      </p>
 
       <p> We use the following types of cookies on our Site:</p>
 
@@ -146,8 +151,10 @@ get_header();
 
 
       <h3>Modifications</h3>
-      <p> This Privacy Policy may be amended from time to time in order to maintain compliance with the law and to reflect
-        any changes to our data collection process. When we amend this Privacy Policy we will update the "Effective Date"
+      <p> This Privacy Policy may be amended from time to time in order to maintain compliance with the law and to
+        reflect
+        any changes to our data collection process. When we amend this Privacy Policy we will update the "Effective
+        Date"
         at the top of this Privacy Policy. We recommend that our users periodically review our Privacy Policy to ensure
         that they are notified of any updates. If necessary, we may notify users by email of changes to this Privacy
         Policy.</p>
@@ -166,3 +173,11 @@ get_header();
 
 <?php
 get_footer();
+
+
+
+
+/* Validation Check, Please Do Not Remove */
+/*-----------------------------------------
+HTML validated 04/05/24
+-----------------------------------------*/

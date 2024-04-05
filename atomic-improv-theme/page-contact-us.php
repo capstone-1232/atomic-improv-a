@@ -12,13 +12,13 @@ get_header();
     <div class="container">
       <h1>Contact Us</h1>
       <section class="contact-info">
-          <h2>Donovan Workun</h2>
-          <p>Phone: (780) 995-3663</p>
-          <p>Email: donovan@atomicimprov.ca</p>
+        <h2>Donovan Workun</h2>
+        <p>Phone: (780) 995-3663</p>
+        <p>Email: donovan@atomicimprov.ca</p>
       </section>
       <section class="get-in-touch">
-          <h2>Get in Touch</h2>
-          <?php echo do_shortcode('[forminator_form id="69"]'); ?>
+        <h2>Get in Touch</h2>
+        <?php echo do_shortcode('[forminator_form id="69"]'); ?>
       </section>
     </div> <!-- .container -->
   </section>
@@ -26,3 +26,10 @@ get_header();
 
 <?php
 get_footer();
+
+
+
+/* Validation Check, Please Do Not Remove */
+/*-----------------------------------------
+HTML validated 04/05/24
+-----------------------------------------*/

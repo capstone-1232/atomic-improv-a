@@ -8,10 +8,7 @@ get_header();
 ?>
 <main id="primary" class="site-main">
   <section class="frontpage-top">
-    <!-- background video -->
-    <div class="full-screen-video-container">
-      <!-- bg-gif -->
-      <?php
+    <!-- background video --><?php
       // Querying the hero image gif using a post.
       // This makes it easy to switch out in the future.
       $frontpage_hero_query = new WP_Query(
@@ -30,9 +27,8 @@ get_header();
           $frontpage_hero_url = get_field("image");
           ?>
           <!-- Displaying queried image in img tag. -->
-          <img src="<?php echo $frontpage_hero_url ?>" class="bg-gif" alt="5 second video of Donovan Workun and Chris Borger">
-
-          <?php
+    <div class="full-screen-video-container" style="background-image: url('<?php echo $frontpage_hero_url; ?>');">      <!-- bg-gif -->
+    <?php
           // Ending the loop
         endwhile;
         // Resetting post data for the next query.
@@ -40,11 +36,10 @@ get_header();
         // Moving on.
       endif;
       ?>
-
       <!-- bg content -->
       <div class="content-flex">
         <div class="full-screen-video-content">
-          <!-- this h1 needs to be different than the other h1's -->
+          <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/AIC.png" alt="">
           <h1>Atomic <span>Improv</span></h1>
           <p>Canada's premier improv comedy duo</p>
           <a href="contact-us">Book Now</a>
@@ -75,7 +70,7 @@ get_header();
                 $frontpage_whatwedo_query->the_post();
                 $frontpage_whatwedo_url = get_field("image");
                 ?>
-                <a href="what-we-do"><img src="<?php echo $frontpage_whatwedo_url ?>"></a>
+                <a href="what-we-do"><img src="<?php echo $frontpage_whatwedo_url ?>" alt="Image of Atomic Improv, Donovan Workun and Chris Borger being silly."></a>
                 <?php
               endwhile;
               wp_reset_postdata();
@@ -112,7 +107,7 @@ get_header();
               $powerofyes_query->the_post();
               $powerofyes_url = get_field("image");
               ?>
-              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>"></a>
+              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>" alt="Poster of 'Power of Yes' workshop with Atomic Improv and Graham Neil"></a>
               <?php
             endwhile;
             wp_reset_postdata();
@@ -148,7 +143,7 @@ get_header();
               $frontpage_whoweare_query->the_post();
               $frontpage_whoweare_url = get_field("image");
               ?>
-              <a href="who-we-are"><img src="<?php echo $frontpage_whoweare_url ?>"></a>
+              <a href="who-we-are"><img src="<?php echo $frontpage_whoweare_url ?>" alt="Image of Donovan Workun and Chris Borger being silly."></a>
             <?php
             endwhile;
             wp_reset_postdata();
@@ -219,3 +214,18 @@ get_header();
 
 <?php
 get_footer();
+
+
+
+
+
+
+
+
+
+
+
+/* Validation Check, Please Do Not Remove */
+/*-----------------------------------------
+HTML validated 04/05/24
+-----------------------------------------*/

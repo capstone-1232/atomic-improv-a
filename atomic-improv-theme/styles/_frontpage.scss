@@ -8,23 +8,21 @@
 }
 
 .full-screen-video-container {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+    // background-image: url('http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .full-screen-video-container img {
-  margin-top: 2rem;
-  max-width: none;
-  z-index: -1;
-  position: absolute;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-60%, -60%);
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
 }
 
 .content-flex {
