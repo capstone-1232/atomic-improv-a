@@ -10,9 +10,9 @@ get_header();
   <section class="frontpage-top">
     <!-- background video -->
     <div class="full-screen-video-container">
-      <!-- bg-gif -->
-      <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif"
-        class="bg-gif" alt="Gif of best improv duo Donovan Workun and Chris Borger, also known as Atomic Improv.">
+      <!-- bg-gif  container-->
+      <!-- <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif"
+        class="bg-gif" alt="Gif of best improv duo Donovan Workun and Chris Borger, also known as Atomic Improv."> -->
       <!-- bg content -->
       <div class="content-flex">
         <div class="full-screen-video-content">

@@ -7,7 +7,7 @@
 
 //header container
 header {
-  padding: 1.5rem;
+  // padding: 1.5rem;
 
   .header-flex {
     display: flex;
@@ -30,8 +30,8 @@ header {
 
         svg {
           padding: 16px;
-          
-}
+
+        }
 
         &:hover {
           cursor: pointer;
@@ -104,57 +104,57 @@ header {
 @media screen and (min-width: 58rem) {
   header {
 
-  .header-flex {
+    .header-flex {
 
-    nav {
+      nav {
 
-      a.menu-toggle {
-        display: none;
-      }
+        a.menu-toggle {
+          display: none;
+        }
 
-      div.menu-navigation-container {
-        ul.menu {
-          position: static;
-          max-height: unset;
-          background: unset;
-          width: unset;
-          border-bottom: none;
-          display:flex;
-          gap:1.5rem;
-          align-items:center;
+        div.menu-navigation-container {
+          ul.menu {
+            position: static;
+            max-height: unset;
+            background: unset;
+            width: unset;
+            border-bottom: none;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
 
-          li {
-            text-align: right;
-            padding: 0;
-
-            a {
-              font-size:1.5rem;
-              line-height: 3rem;
+            li {
+              text-align: right;
               padding: 0;
-            }
-
-            &:last-of-type {
-              margin: 0;
 
               a {
-                padding: 0 0.5rem;
+                font-size: 1.5rem;
+                line-height: 3rem;
+                padding: 0;
+              }
+
+              &:last-of-type {
+                margin: 0;
+
+                a {
+                  padding: 0 0.5rem;
+                }
               }
             }
           }
         }
-      }
 
-      &.toggled {
-        div.menu-navigation-container {
-          ul.menu {
-            max-height: 40rem;
-            padding: 1.5rem 0;
+        &.toggled {
+          div.menu-navigation-container {
+            ul.menu {
+              max-height: 40rem;
+              padding: 1.5rem 0;
+            }
           }
         }
       }
     }
   }
-}
 
 
 }

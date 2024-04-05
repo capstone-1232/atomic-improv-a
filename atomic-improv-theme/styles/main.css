@@ -140,9 +140,6 @@ nav {
   font-weight: 600;
 }
 
-header {
-  padding: 1.5rem;
-}
 header .header-flex {
   display: flex;
   justify-content: space-between;
@@ -249,9 +246,11 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 }
 
 .full-screen-video-container {
+  background-image: url("http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
-  height: 100vh;
-  width: 100vw;
   overflow: hidden;
   display: flex;
   justify-content: center;

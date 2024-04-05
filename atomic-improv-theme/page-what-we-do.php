@@ -7,6 +7,8 @@
 get_header();
 ?>
 
+
+
 <main id="primary" class="site-main">
   <section class="corporate-events">
     <div class="container">
@@ -27,7 +29,8 @@ get_header();
             $whatwedo_query->the_post();
             $whatwedo_url = get_field("image");
             ?>
-            <img src="<?php echo $whatwedo_url ?>">
+            <!-- add seo alt text -->
+            <img src="<?php echo $whatwedo_url ?>" alt="">
           <?php endwhile;
           wp_reset_postdata(); ?>
         <?php endif; ?>
