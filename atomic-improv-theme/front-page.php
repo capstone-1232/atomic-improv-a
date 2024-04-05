@@ -10,15 +10,12 @@ get_header();
   <section class="frontpage-top">
     <!-- background video -->
     <div class="full-screen-video-container">
-      <!-- bg-gif  container-->
-      <!-- <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif"
-        class="bg-gif" alt="Gif of best improv duo Donovan Workun and Chris Borger, also known as Atomic Improv."> -->
       <!-- bg content -->
       <div class="content-flex">
         <div class="full-screen-video-content">
-          <!-- this h1 needs to be different than the other h1's -->
+          <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/AIC.png" alt="">
           <h1>Atomic <span>Improv</span></h1>
-          <p>Canada's premier improv comedy team</p>
+          <p>Canada's premier improv comedy team duo!</p>
           <a href="contact-us">Book Now</a>
         </div>
       </div>
