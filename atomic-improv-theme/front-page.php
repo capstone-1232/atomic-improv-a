@@ -12,7 +12,7 @@ get_header();
     <div class="full-screen-video-container">
       <!-- bg-gif -->
       <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif"
-        class="bg-gif" alt="5 second video of Donovan Workun and Chris Borger">
+        class="bg-gif" alt="Gif of best improv duo Donovan Workun and Chris Borger, also known as Atomic Improv.">
       <!-- bg content -->
       <div class="content-flex">
         <div class="full-screen-video-content">
@@ -43,7 +43,8 @@ get_header();
                 $whatwedo_query->the_post();
                 $whatwedo_url = get_field("image");
                 ?>
-                <a href="what-we-do"><img src="<?php echo $whatwedo_url ?>"></a>
+                <a href="what-we-do"><img src="<?php echo $whatwedo_url ?>"
+                    alt="Image of Atomic Improv, Donovan Workun and Chris Borger being silly."></a>
               <?php endwhile;
               wp_reset_postdata(); ?>
             <?php endif; ?>
@@ -75,7 +76,8 @@ get_header();
               $powerofyes_query->the_post();
               $powerofyes_url = get_field("image");
               ?>
-              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>"></a>
+              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>"
+                  alt="Poster of 'Power of Yes' workshop with Atomic Improv and Graham Neil"></a>
             <?php endwhile;
             wp_reset_postdata(); ?>
           <?php endif; ?>
@@ -109,7 +111,8 @@ get_header();
               $whoweare_query->the_post();
               $whoweare_url = get_field("image");
               ?>
-              <a href="who-we-are"><img src="<?php echo $whoweare_url ?>"></a>
+              <a href="who-we-are"><img src="<?php echo $whoweare_url ?>"
+                  alt="Image of Donovan Workun and Chris Borger being silly."></a>
             <?php endwhile;
             wp_reset_postdata(); ?>
           <?php endif; ?>
@@ -125,7 +128,7 @@ get_header();
             creating comedy on the spot based entirely on audience suggestion since 1990.</p>
           <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn
             your event from humdrum to hilarious!</p>
-        <a href="who-we-are" class="button-style">More About Us</a>
+          <a href="who-we-are" class="button-style">More About Us</a>
         </div>
       </div><!-- end of about section -->
 
@@ -176,12 +179,12 @@ get_header();
             );
             $youtube_query = new WP_Query($youtube_args);
             // Tests if there even are any posts
-            if ($youtube_query->have_posts()) :
+            if ($youtube_query->have_posts()):
               // As long as there are new posts...
-              while ($youtube_query->have_posts()) :
+              while ($youtube_query->have_posts()):
                 // Select the next post
                 $youtube_query->the_post();
-            ?>
+                ?>
                 <h4>
                   <?php the_title(); ?>
                 </h4>
@@ -189,7 +192,7 @@ get_header();
 
               <?php endwhile; ?>
               <!-- end loop -->
-            <?php
+              <?php
             endif;
             wp_reset_postdata();
             ?>
@@ -203,3 +206,18 @@ get_header();
 
 <?php
 get_footer();
+
+
+
+
+
+
+
+
+
+
+
+/* Validation Check, Please Do Not Remove */
+/*-----------------------------------------
+HTML validated 04/05/24
+-----------------------------------------*/

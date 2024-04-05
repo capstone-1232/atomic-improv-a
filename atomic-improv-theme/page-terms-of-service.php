@@ -17,7 +17,9 @@ get_header();
   <section>
     <div class="container">
 
-      <h1><?php echo get_the_title(); ?></h1>
+      <h1>
+        <?php echo get_the_title(); ?>
+      </h1>
 
       <p>generic page</p>
       <p>Dynamically pulls the title using a function.</p>
@@ -27,3 +29,10 @@ get_header();
 
 <?php
 get_footer();
+
+
+
+/* Validation Check, Please Do Not Remove */
+/*-----------------------------------------
+HTML validated 04/05/24
+-----------------------------------------*/
