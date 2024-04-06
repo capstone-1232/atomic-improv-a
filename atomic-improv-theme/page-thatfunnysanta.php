@@ -9,7 +9,6 @@ get_header();
 
 <main id="primary" class="site-main">
   <section class="santa">
-    <h2>@ThatFunnySanta</h2>
     <?php
     $thatfunnysanta_hero_query = new WP_Query(
       array(
@@ -23,6 +22,10 @@ get_header();
         $thatfunnysanta_hero_query->the_post();
         $thatfunnysanta_hero_url = get_field("image");
         ?>
+        <div style="background-image: url('<?php echo $thatfunnysanta_hero_url; ?>');"></div>
+        <div class="container">
+          <h1>@ThatFunnySanta</h1>
+        </div>
         <img src="<?php echo $thatfunnysanta_hero_url ?>" alt="That Funny Santa himself!">
         <?php
       endwhile;
@@ -31,8 +34,8 @@ get_header();
     ?>
   </section>
   <section>
-    <div class="santa">
-      <h3>Corporate Events</h3>
+    <div class="container">
+      <h2>Corporate Events</h2>
       <?php
       $thatfunnysanta_corporate_query = new WP_Query(
         array(
@@ -57,8 +60,10 @@ get_header();
         your staff been naughty or nice? Let @thatsfunnysanta help dish out the coal and the humor at your next event!
       </p>
     </div>
-    <div>
-      <h3>Adventures in Banff</h3>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Adventures in Banff</h2>
       <p>@thatfunnysanta can often be found visiting Banff at the Fairmont Banff Springs Hotel where he brings holiday
         cheers to guest and visitors alike. </p>
       <?php
@@ -81,7 +86,9 @@ get_header();
       endif;
       ?>
     </div>
-    <div>
+  </section>
+  <section>
+    <div class="container">
       <h3>In the Community</h3>
       <?php
       $thatfunnysanta_community_query = new WP_Query(
@@ -109,7 +116,7 @@ get_header();
         difficult time into a magical visit, making hundreds feel important and cherished with memories that will endure
         forever.</p>
     </div>
-    <div>
+    <div class="container">
       <p>Contact his elf helper Donovan for more information</p>
       <a href="contact-us" class="button-style">Book Us</a>
     </div>
