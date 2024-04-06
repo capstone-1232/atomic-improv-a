@@ -7,6 +7,8 @@
 get_header();
 ?>
 
+
+
 <main id="primary" class="site-main">
   <section class="corporate-events">
     <div class="container">
@@ -32,27 +34,6 @@ get_header();
         endif;
         ?>
       </div>
-      <!-- events -->
-      <div class="events">
-        <?php
-        $whatwedo_query = new WP_Query(
-          array(
-            "post_type" => "image",
-            "posts_per_page" => 1,
-            "tag" => "what-we-do"
-          )
-        );
-        if ($whatwedo_query->have_posts()):
-          while ($whatwedo_query->have_posts()):
-            $whatwedo_query->the_post();
-            $whatwedo_url = get_field("image");
-            ?>
-            <img src="<?php echo $whatwedo_url ?>">
-            <?php
-          endwhile;
-          wp_reset_postdata();
-        endif;
-        ?>
         <!-- info -->
         <div class="events-info">
           <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
@@ -91,10 +72,7 @@ get_header();
         </div><!-- end of media -->
         <!-- info -->
         <div class="poy-info">
-          <p>At <span class="pos">Power of Yes!</span>, we believe in the transformative power of improv. Our workshop
-            is
-            designed to unlock your
-            team's full potential. </p>
+          <p>At <span class="pos">Power of Yes!</span>, we believe in the transformative power of improv. Our workshop is designed to unlock your team's full potential. </p>
           <p>Starting with simple exercises, participants will collaborate in teams, building trust and camaraderie as
             they
             navigate through challenges together.</p>
@@ -111,16 +89,18 @@ get_header();
           </div>
         </div> <!-- end of info -->
       </div>
-
     </div>
     <div class="container">
       <p>Additional Booking Options for Donovan and Chris:</p>
       <ul class="booking-options">
-        <li>Professional MC's: Corporate, Conference, and Special Events</li>
+        <!-- <li>Think of us for </li> -->
+        <li>Professional MC's: Corporate, Conference, and Special Events</li> 
         <li>Special Package Pricing when booking Professional MC's PLUS Power of Yes! workshop</li>
       </ul>
     </div>
-
+    <div>
+      <!-- insert YouTube video -->
+    </div>
   </section>
 </main><!-- #main -->
 

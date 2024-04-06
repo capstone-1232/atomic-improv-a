@@ -35,8 +35,8 @@ get_header();
     <div class="container">
       <!-- history -->
       <div class="history">
-        <p>Atomic Improv has performed all across North America & Europe showcasing at Montreal's “Just for Laughs”
-          festival winning the first annual International Improv Tournament.</p>
+        <p>Atomic Improv has performed all over the world showcasing at Montreal's “Just for Laughs”
+          festival winning the first annual International Improv Tournament and the 2012 Olympics in London.</p>
         <!-- icons -->
         <div class="flex">
           <?php
@@ -80,9 +80,7 @@ get_header();
           ?>
         </div> <!-- end of icons -->
         <p>Atomic Improv performed at numerous Universities and Colleges across
-          Canada, and were Voted Variety act of the year, and Comedy act of the year for both 1994,
-          and 1995. by the Canadian Organization of Campus Activities. They were also the first non-
-          musical act to be nominated for Entertainer of the year.
+          Canada, and were voted Variety Act of the Year, and Comedy Act of the Year for both 1994 and 1995 by the Canadian Organization of Campus Activities. They were also the first non-musical act to be nominated for Entertainer of the year.
         </p>
 
       </div><!-- end of history -->
@@ -107,11 +105,9 @@ get_header();
           endwhile;
           wp_reset_postdata();
         endif;
-        ?>
-        <p>Since 1996 The Atomic Improv Co. has been focusing their talents on the corporate sector performing their
-          groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their
-          unique form of comedy allows them to tailor the show to any company’s needs, making them a perfect addition to
-          any organizations function.</p>
+        ?>        
+        <p>Since 1996 Atomic Improv has been focusing their talents on the corporate sector performing their groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their unique form of comedy allows them to tailor the show to any company's needs, making them a perfect addition to any organizations function.</p>
+
       </div> <!-- end of current history -->
 
     </div>
@@ -174,7 +170,7 @@ get_header();
         </div> <!-- end of section 3 -->
         <!-- section 4 -->
         <div class="info-4">
-          <p>For a remarkable span of fourteen years, from 2003 to 2017, Donovan graced the airwaves with his wit and
+          <p>For fourteen years, from 2003 to 2017, Donovan graced the airwaves with his wit and
             humor
             on the CBC radio series, "The Irrelevant Show," leaving an indelible mark on listeners across the nation.
           </p>
@@ -277,15 +273,13 @@ get_header();
         </div> <!-- end of section 1 -->
         <!-- section 2 -->
         <div class="info-2">
-          <p>Chris Borger has worked as a professional improviser since 2011, and performs regularly with Atomic Improv,
-            White
-            Rhino, Rapid Fire Theatre, and the 11 o’ Clock Number.</p>
+          <p>Chris Borger has worked as a professional improviser since 2011.</p>
           <p>He has produced online video content for CBC Comedy, and Oilersnation, and educational videos for the
             University
             of Alberta.</p>
           <p>Borger also has experience as an educational consultant working with post-secondary instructors from the
             University of Alberta, NAIT, and Pixel Blue College.</p>
-          <p>His sketch comedy troupe Marv n’ Berry has toured North America’s comedy festival circuit, appearing
+          <p>His sketch comedy troupe Marv n' Berry has toured North America's comedy festival circuit, appearing
             recently
             at
             the Dallas Comedy Festival, the San Francisco Sketchfest, and Montreal Sketchfest.</p>
