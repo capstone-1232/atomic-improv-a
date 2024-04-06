@@ -273,15 +273,13 @@ get_header();
         </div> <!-- end of section 1 -->
         <!-- section 2 -->
         <div class="info-2">
-          <p>Chris Borger has worked as a professional improviser since 2011, and performs regularly with Atomic Improv,
-            White
-            Rhino, Rapid Fire Theatre, and the 11 o’ Clock Number.</p>
+          <p>Chris Borger has worked as a professional improviser since 2011.</p>
           <p>He has produced online video content for CBC Comedy, and Oilersnation, and educational videos for the
             University
             of Alberta.</p>
           <p>Borger also has experience as an educational consultant working with post-secondary instructors from the
             University of Alberta, NAIT, and Pixel Blue College.</p>
-          <p>His sketch comedy troupe Marv n’ Berry has toured North America’s comedy festival circuit, appearing
+          <p>His sketch comedy troupe Marv n' Berry has toured North America’s comedy festival circuit, appearing
             recently
             at
             the Dallas Comedy Festival, the San Francisco Sketchfest, and Montreal Sketchfest.</p>
