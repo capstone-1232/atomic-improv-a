@@ -67,58 +67,59 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+section.socialmedia p.latestfrom {
   font-family: "Rift", sans-serif;
   font-weight: bold;
   color: #fead39;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   padding: 0;
   text-align: center;
+  text-shadow: 0 0 10px #c97d12;
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 3rem;
+  font-size: clamp(2.5rem, 0.9516rem + 7.7419vw, 4rem);
+  line-height: clamp(4.5rem, 2.9516rem + 7.7419vw, 6rem);
 }
-h1 span {
-  font-size: 2.5rem;
-  line-height: 1.5rem;
+h1.frontpage-h1 {
+  line-height: clamp(1.5rem, -0.0484rem + 7.7419vw, 3rem);
 }
-
-h1,
-.who-we-are h2 {
-  font-size: 4rem;
-  line-height: 4.5rem;
-  text-align: center;
-  text-shadow: 0 0 10px #c97d12;
-  padding-bottom: 1rem;
+h1.frontpage-h1 span {
+  font-size: clamp(1.5rem, 0.4677rem + 5.1613vw, 2.5rem);
 }
 
 h2 {
-  font-size: 3rem;
-  line-height: 4.5rem;
+  font-size: clamp(2rem, 0.9677rem + 5.1613vw, 3rem);
+  line-height: clamp(3rem, 1.4516rem + 7.7419vw, 4.5rem);
+}
+h2.frontpage-h2 {
+  margin: 0;
+}
+
+section.socialmedia h2 {
+  border: 2px solid #fffcf5;
+  box-shadow: 0 0 10px #fffcf5;
+  border-radius: 3px;
 }
 
 h3 {
-  font-size: 2.5rem;
-  line-height: 3.75rem;
-}
-
-h3 {
-  font-size: 2rem;
+  font-size: clamp(1.75rem, 0.9758rem + 3.871vw, 2.5rem);
   line-height: 3rem;
   color: #fffcf5;
-}
-
-h4 {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+  text-shadow: 0 0 5px #fffcf5;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: clamp(1.125rem, 0.996rem + 0.6452vw, 1.25rem);
   line-height: 1.5rem;
   color: #fffcf5;
+  margin: 0 0 1.5rem;
+}
+
+section.socialmedia p.latestfrom {
+  font-size: clamp(1.25rem, 0.9919rem + 1.2903vw, 1.5rem);
+  margin-top: 1.5rem;
 }
 
 nav {
@@ -198,6 +199,7 @@ header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type {
 header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type a:hover {
   -webkit-text-decoration: underline #fffcf5;
           text-decoration: underline #fffcf5;
+  box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
 }
 header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   max-height: 25.625rem;
@@ -274,22 +276,7 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 350px;
   text-align: center;
-}
-
-.full-screen-video-content h1 {
-  text-align: center;
-  width: 250px;
-}
-
-.full-screen-video-content span {
-  font-size: 3rem;
-}
-
-.full-screen-video-content p {
-  font-weight: 500;
-  text-shadow: 0 0 20px black;
 }
 
 .full-screen-video-content a {
@@ -342,12 +329,6 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   padding-bottom: 1rem;
 }
 
-.section-content h3 {
-  margin: 3.5rem auto 0 auto;
-  text-align: center;
-  max-width: 350px;
-}
-
 .section-content a {
   margin: 2rem auto;
   display: block;
@@ -366,49 +347,34 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   border-radius: 3px;
 }
 
-.power-of-yes h3 {
+section.socialmedia div.social-media-title-container,
+section.community-socials div.social-media-title-container {
   margin: 0 auto;
-  text-align: center;
   max-width: 350px;
 }
-
-section.socialmedia div.social-media-title-container div.social-media-title {
-  display: block;
-  margin: 0 auto;
-  background-color: #131313;
-  max-width: 350px;
+section.socialmedia div.socialflex section div.social-content,
+section.community-socials div.socialflex section div.social-content {
+  margin: 0 auto 1.5rem;
+  width: 80%;
 }
-section.socialmedia div.social-media-title-container div.social-media-title h2 {
-  text-align: center;
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 10px #ffffff;
-  border-radius: 3px;
-}
-section.socialmedia h4 {
-  text-align: center;
-  letter-spacing: 2px;
-  font-size: 1.25rem;
-  margin-top: 1.5rem;
-}
-section.socialmedia div.socialflex section div.social-content h3 {
-  color: #fffcf5;
-  text-align: center;
-  margin: 1.5rem 0;
-}
-section.socialmedia div.socialflex section div.social-content > div {
+section.socialmedia div.socialflex section div.social-content > div,
+section.community-socials div.socialflex section div.social-content > div {
   background: #fffcf5;
   border-radius: 1rem;
   padding: 0.75rem !important;
   height: 600px;
   overflow: auto;
 }
-section.socialmedia div.socialflex section div.social-content > div a.sbi_photo {
+section.socialmedia div.socialflex section div.social-content > div a.sbi_photo,
+section.community-socials div.socialflex section div.social-content > div a.sbi_photo {
   margin-bottom: 0.75rem;
 }
-section.socialmedia div.socialflex section div.social-content > div h3 {
+section.socialmedia div.socialflex section div.social-content > div h3,
+section.community-socials div.socialflex section div.social-content > div h3 {
   color: #202020;
 }
-section.socialmedia div.socialflex section div.social-content > div div.cff-visual-header {
+section.socialmedia div.socialflex section div.social-content > div div.cff-visual-header,
+section.community-socials div.socialflex section div.social-content > div div.cff-visual-header {
   display: none;
 }
 
@@ -468,6 +434,9 @@ section.socialmedia div.socialflex section div.social-content > div div.cff-visu
     /* padding: 1rem; */
     margin: 0 auto;
   }
+  .socialflex section div.social-content {
+    width: unset !important;
+  }
 }
 @media screen and (min-width: 60rem) {
   .socialflex {
@@ -478,7 +447,7 @@ section.socialmedia div.socialflex section div.social-content > div div.cff-visu
   }
   .socialflex section {
     width: 0;
-    flex: 1 1 0px;
+    flex: 1;
   }
 }
 .flex-title {
@@ -495,10 +464,6 @@ section.socialmedia div.socialflex section div.social-content > div div.cff-visu
   z-index: -1;
   position: absolute;
   min-height: 100%;
-}
-
-.flex-title h1 {
-  padding: 1rem 0;
 }
 
 .events {
@@ -521,10 +486,6 @@ section.socialmedia div.socialflex section div.social-content > div div.cff-visu
   background-color: #cc0033;
   box-shadow: 0 0 10px #cc0033;
   border-radius: 3px;
-}
-
-.power-of-yes h2 {
-  text-align: center;
 }
 
 .booking-options {
@@ -563,10 +524,6 @@ section.socialmedia div.socialflex section div.social-content > div div.cff-visu
   z-index: -1;
   position: absolute;
   min-height: 100%;
-}
-
-.flex-title h2 {
-  padding: 1rem 0;
 }
 
 .current-history {

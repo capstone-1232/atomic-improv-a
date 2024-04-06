@@ -52,13 +52,13 @@ get_header();
       <div class="poy-flex">
         <div class="poy-media">
           <?php
-          $powerofyes_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
-          if ($powerofyes_query->have_posts()):
-            while ($powerofyes_query->have_posts()):
-              $powerofyes_query->the_post();
-              $powerofyes_url = get_field("image");
+          $workshop_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
+          if ($workshop_query->have_posts()):
+            while ($workshop_query->have_posts()):
+              $workshop_query->the_post();
+              $workshop_url = get_field("image");
               ?>
-              <img src="<?php echo $powerofyes_url ?>">
+              <img src="<?php echo $workshop_url ?>">
             <?php
             endwhile;
             wp_reset_postdata();

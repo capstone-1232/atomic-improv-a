@@ -76,6 +76,7 @@ header {
               a {
                 &:hover {
                   text-decoration: underline $text-white;
+                  box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
                 }
               }
             }
