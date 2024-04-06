@@ -8,40 +8,42 @@ get_header();
 ?>
 <main id="primary" class="site-main">
   <section class="frontpage-top">
-    <!-- background video --><?php
-      // Querying the hero image gif using a post.
-      // This makes it easy to switch out in the future.
-      $frontpage_hero_query = new WP_Query(
-        array(
-          "post_type" => "image",
-          "posts_per_page" => 1,
-          "tag" => "frontpage_hero"
-        )
-      );
-      // Testing if the given query has posts via alternate syntax.
-      if ($frontpage_hero_query->have_posts()):
-        // Looping through the posts using alternate syntax.
-        while ($frontpage_hero_query->have_posts()):
-          $frontpage_hero_query->the_post();
-          // Getting image URL.
-          $frontpage_hero_url = get_field("image");
-          ?>
-          <!-- Displaying queried image in img tag. -->
-    <div class="full-screen-video-container" style="background-image: url('<?php echo $frontpage_hero_url; ?>');">      <!-- bg-gif -->
+    <!-- background video -->
     <?php
-          // Ending the loop
-        endwhile;
-        // Resetting post data for the next query.
-        wp_reset_postdata();
-        // Moving on.
-      endif;
-      ?>
+    // Querying the hero image gif using a post.
+    // This makes it easy to switch out in the future.
+    $frontpage_hero_query = new WP_Query(
+      array(
+        "post_type" => "image",
+        "posts_per_page" => 1,
+        "tag" => "frontpage_hero"
+      )
+    );
+    // Testing if the given query has posts via alternate syntax.
+    if ($frontpage_hero_query->have_posts()):
+      // Looping through the posts using alternate syntax.
+      while ($frontpage_hero_query->have_posts()):
+        $frontpage_hero_query->the_post();
+        // Getting image URL.
+        $frontpage_hero_url = get_field("image");
+        ?>
+        <!-- Displaying queried image in img tag. -->
+        <div class="full-screen-video-container" style="background-image: url('<?php echo $frontpage_hero_url; ?>');">
+          <!-- bg-gif -->
+          <?php
+        // Ending the loop
+      endwhile;
+      // Resetting post data for the next query.
+      wp_reset_postdata();
+      // Moving on.
+    endif;
+    ?>
       <!-- bg content -->
       <div class="content-flex">
         <div class="full-screen-video-content">
-          <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/AIC.png" alt="">
-          <h1>Atomic <span>Improv</span></h1>
-          <p>Canada's premier improv comedy duo</p>
+          <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/AIC.png"
+            alt="">
+          <h1 class="frontpage-h1">Atomic<br><span>Improv</span></h1>
           <p>Canada's premier improv comedy duo</p>
           <a href="contact-us">Book Now</a>
         </div>
@@ -71,7 +73,8 @@ get_header();
                 $frontpage_whatwedo_query->the_post();
                 $frontpage_whatwedo_url = get_field("image");
                 ?>
-                <a href="what-we-do"><img src="<?php echo $frontpage_whatwedo_url ?>" alt="Image of Atomic Improv, Donovan Workun and Chris Borger being silly."></a>
+                <a href="what-we-do"><img src="<?php echo $frontpage_whatwedo_url ?>"
+                    alt="Image of Atomic Improv, Donovan Workun and Chris Borger being silly."></a>
                 <?php
               endwhile;
               wp_reset_postdata();
@@ -79,19 +82,19 @@ get_header();
             ?>
             <div class="section-flex">
               <div class="section-title">
-                <h2>What We Do</h2>
+                <h2 class="frontpage-h2">What We Do</h2>
               </div>
             </div>
           </div>
           <div class="section-content">
-            <h3>Customized shows for your events</h3>
-            <!-- <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
+            <h3>Customized shows</h3>
+            <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
               creating comedy on the spot based entirely on audience suggestion since 1990.</p>
             <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn
               your event from humdrum to hilarious!</p>
             <a href="what-we-do" class="button-style">Learn More</a>
           </div>
-        </div><!-- end of events section -->
+        </div>
         <!-- Power Of Yes -->
         <div class="power-of-yes">
           <!-- Power of Yes poster-->
@@ -109,7 +112,8 @@ get_header();
               $powerofyes_query->the_post();
               $powerofyes_url = get_field("image");
               ?>
-              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>" alt="Poster of 'Power of Yes' workshop with Atomic Improv and Graham Neil"></a>
+              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>"
+                  alt="Poster of 'Power of Yes' workshop with Atomic Improv and Graham Neil"></a>
               <?php
             endwhile;
             wp_reset_postdata();
@@ -117,9 +121,10 @@ get_header();
           ?>
           <div class="section-flex">
             <div class="section-content">
-              <p>Unlock your teams full potential with the <span class="pos">Power of Yes!</span> our customizable corporate workshop that can help teams
-              boost their creativity and communication skills.</p>
-              <a href="what-we-do#power-of-yes" class="button-style">Learn More</a>
+              <p>Unlock your teams full potential with the <span class="pos">Power of Yes!</span> our customizable
+                corporate workshop that can help teams
+                boost their creativity and communication skills.</p>
+              <a href="what-we-do" class="button-style">Learn More</a>
             </div>
           </div>
         </div><!-- end of Power of Yes -->
@@ -146,8 +151,9 @@ get_header();
               $frontpage_whoweare_query->the_post();
               $frontpage_whoweare_url = get_field("image");
               ?>
-              <a href="who-we-are"><img src="<?php echo $frontpage_whoweare_url ?>" alt="Image of Donovan Workun and Chris Borger being silly."></a>
-            <?php
+              <a href="who-we-are"><img src="<?php echo $frontpage_whoweare_url ?>"
+                  alt="Image of Donovan Workun and Chris Borger being silly."></a>
+              <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -155,7 +161,7 @@ get_header();
           <!-- About content -->
           <div class="section-flex">
             <div class="section-title">
-              <h2>Who We Are</h2>
+              <h2 class="frontpage-h2">Who We Are</h2>
             </div>
           </div>
         </div>
@@ -164,7 +170,7 @@ get_header();
             creating comedy on the spot based entirely on audience suggestion since 1990.</p>
           <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn
             your event from humdrum to hilarious!</p>
-        <a href="who-we-are" class="button-style">More About Us</a>
+          <a href="who-we-are" class="button-style">More About Us</a>
         </div>
       </div><!-- end of about section -->
 
@@ -178,12 +184,10 @@ get_header();
 
       <!-- social media title -->
       <div class="social-media-title-container">
-        <div class="social-media-title">
-          <h2>#atomicimprov</h2>
-        </div>
+          <h2 class="frontpage-h2">#atomicimprov</h2>
       </div>
 
-      <h4>The Latest from...</h4>
+      <p class="latestfrom">The Latest from...</p>
       <div class="socialflex">
         <section>
           <div class="social-content">
@@ -197,6 +201,9 @@ get_header();
         <section>
           <div class="social-content">
             <h3>Facebook</h3>
+            <?php
+            echo do_shortcode("[custom-facebook-feed feed=3]")
+              ?>
           </div>
 
         </section>

@@ -11,7 +11,7 @@ get_header();
   <section class="who-we-are">
     <!-- section -->
     <div class="flex-title">
-      <h2>Who We Are</h2>
+      <h1>Who We Are</h1>
       <?php
       $whoweare_hero_query = new WP_Query(
         array(
@@ -120,7 +120,7 @@ get_header();
     <div class="container">
       <!-- title -->
       <div class="about-title">
-        <h3>Donovan Workun</h3>
+        <h2>Donovan Workun</h2>
         <p class="socialhandle">@atomicimprov</p>
       </div><!-- end of title/social media tag -->
 
@@ -243,7 +243,7 @@ get_header();
     <div class="container">
       <!-- title -->
       <div class="about-title">
-        <h3>Chris Borger</h3>
+        <h2>Chris Borger</h2>
         <p class="socialhandle">@thecheeseborger</p>
       </div><!-- end of title/social media tag -->
 
@@ -289,7 +289,7 @@ get_header();
   </section>
   <section>
     <div class="container">
-      <h2>See us in action</h2>
+      <h2>See us in action!</h2>
       <div class="vid">
         <iframe src="https://www.youtube.com/embed/Vkwthc6cyBY?si=CcRySMFZteAcGHAF" title="YouTube video player"
           frameborder="0"
