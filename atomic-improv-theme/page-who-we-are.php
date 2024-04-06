@@ -158,11 +158,11 @@ get_header();
             comedic
             timing, wit, and hilarious characters. </p>
 
-          <p>He is the first Improvisor to headline at Montreal’s JUST FOR LAUGHS and has shared the improv stage with
+          <p>He is the first Improvisor to headline at Montreal's JUST FOR LAUGHS and has shared the improv stage with
             Wayne
             Brady, and Colin Mochrie (Whose Line is it Anyway?) Mike Myers (SNL & Austin Powers) and two of his
             childhood
-            idols Dave Thomas and Joe Flarhety of S.C.T.V.</p>
+            idols Dave Thomas and Joe Flaherty of S.C.T.V.</p>
         </div><!-- end of section 2 -->
         <!-- section 3 -->
         <div class="info-3">
@@ -279,7 +279,7 @@ get_header();
             of Alberta.</p>
           <p>Borger also has experience as an educational consultant working with post-secondary instructors from the
             University of Alberta, NAIT, and Pixel Blue College.</p>
-          <p>His sketch comedy troupe Marv n' Berry has toured North America’s comedy festival circuit, appearing
+          <p>His sketch comedy troupe Marv n' Berry has toured North America's comedy festival circuit, appearing
             recently
             at
             the Dallas Comedy Festival, the San Francisco Sketchfest, and Montreal Sketchfest.</p>

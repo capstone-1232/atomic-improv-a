@@ -178,7 +178,7 @@ get_header();
         </div>
       </div>
 
-      <h4>The Latest from...</h4>
+      <!-- <h4>The Latest from...</h4> -->
       <div class="socialflex">
         <section>
           <div class="social-content">
