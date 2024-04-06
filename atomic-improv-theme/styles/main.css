@@ -22,7 +22,7 @@ img,
 iframe,
 div.social-content > div,
 div.social-content > div > iframe {
-  max-width: 100%;
+  max-width: 100% !important;
 }
 
 .button-style {
@@ -73,6 +73,7 @@ h6 {
   color: #fead39;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 h1 {
@@ -101,14 +102,12 @@ h2 {
 h3 {
   font-size: 2.5rem;
   line-height: 3.75rem;
-  text-align: center;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 3rem;
   color: #fffcf5;
-  text-align: center;
 }
 
 h4 {
@@ -140,9 +139,6 @@ nav {
   font-weight: 600;
 }
 
-header {
-  padding: 1.5rem;
-}
 header .header-flex {
   display: flex;
   justify-content: space-between;
@@ -208,7 +204,10 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   padding: 1.5rem 0;
 }
 
-@media screen and (min-width: 58rem) {
+@media screen and (min-width: 60rem) {
+  header {
+    border-bottom: 2px solid #cc0033;
+  }
   header .header-flex nav a.menu-toggle {
     display: none;
   }
@@ -249,23 +248,20 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
 }
 
 .full-screen-video-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
-  height: 100vh;
-  width: 100vw;
   overflow: hidden;
   display: flex;
   justify-content: center;
 }
 
 .full-screen-video-container img {
-  margin-top: 2rem;
-  max-width: none;
-  z-index: -1;
-  position: absolute;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-60%, -60%);
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
 }
 
 .content-flex {
@@ -376,52 +372,44 @@ header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   max-width: 350px;
 }
 
-.social-media-title {
+section.socialmedia div.social-media-title-container div.social-media-title {
   display: block;
   margin: 0 auto;
   background-color: #131313;
   max-width: 350px;
 }
-
-.social-media-title h2 {
+section.socialmedia div.social-media-title-container div.social-media-title h2 {
   text-align: center;
   border: 2px solid #ffffff;
   box-shadow: 0 0 10px #ffffff;
   border-radius: 3px;
 }
-
-.socialmedia h4 {
-  color: #fead39;
-  font-family: "rift", sans-serif;
+section.socialmedia h4 {
   text-align: center;
-  font-weight: 600;
   letter-spacing: 2px;
   font-size: 1.25rem;
-  padding-top: 0.5rem;
+  margin-top: 1.5rem;
 }
-
-/* for tablet view */
-/* .socialflex :nth-of-type(2) {
-    padding: 1rem;
-} */
-.socialflex h3 {
-  color: #ffffff;
-  font-family: "rift", sans-serif;
+section.socialmedia div.socialflex section div.social-content h3 {
+  color: #fffcf5;
   text-align: center;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 1rem;
+  margin: 1.5rem 0;
 }
-
-.socialflex p {
-  color: #ffffff;
+section.socialmedia div.socialflex section div.social-content > div {
+  background: #fffcf5;
+  border-radius: 1rem;
+  padding: 0.75rem !important;
+  height: 600px;
+  overflow: auto;
 }
-
-/* .power-of-yes img {
-    width: 100%;
-} */
-div#sb_instagram {
-  width: 100%;
+section.socialmedia div.socialflex section div.social-content > div a.sbi_photo {
+  margin-bottom: 0.75rem;
+}
+section.socialmedia div.socialflex section div.social-content > div h3 {
+  color: #202020;
+}
+section.socialmedia div.socialflex section div.social-content > div div.cff-visual-header {
+  display: none;
 }
 
 @media screen and (min-width: 630px) {
@@ -475,13 +463,22 @@ div#sb_instagram {
     left: auto;
     padding: 0.25rem 1rem;
   }
+  .socialflex {
+    width: 400px;
+    /* padding: 1rem; */
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 60rem) {
   .socialflex {
     display: flex;
-    flex-wrap: wrap;
+    gap: 1.5rem;
     width: 100%;
     /* padding: 1rem; */
+  }
+  .socialflex section {
+    width: 0;
+    flex: 1 1 0px;
   }
 }
 .flex-title {

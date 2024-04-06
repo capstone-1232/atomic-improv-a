@@ -1,13 +1,10 @@
 @import "variables";
 
-
-
 // mobile screen
-
 
 //header container
 header {
-  padding: 1.5rem;
+  // padding: 1.5rem;
 
   .header-flex {
     display: flex;
@@ -30,8 +27,8 @@ header {
 
         svg {
           padding: 16px;
-          
-}
+
+        }
 
         &:hover {
           cursor: pointer;
@@ -47,7 +44,8 @@ header {
           top: 144px; // changed it to 130px for 320px mobile screen and cause I shrunk the nav font
           max-height: 0;
           overflow: hidden;
-          background: $bg url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+          background: $bg
+            url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
           padding: 0;
           margin: 0;
           width: 100%;
@@ -66,7 +64,6 @@ header {
 
               &:hover {
                 text-decoration: underline $orange;
-
               }
             }
 
@@ -99,63 +96,57 @@ header {
   }
 }
 
-
-
-
-@media screen and (min-width: 58rem) {
+@media screen and (min-width: 60rem) {
   header {
+    border-bottom: 2px solid $red;
 
-  .header-flex {
+    .header-flex {
+      nav {
+        a.menu-toggle {
+          display: none;
+        }
 
-    nav {
+        div.menu-navigation-container {
+          ul.menu {
+            position: static;
+            max-height: unset;
+            background: unset;
+            width: unset;
+            border-bottom: none;
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
 
-      a.menu-toggle {
-        display: none;
-      }
-
-      div.menu-navigation-container {
-        ul.menu {
-          position: static;
-          max-height: unset;
-          background: unset;
-          width: unset;
-          border-bottom: none;
-          display:flex;
-          gap:1.5rem;
-          align-items:center;
-
-          li {
-            text-align: right;
-            padding: 0;
-
-            a {
-              font-size:1.5rem;
-              line-height: 3rem;
+            li {
+              text-align: right;
               padding: 0;
-            }
-
-            &:last-of-type {
-              margin: 0;
 
               a {
-                padding: 0 0.5rem;
+                font-size: 1.5rem;
+                line-height: 3rem;
+                padding: 0;
+              }
+
+              &:last-of-type {
+                margin: 0;
+
+                a {
+                  padding: 0 0.5rem;
+                }
               }
             }
           }
         }
-      }
 
-      &.toggled {
-        div.menu-navigation-container {
-          ul.menu {
-            max-height: 40rem;
-            padding: 1.5rem 0;
+        &.toggled {
+          div.menu-navigation-container {
+            ul.menu {
+              max-height: 40rem;
+              padding: 1.5rem 0;
+            }
           }
         }
       }
     }
   }
-}
-
-
 }
