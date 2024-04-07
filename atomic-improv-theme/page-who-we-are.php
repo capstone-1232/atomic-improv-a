@@ -35,8 +35,8 @@ get_header();
     <div class="container">
       <!-- history -->
       <div class="history">
-        <p>Atomic Improv has performed all across North America & Europe showcasing at Montreal's “Just for Laughs”
-          festival winning the first annual International Improv Tournament.</p>
+        <p>Atomic Improv stars the incredible talent of comedic legends Donovan Workun and Chris Borger.</p>
+        <p>Atomic Improv has performed all over the world, starting as local legends at Edmonton’s Sidetrack Café to headlining at Montreal's “Just for Laughs” festival and San Francisco Comedy Festival, hosting the red carpet at the Junos and preforming at the 2012 London Summer Olympics.</p>
         <!-- icons -->
         <div class="flex">
           <?php
@@ -79,8 +79,7 @@ get_header();
           endif;
           ?>
         </div> <!-- end of icons -->
-        <p>Atomic Improv performed at numerous Universities and Colleges across
-          Canada, and were voted Variety Act of the Year, and Comedy Act of the Year for both 1994 and 1995 by the Canadian Organization of Campus Activities. They were also the first non-musical act to be nominated for Entertainer of the year.
+        <p>They also boast several awards, such as Variety Act of the Year, and Comedy Act of the Year for both 1994 and 1995 by the Canadian Organization of Campus Activities, several Alberta Motion Picture Association Awards, and Canadian Comedy Awards.
         </p>
 
       </div><!-- end of history -->
@@ -106,7 +105,7 @@ get_header();
           wp_reset_postdata();
         endif;
         ?>        
-        <p>Since 1996 Atomic Improv has been focusing their talents on the corporate sector performing their groundbreaking show for hundreds of corporate dinners, lunches, Christmas parties and product launches. Their unique form of comedy allows them to tailor the show to any company's needs, making them a perfect addition to any organizations function.</p>
+        <p>Atomic Improv also bring their talents over to the corporate sector entertaining and educating as hosts, keynote speakers and with their incredible Power of Yes workshops that help teach employees to reach their full potential.</p>
 
       </div> <!-- end of current history -->
 
@@ -152,17 +151,9 @@ get_header();
         <!-- end of section 1 -->
         <!-- section 2 -->
         <div class="info-2">
-          <p>Donovan is a world-renowned Improviser, and founding member of Atomic Improv with over 30 years of comedy
-            under
-            his belt. Donovan has toured all over Canada, the US, and Europe, amazing audiences with his brilliant
-            comedic
-            timing, wit, and hilarious characters. </p>
+          <p>Donovan Workun is a world-renowned Improviser and founding member of Atomic Improv. With over 30 years of comedy under his belt, Donovan has toured all over Canada, the US, and Europe, amazing audiences with his brilliant comedic timing, wit, and hilarious characters.</p>
 
-          <p>He is the first Improvisor to headline at Montreal's JUST FOR LAUGHS and has shared the improv stage with
-            Wayne
-            Brady, and Colin Mochrie (Whose Line is it Anyway?) Mike Myers (SNL & Austin Powers) and two of his
-            childhood
-            idols Dave Thomas and Joe Flaherty of S.C.T.V.</p>
+          <p>He is the first Improvisor to headline at Montreal's Just For Laughs and has shared the improv stage with Wayne Brady, and Colin Mochrie (Whose Line is it Anyway?) Mike Myers (SNL & Austin Powers) and two of his childhood idols Dave Thomas and Joe Flaherty of S.C.T.V.</p>
         </div><!-- end of section 2 -->
         <!-- section 3 -->
         <div class="info-3">
@@ -170,10 +161,9 @@ get_header();
         </div> <!-- end of section 3 -->
         <!-- section 4 -->
         <div class="info-4">
-          <p>For a remarkable span of fourteen years, from 2003 to 2017, Donovan graced the airwaves with his wit and
-            humor
-            on the CBC radio series, "The Irrelevant Show," leaving an indelible mark on listeners across the nation.
+          <p>For fourteen years, from 2003 to 2017, Donovan graced the airwaves with his wit and humor on the CBC Radio One series, "The Irrelevant Show,” as a performer and writer, leaving an indelible mark on listeners across the nation.
           </p>
+          <p>He has also shared the screen with Tim Curry, Demi Moore, Patrick Swayze, Carmen Electra, Tom Green, Donald and Keifer Sutherland, appeared on Amazing Race Canada, as well as several commercials for the Alberta Motor Association and Volvo Canada.</p>
         </div> <!-- end of info info-4 -->
         <!-- flexed icons -->
         <div class="flex">

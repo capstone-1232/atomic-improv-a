@@ -42,7 +42,7 @@ get_header();
           <img src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/AIC.png" alt="Atomic Improv Logo">
           <h1>Atomic <span>Improv</span></h1>
           <p>Canada's premier improv comedy duo</p>
-          <a href="contact-us">Book Now</a>
+          <a href="contact-us">Book Us Now</a>
         </div>
       </div>
         </div>

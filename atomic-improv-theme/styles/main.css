@@ -571,8 +571,19 @@ iframe {
 .card img {
   display: block;
   margin: 0 auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+@media screen and (min-width: 60rem) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    flex: 1 0 50%;
+  }
+}
 input,
 select,
 optgroup,

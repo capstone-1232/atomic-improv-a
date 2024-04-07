@@ -13,4 +13,21 @@ iframe {
 .card img {
   display: block;
   margin: 0 auto;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 630px){
+
+}
+
+@media screen and (min-width: 60rem) {
+  .card-container{
+    display:flex;
+    flex-wrap: wrap;
+
+  }
+
+  .card{
+    flex: 1 0 50%;
+  }
 }
