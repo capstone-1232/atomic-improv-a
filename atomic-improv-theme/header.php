@@ -80,7 +80,7 @@
 
 				</div>
 			</div>
-		</header><!-- #masthead -->
+		</header>
 
 
 
@@ -89,7 +89,3 @@
 
 
 
-
-		<!-- Validation Check, Please Do Not Remove -->
-		<!-- -------------------------------------- -->
-		<!-- HTML validated 04/05/24 -->

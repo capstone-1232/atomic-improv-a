@@ -10,7 +10,7 @@ get_header();
 <main id="primary" class="site-main">
   <section class="who-we-are">
     <!-- section -->
-    <div class="flex-title">
+    <div class="flex-title"> 
       <h2>Who We Are</h2>
       <?php
       $whoweare_hero_query = new WP_Query(
@@ -20,18 +20,19 @@ get_header();
           "tag" => "whoweare_hero"
         )
       );
-      if ($whoweare_hero_query->have_posts()):
-        while ($whoweare_hero_query->have_posts()):
+      if ($whoweare_hero_query->have_posts()) :
+        while ($whoweare_hero_query->have_posts()) :
           $whoweare_hero_query->the_post();
           $whoweare_hero_url = get_field("image");
-          ?>
-          <img src="<?php echo $whoweare_hero_url ?>">
-          <?php
+      ?>
+          <img src="<?php echo $whoweare_hero_url ?>" alt="Donovan and Chris in track suits posing.">
+      <?php
         endwhile;
         wp_reset_postdata();
       endif;
       ?>
     </div>
+
     <div class="container">
       <!-- history -->
       <div class="history">
@@ -47,13 +48,13 @@ get_header();
               "tag" => "justforlaughs"
             )
           );
-          if ($justforlaughs_query->have_posts()):
-            while ($justforlaughs_query->have_posts()):
+          if ($justforlaughs_query->have_posts()) :
+            while ($justforlaughs_query->have_posts()) :
               $justforlaughs_query->the_post();
               $justforlaughs_url = get_field("image");
-              ?>
-              <img src="<?php echo $justforlaughs_url ?>">
-              <?php
+          ?>
+              <img src="<?php echo $justforlaughs_url ?>" alt="Just for Laughs logo.">
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -67,13 +68,13 @@ get_header();
               "tag" => "canadiancomedyawards"
             )
           );
-          if ($canadiancomedyawards_query->have_posts()):
-            while ($canadiancomedyawards_query->have_posts()):
+          if ($canadiancomedyawards_query->have_posts()) :
+            while ($canadiancomedyawards_query->have_posts()) :
               $canadiancomedyawards_query->the_post();
               $canadiancomedyawards_url = get_field("image");
-              ?>
-              <img src="<?php echo $canadiancomedyawards_url ?>">
-              <?php
+          ?>
+              <img src="<?php echo $canadiancomedyawards_url ?>" alt="Canadian Comedy Awards logo.">
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -94,24 +95,24 @@ get_header();
             "tag" => "currenthistory"
           )
         );
-        if ($currenthistory_query->have_posts()):
-          while ($currenthistory_query->have_posts()):
+        if ($currenthistory_query->have_posts()) :
+          while ($currenthistory_query->have_posts()) :
             $currenthistory_query->the_post();
             $currenthistory_url = get_field("image");
-            ?>
-            <img src="<?php echo $currenthistory_url ?>" alt="Donovan holding Chris up">
-            <?php
+        ?>
+            <img src="<?php echo $currenthistory_url ?>" alt="Donovan holding Chris up.">
+        <?php
           endwhile;
           wp_reset_postdata();
         endif;
-        ?>        
+        ?>
         <p>Atomic Improv also bring their talents over to the corporate sector entertaining and educating as hosts, keynote speakers and with their incredible Power of Yes workshops that help teach employees to reach their full potential.</p>
 
       </div> <!-- end of current history -->
 
     </div>
 
-  </section>
+  </section> <!-- eo section -->
 
   <!-- donovan section -->
   <section class="donovan">
@@ -136,13 +137,13 @@ get_header();
               "tag" => "donovanheadshot"
             )
           );
-          if ($donovanheadshot_query->have_posts()):
-            while ($donovanheadshot_query->have_posts()):
+          if ($donovanheadshot_query->have_posts()) :
+            while ($donovanheadshot_query->have_posts()) :
               $donovanheadshot_query->the_post();
               $donovanheadshot_url = get_field("image");
-              ?>
-              <img src="<?php echo $donovanheadshot_url ?>">
-              <?php
+          ?>
+              <img src="<?php echo $donovanheadshot_url ?>" alt="Donovan Workun laughing in a white dress shirt.">
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -175,13 +176,13 @@ get_header();
               "tag" => "justforlaughs"
             )
           );
-          if ($justforlaughs_query->have_posts()):
-            while ($justforlaughs_query->have_posts()):
+          if ($justforlaughs_query->have_posts()) :
+            while ($justforlaughs_query->have_posts()) :
               $justforlaughs_query->the_post();
               $justforlaughs_url = get_field("image");
-              ?>
-              <img src="<?php echo $justforlaughs_url ?>">
-              <?php
+          ?>
+              <img src="<?php echo $justforlaughs_url ?>" alt="Just for Laughs logo.">
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -194,13 +195,13 @@ get_header();
               "tag" => "irrelevantshow"
             )
           );
-          if ($irrelevantshow_query->have_posts()):
-            while ($irrelevantshow_query->have_posts()):
+          if ($irrelevantshow_query->have_posts()) :
+            while ($irrelevantshow_query->have_posts()) :
               $irrelevantshow_query->the_post();
               $irrelevantshow_url = get_field("image");
-              ?>
-              <img src="<?php echo $irrelevantshow_url ?>">
-              <?php
+          ?>
+              <img src="<?php echo $irrelevantshow_url ?>" alt="CBC Radio One Irrelevant Show poster.">
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -213,13 +214,13 @@ get_header();
               "tag" => "canadiancomedyawards"
             )
           );
-          if ($canadiancomedyawards_query->have_posts()):
-            while ($canadiancomedyawards_query->have_posts()):
+          if ($canadiancomedyawards_query->have_posts()) :
+            while ($canadiancomedyawards_query->have_posts()) :
               $canadiancomedyawards_query->the_post();
               $canadiancomedyawards_url = get_field("image");
-              ?>
-              <img src="<?php echo $canadiancomedyawards_url ?>">
-              <?php
+          ?>
+              <img src="<?php echo $canadiancomedyawards_url ?>" alt="Canadian Comedy Awards logo.">
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -249,13 +250,13 @@ get_header();
               "tag" => "chrisheadshot"
             )
           );
-          if ($chrisheadshot_query->have_posts()):
-            while ($chrisheadshot_query->have_posts()):
+          if ($chrisheadshot_query->have_posts()) :
+            while ($chrisheadshot_query->have_posts()) :
               $chrisheadshot_query->the_post();
               $chrisheadshot_url = get_field("image");
-              ?>
-              <img src="<?php echo $chrisheadshot_url ?>">
-              <?php
+          ?>
+              <img src="<?php echo $chrisheadshot_url ?>" alt="Chris Borger in a white dress shirt.">
+          <?php
             endwhile;
             wp_reset_postdata();
           endif;
@@ -281,10 +282,7 @@ get_header();
     <div class="container">
       <h2>See us in action</h2>
       <div class="vid">
-        <iframe src="https://www.youtube.com/embed/Vkwthc6cyBY?si=CcRySMFZteAcGHAF" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Vkwthc6cyBY?si=CcRySMFZteAcGHAF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
 
