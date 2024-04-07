@@ -10,11 +10,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:1.5rem 0;
 
     div.site-branding {
       a {
         display: block;
-        max-height: 96px;
+        img {
+          max-height:96px;
+          max-width:100px !important;
+        }
       }
     }
 
@@ -23,11 +27,10 @@ header {
 
       a.menu-toggle {
         display: block;
-        max-height: 82px;
 
         svg {
           padding: 16px;
-
+          display:block;
         }
 
         &:hover {
@@ -69,20 +72,16 @@ header {
 
             &:last-of-type {
               background-color: $red;
-              box-shadow: 0 0 5px $red;
-              border-radius: 3px;
+              box-shadow: 0 0 10px $red;
+              border-radius: 8px;
               margin: 0 1.5rem;
 
-              &:hover{
-                box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
-              }
-
-              a 
-              {
+              a {
                 &:hover {
                   text-decoration: underline $text-white;
+                  box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
                 }
-}
+              }
             }
           }
         }

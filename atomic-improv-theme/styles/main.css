@@ -192,14 +192,16 @@ header .header-flex nav div.menu-navigation-container ul.menu li a:hover {
 }
 header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type {
   background-color: #cc0033;
-  box-shadow: 0 0 10px #cc0033;
-  border-radius: 8px;
+  box-shadow: 0 0 5px #cc0033;
+  border-radius: 3px;
   margin: 0 1.5rem;
+}
+header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type:hover {
+  box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
 }
 header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type a:hover {
   -webkit-text-decoration: underline #fffcf5;
           text-decoration: underline #fffcf5;
-  box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
 }
 header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   max-height: 25.625rem;
