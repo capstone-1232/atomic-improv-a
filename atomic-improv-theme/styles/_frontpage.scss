@@ -6,23 +6,15 @@
 }
 
 .full-screen-video-container {
+    background-image: url('http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif');
+    background-repeat: no-repeat;
+    background-position: 65%;
     position: relative;
-    height: 100vh;
+    // height: 100vh;
     width: 100vw;
-    overflow: hidden;
     display: flex;
     justify-content: center;
-}
-
-.full-screen-video-container img {
-    margin-top: 2rem;
-    max-width: none;
-    z-index: -1;
-    position: absolute;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-60%, -60%);
+    padding: 2rem 0;
 }
 
 .content-flex {
@@ -38,6 +30,12 @@
     width: 350px;
     text-align: center;
 }
+
+.full-screen-video-content img {
+    width: 150px;
+    height: 150px;
+}
+
 
 .full-screen-video-content h1 {
     text-align: center;
@@ -189,7 +187,7 @@ div#sb_instagram {
     width: 100%;
 }
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 680px) {
     .poster {
         position: relative;
         border-bottom: none;

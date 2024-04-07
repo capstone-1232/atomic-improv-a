@@ -1,24 +1,12 @@
-.flex-title {
+.hero-title {
     position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+    top: 30%;
 }
 
-.flex-title img {
-    max-width: none;
-    z-index: -1;
-    position: absolute;
-    min-height: 100%;
+.hero-bg {
+    position: relative;
+    top: 30%;
 }
-
-.flex-title h1 {
-    padding: 1rem 0;
-}
-
-
 
 // events
 .events {

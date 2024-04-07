@@ -10,11 +10,36 @@ get_header();
 <main id="primary" class="site-main">
   <section class="corporate-events">
     <div class="container">
-      <div class="flex-title">
-        <h1>What We Do</h1>
-        <img
+      <div class="whoweare-hero">
+
+        <!-- <img
           src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/poy-donovan-chris-blue-md.webp"
-          alt="Donovan holding Chris up">
+          alt="Donovan holding Chris up"> -->
+
+        <?php
+        $whatwedo_hero_query = new WP_Query(
+          array(
+            "post_type" => "image",
+            "posts_per_page" => 1,
+            "tag" => "whatwedo_hero"
+          )
+        );
+        if ($whatwedo_hero_query->have_posts()):
+          while ($whatwedo_hero_query->have_posts()):
+            $whatwedo_hero_query->the_post();
+            $whatwedo_hero_url = get_field("image");
+            ?>
+            <img src="<?php echo $whatwedo_hero_url ?>" alt="That Funny Santa himself!" class="hero-bg">
+
+            <h1 class="hero-title">What We Do</h1>
+
+
+            <?php
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
+
       </div>
       <!-- events -->
       <div class="events">
@@ -27,7 +52,7 @@ get_header();
             $whatwedo_query->the_post();
             $whatwedo_url = get_field("image");
             ?>
-            <img src="<?php echo $whatwedo_url ?>">
+            <img src="<?php echo $whatwedo_url ?>" alt="">
           <?php endwhile;
           wp_reset_postdata(); ?>
         <?php endif; ?>
@@ -37,7 +62,13 @@ get_header();
           <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
           <p>You're not just watching the show … you're a part of it!</p>
           <div class="button">
-      <a href="contact-us" class="button-style">Book Now</a>
+            <a href="contact-us" class="button-style">Book Now</a>
+            <div class="vid">
+              <iframe width="682" height="384" src="https://www.youtube.com/embed/90KLfFZoszI" title="April 4, 2024"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div><!-- end of events -->
@@ -85,7 +116,7 @@ get_header();
             larger
             crowd.</p>
           <div class="button">
-        <a href="contact-us" class="button-style">Book Now</a>
+            <a href="contact-us" class="button-style">Book Now</a>
           </div>
         </div> <!-- end of info -->
       </div>
