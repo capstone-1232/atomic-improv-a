@@ -13,31 +13,12 @@
     position: absolute;
     min-height: 100%;
 }
-
-
-
+.vid{
+    margin-top: 2rem;
+}
 // events
 .events {
     margin: 3rem 0 2rem 0;
-}
-
-.button a {
-    margin: 2rem auto;
-    display: block;
-    width: 190px;
-    padding: 0.25rem;
-    font-family: "rift", sans-serif;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 2px;
-    font-size: 1.5rem;
-    color: #ffffff;
-    text-decoration: none;
-    border: 2px solid #AE2012;
-    background-color: #cc0033;
-    box-shadow: 0 0 10px #cc0033;
-    border-radius: 3px;
-
 }
 
 .booking-options {
@@ -45,9 +26,17 @@
 }
 
 @media screen and (min-width: 630px){
-
+    .poy-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+    
+     .poy-info a{
+        justify-content:center;
+     }
 }
 
 @media screen and (min-width: 60rem){
-
+ 
 }

@@ -27,7 +27,10 @@ get_header();
             $whatwedo_hero_query->the_post();
             $whatwedo_hero_url = get_field("image");
             ?>
+            <div class="">
             <img src="<?php echo $whatwedo_hero_url ?>" alt="Donovan holding Chris up">
+            </div>
+            
             <?php
           endwhile;
           wp_reset_postdata();
@@ -40,7 +43,7 @@ get_header();
           <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
           <p>You're not just watching the show … you're a part of it!</p>
           <div class="button">
-            <a href="contact-us" class="button-style">Book Now</a>
+            <a href="contact-us" class="button-style">Book Us Now</a>
           </div>
         </div>
       </div><!-- end of events -->
@@ -50,28 +53,31 @@ get_header();
     <div class="container">
       <h2>Power of Yes</h2>
       <div class="poy-flex">
-        <div class="poy-media">
+       
+          <div>
           <?php
-          $workshop_query = new WP_Query(array("post_type" => "image", "posts_per_page" => 1, "tag" => "power-of-yes"));
-          if ($workshop_query->have_posts()):
-            while ($workshop_query->have_posts()):
-              $workshop_query->the_post();
-              $workshop_url = get_field("image");
-              ?>
-              <img src="<?php echo $workshop_url ?>">
-            <?php
-            endwhile;
-            wp_reset_postdata();
-          endif;
-          ?>
-          <div class="vid">
-            <iframe src="https://www.youtube.com/embed/WLpsNkCDZMA" title="Power of Yes" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div><!-- end of vid -->
-        </div><!-- end of media -->
+        $workshop_query = new WP_Query(
+          array(
+            "post_type" => "image",
+            "posts_per_page" => 1,
+            "tag" => "workshop"
+          )
+        );
+        if ($workshop_query->have_posts()) :
+          while ($workshop_query->have_posts()) :
+            $workshop_query->the_post();
+            $workshop_url = get_field("image");
+        ?>
+            <img src="<?php echo $workshop_url ?>" alt="Donovan and Grant Power of Yes.">
+        <?php
+          endwhile;
+          wp_reset_postdata();
+        endif;
+        ?>
+          </div>
+
         <!-- info -->
-        <div class="poy-info">
+        <div class="poy-info container">
           <p>At <span class="pos">Power of Yes!</span>, we believe in the transformative power of improv. Our workshop
             is
             designed to unlock your
@@ -87,15 +93,22 @@ get_header();
             hands-on session for intimate teams or turn it into an interactive and entertaining keynote address for a
             larger
             crowd.</p>
+
+            <div class="vid">
+            <iframe src="https://www.youtube.com/embed/WLpsNkCDZMA" title="Power of Yes" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div><!-- end of vid -->
           <div class="button">
-            <a href="contact-us" class="button-style">Book Now</a>
+            <a href="contact-us" class="button-style">Book Power Of Yes</a>
           </div>
+          
         </div> <!-- end of info -->
       </div>
     </div>
-    <div>
+    <div class="container">
     <p>Additional Booking Options for Donovan and Chris:</p>
-      <ul>
+      <ul class="booking-options">
         <li>Professional MC's: Corporate, Conference, and Special Events</li>
         <li>Special Package Pricing when booking Professional MC's PLUS Power of Yes! workshop</li>
       </ul>

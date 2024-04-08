@@ -5,10 +5,6 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   font-size: 100%;
   line-height: 1.5rem;
-  /*16 x 1.5 = 24px*/
-  /*visual grid;*/
-  /*typographic scale*/
-  /* 12, 14, 16, 18, 21, 24, 36, 48, 60, 72*/
   margin: 0;
 }
 
@@ -468,32 +464,28 @@ section.community-socials div.socialflex section div.social-content > div div.cf
   min-height: 100%;
 }
 
-.events {
-  margin: 3rem 0 2rem 0;
+.vid {
+  margin-top: 2rem;
 }
 
-.button a {
-  margin: 2rem auto;
-  display: block;
-  width: 190px;
-  padding: 0.25rem;
-  font-family: "rift", sans-serif;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  color: #ffffff;
-  text-decoration: none;
-  border: 2px solid #AE2012;
-  background-color: #cc0033;
-  box-shadow: 0 0 10px #cc0033;
-  border-radius: 3px;
+.events {
+  margin: 3rem 0 2rem 0;
 }
 
 .booking-options {
   padding-bottom: 2rem;
 }
 
+@media screen and (min-width: 630px) {
+  .poy-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .poy-info a {
+    justify-content: center;
+  }
+}
 .flex {
   margin: 0 auto;
   display: flex;
@@ -584,14 +576,56 @@ iframe {
     flex: 1 0 50%;
   }
 }
-input,
-select,
-optgroup,
-textarea {
-  color: #131313 !important;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
-  letter-spacing: 1px;
+footer {
+  background: #131313;
+}
+footer div.footerflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div.footerflex ul.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+footer div.footerflex ul.menu li a {
+  color: #fffcf5;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 0;
+}
+footer div.footerflex ul.menu li a:hover {
+  text-decoration: underline;
+}
+footer div.footerflex div.footerlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+footer div.footerflex div.footerlinks > a {
+  display: block;
+  height: 3rem;
+  padding: 1rem;
+}
+footer div.footerflex div.footerlinks > a:hover svg {
+  background-color: #efcf93;
+}
+footer div.footerflex div.footerlinks > a svg {
+  background-color: #fead39;
+  border-radius: 3rem;
+}
+footer div.site-branding {
+  padding: 0;
+  margin-top: 1.5rem;
+}
+footer div.site-branding a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 footer {
