@@ -140,6 +140,18 @@ nav {
   font-weight: 600;
 }
 
+.hero-section {
+  position: relative;
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding-top: 20px;
+}
+
 header {
   padding: 1.5rem;
 }
@@ -480,16 +492,6 @@ div#sb_instagram {
     /* padding: 1rem; */
   }
 }
-.hero-title {
-  position: relative;
-  top: 30%;
-}
-
-.hero-bg {
-  position: relative;
-  top: 30%;
-}
-
 .events {
   margin: 3rem 0 2rem 0;
 }
@@ -536,26 +538,6 @@ div#sb_instagram {
 .flex img:last-of-type {
   margin-left: 1.5rem;
   max-width: 150px;
-}
-
-.flex-title {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
-
-.flex-title img {
-  max-width: none;
-  z-index: -1;
-  position: absolute;
-  min-height: 100%;
-}
-
-.flex-title h2 {
-  padding: 1rem 0;
 }
 
 .current-history {

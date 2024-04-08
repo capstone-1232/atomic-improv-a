@@ -17,26 +17,6 @@
 
 }
 
-.flex-title {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.flex-title img {
-    max-width: none;
-    z-index: -1;
-    position: absolute;
-    min-height: 100%;
-}
-
-.flex-title h2 {
-    padding: 1rem 0;
-}
-
 
 .current-history {
     display: flex;

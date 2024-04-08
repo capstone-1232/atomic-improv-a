@@ -9,38 +9,32 @@ get_header();
 
 <main id="primary" class="site-main">
   <section class="corporate-events">
-    <div class="container">
-      <div class="whoweare-hero">
-
-        <!-- <img
-          src="http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/poy-donovan-chris-blue-md.webp"
-          alt="Donovan holding Chris up"> -->
-
-        <?php
-        $whatwedo_hero_query = new WP_Query(
-          array(
-            "post_type" => "image",
-            "posts_per_page" => 1,
-            "tag" => "whatwedo_hero"
-          )
-        );
-        if ($whatwedo_hero_query->have_posts()):
-          while ($whatwedo_hero_query->have_posts()):
-            $whatwedo_hero_query->the_post();
-            $whatwedo_hero_url = get_field("image");
-            ?>
-            <img src="<?php echo $whatwedo_hero_url ?>" alt="That Funny Santa himself!" class="hero-bg">
-
+    <!-- hero container -->
+    <div class="hero-banner">
+      <?php
+      $whatwedo_hero_query = new WP_Query(
+        array(
+          "post_type" => "image",
+          "posts_per_page" => 1,
+          "tag" => "whatwedo_hero"
+        )
+      );
+      if ($whatwedo_hero_query->have_posts()):
+        while ($whatwedo_hero_query->have_posts()):
+          $whatwedo_hero_query->the_post();
+          $whatwedo_hero_url = get_field("image");
+          ?>
+          <!-- hero banner -->
+          <div class="hero-section" style="background-image: url('<?php echo $whatwedo_hero_url; ?>');">
             <h1 class="hero-title">What We Do</h1>
-
-
-            <?php
-          endwhile;
-          wp_reset_postdata();
-        endif;
-        ?>
-
-      </div>
+          </div><!-- end of hero banner -->
+          <?php
+        endwhile;
+        wp_reset_postdata();
+      endif;
+      ?>
+    </div><!-- end of hero container -->
+    <div class="container">
       <!-- events -->
       <div class="events">
         <?php
