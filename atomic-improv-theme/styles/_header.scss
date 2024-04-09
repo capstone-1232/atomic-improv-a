@@ -10,11 +10,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding:1.5rem 0;
 
     div.site-branding {
       a {
         display: block;
-        max-height: 96px;
+        img {
+          max-height:96px;
+          max-width:100px !important;
+        }
       }
     }
 
@@ -23,11 +27,10 @@ header {
 
       a.menu-toggle {
         display: block;
-        max-height: 82px;
 
         svg {
           padding: 16px;
-
+          display:block;
         }
 
         &:hover {
