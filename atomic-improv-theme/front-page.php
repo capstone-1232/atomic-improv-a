@@ -79,10 +79,8 @@ get_header();
       <!-- poster -->
       <section>
         <h3>Customized shows</h3>
-        <p>Atomic Improv is Canada's Premier two man Improv troupe that has been
-          creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-        <p>These 3 time World Improv champions and main stage performer at Montreal's just for laughs can help turn
-          your event from humdrum to hilarious!</p>
+        <p>Atomic Improv is Canada's Premier two-man Improv duo that has been creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+        <p>3-time World Improv champions and headliners of Montreal's Just for Laughs can help turn your event from humdrum to hilarious!</p>
         <div class="center-container">
           <a href="what-we-do" class="button-style">Learn More</a>
         </div>
@@ -167,8 +165,6 @@ get_header();
       <div class="center-container">
         <h2>#atomicimprov</h2>
       </div>
-
-      <p class="latestfrom">The Latest from...</p>
       <div class="socialflex">
         <section>
           <div class="social-content">

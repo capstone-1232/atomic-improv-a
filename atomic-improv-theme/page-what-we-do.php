@@ -19,28 +19,30 @@ get_header();
         "tag" => "whatwedo_hero"
       )
     );
-    if ($whatwedo_hero_query->have_posts()):
-      while ($whatwedo_hero_query->have_posts()):
+    if ($whatwedo_hero_query->have_posts()) :
+      while ($whatwedo_hero_query->have_posts()) :
         $whatwedo_hero_query->the_post();
         $whatwedo_hero_url = get_field("image");
-        ?>
+    ?>
         <div class="hero" style="background-image: url('<?php echo $whatwedo_hero_url ?>');">
-          <?php
+      <?php
       endwhile;
       wp_reset_postdata();
     endif;
-    ?>
+      ?>
       <div class="hero-content">
         <h1>What We Do</h1>
       </div>
-    </div>
+        </div>
   </section>
   <section>
     <div class="container">
       <h2>Private Events</h2>
-      <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. </p>
-      <p>Fast, funny and tailored to the crowd, Atomic Improv is always a hit.</p>
-      <p>You're not just watching the show … you're a part of it!</p>
+      <p>Our interactive, custom and hilarious shows are the perfect fit for any audience. Fast, funny and tailored to the crowd, Atomic Improv is always a hit.
+      </p>
+      <p>
+        You're not just watching the show … you're a part of it!
+      </p>
       <div class="center-container">
         <a href="contact-us" class="button-style">Book Now</a>
       </div>
@@ -49,6 +51,7 @@ get_header();
   <section class="power-of-yes" id="power-of-yes">
     <div class="container">
       <h2>Power of Yes</h2>
+
       <?php
       $workshop_query = new WP_Query(
         array(
@@ -69,6 +72,7 @@ get_header();
       endif;
       ?>
      
+
       <!-- info -->
       <p>At <span class="pos">Power of Yes!</span>, we believe in the transformative power of improv. Our workshop
         is designed to unlock your team's full potential. </p>

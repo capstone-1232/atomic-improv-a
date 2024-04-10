@@ -144,12 +144,22 @@ function atomic_improv_widgets_init()
 	);
 }
 add_action('widgets_init', 'atomic_improv_widgets_init');
+function my_google_fonts()
+{
+	wp_enqueue_style(
+		'my-google-fonts',
+		'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap',
+		false
+	);
+}
+add_action('wp_enqueue_scripts', 'wpb_add_google_fonts');
 
 /**
  * Enqueue scripts and styles.
  */
 function atomic_improv_scripts()
 {
+
 
 	wp_enqueue_style('atomic-improv-style', get_stylesheet_directory_uri() . '/styles/main.css', array(), _S_VERSION);
 
