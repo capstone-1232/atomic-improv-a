@@ -14,10 +14,8 @@ get_header();
       <h2>Donovan Workun</h2>
       <p>Phone: (780) 995-3663</p>
       <p>Email: donovan@atomicimprov.ca</p>
-    </div>
   </section>
   <section class="get-in-touch">
-    <div class="container">
     <h2>Get in Touch</h2>
     <?php echo do_shortcode('[forminator_form id="69"]'); ?>
     </div> <!-- .container -->
