@@ -13,8 +13,8 @@ get_header();
       <h1>Contact Us</h1>
       <section class="contact-info">
         <h2>Donovan Workun</h2>
-        <p>Phone: (780) 995-3663</p>
-        <p>Email: donovan@atomicimprov.ca</p>
+        <p><a href="tel:780-995-3663">Phone: (780)995-3663</a></p>
+        <p><a href="mailto:donovan@atomicimprov.ca">Email: donovan@atomicimprov.ca</a></p>
       </section>
       <section class="get-in-touch">
         <h2>Get in Touch</h2>
