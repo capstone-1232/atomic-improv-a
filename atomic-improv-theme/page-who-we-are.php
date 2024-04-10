@@ -164,9 +164,9 @@ get_header();
       ?>
       <p>For fourteen years, from 2003 to 2017, Donovan graced the airwaves with his wit and humor on the CBC Radio One series, "The Irrelevant Show,” as a performer and writer, leaving an indelible mark on listeners across the nation.
       </p>
-      He has also shared the screen with Tim Curry, Demi Moore, Patrick Swayze, Carmen Electra, Tom Green, Donald and Keifer Sutherland, appeared on Amazing Race Canada, as well as several commercials for the Alberta Motor Association and Volvo Canada.
+      
       <p>
-
+      He has also shared the screen with Tim Curry, Demi Moore, Patrick Swayze, Carmen Electra, Tom Green, Donald and Keifer Sutherland, appeared on Amazing Race Canada, as well as several commercials for the Alberta Motor Association and Volvo Canada.
       </p>
     </div> <!-- end of container -->
   </section><!-- end of donovan section -->
