@@ -5,6 +5,9 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   font-size: 100%;
   line-height: 1.5rem;
+  /*visual grid;*/
+  /*typographic scale*/
+  /* 12, 14, 16, 18, 21, 24, 36, 48, 60, 72*/
   margin: 0;
 }
 
@@ -15,10 +18,13 @@ body {
 }
 
 img,
-iframe,
-div.social-content > div,
-div.social-content > div > iframe {
+iframe {
   max-width: 100% !important;
+  display: block;
+}
+
+div.center-container {
+  text-align: center;
 }
 
 .button-style {
@@ -26,13 +32,15 @@ div.social-content > div > iframe {
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 1.5rem;
+  line-height: 1.5rem;
   color: #ffffff;
   text-decoration: none;
-  border: 2px solid #AE2012;
   background-color: #cc0033;
   box-shadow: 0 0 5px #cc0033;
   border-radius: 3px;
-  padding: 0.25rem 1rem;
+  padding: 0.75rem;
+  margin: 0 auto;
+  display: inline-block;
 }
 .button-style:hover {
   box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
@@ -40,17 +48,13 @@ div.social-content > div > iframe {
 
 @font-face {
   font-family: "Rift";
-  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
+  src: url(https://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
   font-weight: normal;
 }
 @font-face {
   font-family: "Rift";
-  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
+  src: url(https://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
   font-weight: bold;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/montserrat.woff);
 }
 body,
 button {
@@ -90,13 +94,15 @@ h2 {
   line-height: clamp(3rem, 1.4516rem + 7.7419vw, 4.5rem);
 }
 h2.frontpage-h2 {
-  margin: 0;
-}
-
-section.socialmedia h2 {
+  margin-top: -1.5rem;
+  background-color: #131313;
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  padding: 0 0.75rem;
+  border-radius: 3px;
   border: 2px solid #fffcf5;
   box-shadow: 0 0 10px #fffcf5;
-  border-radius: 3px;
 }
 
 h3 {
@@ -110,7 +116,12 @@ p {
   font-size: clamp(1.125rem, 0.996rem + 0.6452vw, 1.25rem);
   line-height: 1.5rem;
   color: #fffcf5;
-  margin: 0 0 1.5rem;
+  margin: 1.5rem 0;
+}
+p.socialhandle {
+  font-family: "Rift", sans-serif;
+  text-align: center;
+  font-weight: normal;
 }
 
 section.socialmedia p.latestfrom {
@@ -133,27 +144,31 @@ nav {
 }
 
 .pos {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 header .header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 0;
 }
 header .header-flex div.site-branding a {
   display: block;
+}
+header .header-flex div.site-branding a img {
   max-height: 96px;
+  max-width: 100px !important;
 }
 header .header-flex nav {
   z-index: 4;
 }
 header .header-flex nav a.menu-toggle {
   display: block;
-  max-height: 82px;
 }
 header .header-flex nav a.menu-toggle svg {
   padding: 16px;
+  display: block;
 }
 header .header-flex nav a.menu-toggle:hover {
   cursor: pointer;
@@ -188,16 +203,14 @@ header .header-flex nav div.menu-navigation-container ul.menu li a:hover {
 }
 header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type {
   background-color: #cc0033;
-  box-shadow: 0 0 5px #cc0033;
+  box-shadow: 0 0 10px #cc0033;
   border-radius: 3px;
   margin: 0 1.5rem;
-}
-header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type:hover {
-  box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
 }
 header .header-flex nav div.menu-navigation-container ul.menu li:last-of-type a:hover {
   -webkit-text-decoration: underline #fffcf5;
           text-decoration: underline #fffcf5;
+  box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
 }
 header .header-flex nav.toggled div.menu-navigation-container ul.menu {
   max-height: 25.625rem;
@@ -477,13 +490,10 @@ section.community-socials div.socialflex section div.social-content > div div.cf
 }
 
 @media screen and (min-width: 630px) {
-  .poy-info {
+  .poy-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .poy-info a {
-    justify-content: center;
   }
 }
 .flex {
@@ -552,10 +562,6 @@ section.community-socials div.socialflex section div.social-content > div div.cf
   height: 100%;
 }
 
-iframe {
-  height: unset;
-}
-
 .card {
   margin: 3rem 0;
 }
@@ -576,56 +582,14 @@ iframe {
     flex: 1 0 50%;
   }
 }
-footer {
-  background: #131313;
-}
-footer div.footerflex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-footer div.footerflex ul.menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-footer div.footerflex ul.menu li a {
-  color: #fffcf5;
-  text-decoration: none;
-  display: block;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding: 0.75rem 0;
-}
-footer div.footerflex ul.menu li a:hover {
-  text-decoration: underline;
-}
-footer div.footerflex div.footerlinks {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.75rem;
-}
-footer div.footerflex div.footerlinks > a {
-  display: block;
-  height: 3rem;
-  padding: 1rem;
-}
-footer div.footerflex div.footerlinks > a:hover svg {
-  background-color: #efcf93;
-}
-footer div.footerflex div.footerlinks > a svg {
-  background-color: #fead39;
-  border-radius: 3rem;
-}
-footer div.site-branding {
-  padding: 0;
-  margin-top: 1.5rem;
-}
-footer div.site-branding a {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+input,
+select,
+optgroup,
+textarea {
+  color: #131313 !important;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 footer {
@@ -647,7 +611,7 @@ footer div.footerflex ul.menu li a {
   display: block;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding: 0.75rem 0;
+  padding: 0.5rem;
 }
 footer div.footerflex ul.menu li a:hover {
   text-decoration: underline;
@@ -671,11 +635,14 @@ footer div.footerflex div.footerlinks > a svg {
   border-radius: 3rem;
 }
 footer div.site-branding {
-  padding: 0;
-  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+  text-align: center;
 }
 footer div.site-branding a {
   display: block;
-  margin: 0 auto;
-  text-align: center;
+}
+footer div.site-branding a img {
+  display: block;
+  height: 96px;
+  width: 100px;
 }/*# sourceMappingURL=main.css.map */

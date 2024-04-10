@@ -2,19 +2,14 @@
 
 @font-face {
   font-family: "Rift";
-  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
+  src: url(https://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Rift";
-  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
+  src: url(https://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
   font-weight: bold;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url(http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/montserrat.woff);
 }
 
 body,
@@ -59,16 +54,17 @@ h1 {
 h2 {
   font-size: clamp(2rem, 0.9677rem + 5.1613vw, 3rem);
   line-height: clamp(3rem, 1.4516rem + 7.7419vw, 4.5rem);
-
   &.frontpage-h2 {
-    margin: 0;
+    margin-top: -1.5rem;
+    background-color:$bg;
+    z-index:1;
+    position:relative;
+    display:inline-block;
+    padding: 0 0.75rem;
+    border-radius:3px;
+    border: 2px solid $text-white;
+    box-shadow: 0 0 10px $text-white;
   }
-}
-
-section.socialmedia h2 {
-  border: 2px solid $text-white;
-  box-shadow: 0 0 10px $text-white;
-  border-radius: 3px;
 }
 
 h3 {
@@ -82,7 +78,12 @@ p {
   font-size: clamp(1.125rem, 0.996rem + 0.6452vw, 1.25rem);
   line-height: 1.5rem;
   color: $text-white;
-  margin: 0 0 1.5rem;
+  margin: 1.5rem 0;
+  &.socialhandle {
+    font-family: "Rift", sans-serif;
+    text-align:center;
+    font-weight:normal;
+  }
 }
 
 section.socialmedia p.latestfrom {
@@ -92,7 +93,6 @@ section.socialmedia p.latestfrom {
 
 
 nav {
-
   font-size: 2rem;
   font-family: "Rift", sans-serif;
   font-weight: bold;
@@ -107,5 +107,5 @@ nav {
 }
 
 .pos {
-  font-weight: 600;
+  font-weight: bold;
 }

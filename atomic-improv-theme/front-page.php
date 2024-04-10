@@ -27,7 +27,7 @@ get_header();
                                   $frontpage_hero_url = get_field("image");
                               ?>
         <!-- Displaying queried image in img tag. -->
-        <div class="full-screen-video-container" style="background-image: url('<?php echo $frontpage_hero_url; ?>');"> <!-- bg-gif -->
+        <div class="full-screen-video-container" style="background-image: url('<?php echo $frontpage_hero_url; ?>' );" alt="A 10 second gif showing clips from an Atomic Improv show."> <!-- bg-gif -->
       <?php
                                 // Ending the loop
                                 endwhile;
@@ -107,7 +107,7 @@ get_header();
               $powerofyes_query->the_post();
               $powerofyes_url = get_field("image");
           ?>
-              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>" alt="'Power of Yes' logo on  "></a>
+              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>" alt="'Power of Yes' logo on an image of Chris whipsering to Donovan."></a>
           <?php
             endwhile;
             wp_reset_postdata();

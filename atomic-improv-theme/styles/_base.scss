@@ -10,6 +10,13 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23313131' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   font-size: 100%;
   line-height: 1.5rem;
+
+   /*visual grid;*/
+  // background-image: linear-gradient(#0ff 1px, transparent 1px);
+  // background-size: auto 24px;
+  /*typographic scale*/
+  /* 12, 14, 16, 18, 21, 24, 36, 48, 60, 72*/
+  // background-color: rgb(205, 205, 205);
   margin:0;
 }
 
@@ -21,10 +28,13 @@ body {
 
 
 img,
-iframe,
-div.social-content > div,
-div.social-content > div > iframe {
+iframe {
   max-width:100% !important;
+  display:block;
+}
+
+div.center-container {
+  text-align:center;
 }
 
 .button-style{
@@ -32,13 +42,15 @@ div.social-content > div > iframe {
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 1.5rem;
+  line-height:1.5rem;
   color: #ffffff;
   text-decoration: none;
-  border: 2px solid #AE2012;
   background-color: #cc0033;
   box-shadow: 0 0 5px #cc0033;
   border-radius: 3px;
-  padding: 0.25rem 1rem;
+  padding: 0.75rem;
+  margin: 0 auto;
+  display:inline-block;
 
   &:hover{
     box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
