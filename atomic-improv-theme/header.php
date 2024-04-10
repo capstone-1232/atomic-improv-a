@@ -19,7 +19,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
 	<!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
-	<!-- <link rel="stylesheet" href="https://use.typekit.net/cpc0wpe.css"> -->
+	<link rel="stylesheet" href="https://use.typekit.net/cpc0wpe.css">
 
 
 	<?php wp_head(); ?>

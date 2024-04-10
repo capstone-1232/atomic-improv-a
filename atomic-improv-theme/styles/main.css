@@ -47,16 +47,6 @@ div.center-container {
   box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
 }
 
-@font-face {
-  font-family: "Rift";
-  src: url(https://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-regular.woff);
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Rift";
-  src: url(https://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/fonts/rift-bold.woff);
-  font-weight: bold;
-}
 body,
 button {
   font-family: "Montserrat", sans-serif;
