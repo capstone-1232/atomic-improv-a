@@ -24,15 +24,18 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto; 
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 
 img,
-iframe,
-div.social-content > div,
-div.social-content > div > iframe {
+iframe {
   max-width:100% !important;
+  display:block;
+}
+
+div.center-container {
+  text-align:center;
 }
 
 .button-style{
@@ -40,13 +43,15 @@ div.social-content > div > iframe {
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 1.5rem;
+  line-height:1.5rem;
   color: #ffffff;
   text-decoration: none;
-  border: 2px solid #AE2012;
   background-color: #cc0033;
   box-shadow: 0 0 5px #cc0033;
   border-radius: 3px;
-  padding: 0.25rem 1rem;
+  padding: 0.75rem;
+  margin: 0 auto;
+  display:inline-block;
 
   &:hover{
     box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;

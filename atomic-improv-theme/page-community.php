@@ -51,7 +51,7 @@ get_header();
 
 
   <!-- social media -->
-  <section class="socialmedia">
+  <section class="community-socials">
     <div class="container">
       <h2>#atomicimprov</h2>
       <div class="socialflex">

@@ -17,7 +17,8 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
+	<!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
 	<link rel="stylesheet" href="https://use.typekit.net/cpc0wpe.css">
 
 
@@ -28,7 +29,7 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary">
-			<?php esc_html_e('Skip to content', 'atomic-improv'); ?>
+			<?php esc_html_e('Skip to con tent', 'atomic-improv'); ?>
 		</a>
 
 		<header id="masthead" class="site-header">
@@ -41,7 +42,7 @@
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation">
-						<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" tabindex="0">
 							<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px">
 								<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
 									<g transform="scale(5.12,5.12)">

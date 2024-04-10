@@ -20,7 +20,7 @@ footer {
           display: block;
           font-size: 1rem;
           line-height: 1.5rem;
-          padding: 0.75rem 0;
+          padding-bottom:0.5rem;
 
           &:hover {
             text-decoration: underline;
@@ -51,13 +51,15 @@ footer {
   }
 
   div.site-branding {
-    padding: 0;
-    margin-top:1.5rem;
-
+    padding: 1.5rem 0;
+    text-align:center;
     a {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
+      display:inline-block;
+      img {
+        display:block;
+        height:96px;
+        width:100px;
+      }
     }
   }
 }
