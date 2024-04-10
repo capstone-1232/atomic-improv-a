@@ -51,7 +51,28 @@ get_header();
   <section class="power-of-yes" id="power-of-yes">
     <div class="container">
       <h2>Power of Yes</h2>
-      <iframe src="https://www.youtube.com/embed/WLpsNkCDZMA" title="Power of Yes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <?php
+      $workshop_query = new WP_Query(
+        array(
+          "post_type" => "image",
+          "posts_per_page" => 1,
+          "tag" => "workshop"
+        )
+      );
+      if ($workshop_query->have_posts()):
+        while ($workshop_query->have_posts()):
+          $workshop_query->the_post();
+          $workshop_url = get_field("image");
+          ?>
+          <img src="<?php echo $workshop_url ?>">
+          <?php
+        endwhile;
+        wp_reset_postdata();
+      endif;
+      ?>
+     
+
       <!-- info -->
       <p>At <span class="pos">Power of Yes!</span>, we believe in the transformative power of improv. Our workshop
         is designed to unlock your team's full potential. </p>
@@ -66,6 +87,10 @@ get_header();
         hands-on session for intimate teams or turn it into an interactive and entertaining keynote address for a
         larger
         crowd.</p>
+
+        <iframe src="https://www.youtube.com/embed/WLpsNkCDZMA" title="Power of Yes" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div class="center-container">
         <a href="contact-us" class="button-style">Book Now</a>
       </div>
