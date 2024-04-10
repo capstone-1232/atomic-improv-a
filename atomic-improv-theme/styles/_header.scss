@@ -10,14 +10,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:1.5rem 0;
+    padding: 1.5rem 0;
 
     div.site-branding {
       a {
         display: block;
         img {
-          max-height:96px;
-          max-width:100px !important;
+          max-height: 96px;
+          max-width: 100px !important;
         }
       }
     }
@@ -30,7 +30,7 @@ header {
 
         svg {
           padding: 16px;
-          display:block;
+          display: block;
         }
 
         &:hover {
@@ -75,13 +75,13 @@ header {
               box-shadow: 0 0 10px $red;
               border-radius: 3px;
               margin: 0 1.5rem;
-              a{
-                &:hover{
+                &:hover {
                   text-decoration: underline $text-white;
-                  box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
-                  box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
+                  box-shadow:
+                    0 0 10px $red,
+                    0 0 20px $red,
+                    0 0 20px $text-white inset;
                 }
-              }
             }
           }
         }
@@ -99,7 +99,7 @@ header {
   }
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 52rem) {
   header {
     border-bottom: 2px solid $red;
 

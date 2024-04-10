@@ -167,8 +167,6 @@ get_header();
       <div class="center-container">
         <h2>#atomicimprov</h2>
       </div>
-
-      <p class="latestfrom">The Latest from...</p>
       <div class="socialflex">
         <section>
           <div class="social-content">

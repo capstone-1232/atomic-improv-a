@@ -20,7 +20,7 @@ get_header();
 <main id="primary" class="site-main">
   <section>
     <div class="container">
-      <h1>In the community</h1>
+      <h1 class="margin-top-h1">In the community</h1>
       <div class="card-container">
         <?php
         $community_card_query = new WP_Query(
