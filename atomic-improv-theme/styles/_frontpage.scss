@@ -115,6 +115,9 @@
 section.socialmedia,
 section.community-socials {
   div.social-media-title-container {
+section.socialmedia,
+section.community-socials {
+  div.social-media-title-container {
     margin: 0 auto;
     max-width: 350px;
 
@@ -126,6 +129,8 @@ section.community-socials {
   div.socialflex {
     section {
       div.social-content {
+        margin: 0 auto 1.5rem;
+        width:80%;
         margin: 0 auto 1.5rem;
         width:80%;
         & > div {
@@ -219,6 +224,12 @@ section.community-socials {
       }
       
     }
+    section {
+      div.social-content {
+        width:unset !important;
+      }
+      
+    }
   }
 }
 
@@ -230,6 +241,7 @@ section.community-socials {
     /* padding: 1rem; */
     section {
       width: 0;
+      flex: 1;
       flex: 1;
     }
   }

@@ -1,0 +1,20 @@
+.santa {
+    // background-color: blue;
+    // testing if this links with the page
+}
+
+
+@media screen and (min-width: 680px) {
+    .santa-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+
+    }
+
+
+    // .santa-flex img {
+    //     width: 200px;
+    //     height: auto;
+    // }
+}

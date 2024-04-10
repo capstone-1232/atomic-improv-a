@@ -64,8 +64,7 @@
 								</defs>
 								<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
 									stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
-									stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-									font-size="none" text-anchor="none" style="mix-blend-mode: normal"
+									stroke-dasharray="" stroke-dashoffset="0"  style="mix-blend-mode: normal"
 									filter="url(#glow)">
 									<g transform="scale(5.12,5.12)">
 										<path
@@ -90,7 +89,7 @@
 
 				</div>
 			</div>
-		</header><!-- #masthead -->
+		</header>
 
 
 
@@ -99,7 +98,3 @@
 
 
 
-
-		<!-- Validation Check, Please Do Not Remove -->
-		<!-- -------------------------------------- -->
-		<!-- HTML validated 04/05/24 -->

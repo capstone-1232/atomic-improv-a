@@ -13,9 +13,9 @@
     position: absolute;
     min-height: 100%;
 }
-
-
-
+.vid{
+    margin-top: 2rem;
+}
 // events
 .events {
     margin: 3rem 0 2rem 0;
@@ -42,4 +42,17 @@
 
 .booking-options {
     padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 630px){
+    .poy-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+  
+}
+
+@media screen and (min-width: 60rem){
+ 
 }

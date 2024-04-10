@@ -46,7 +46,7 @@ get_header();
           <a href="contact-us" class="button-style">Book Us</a>
         </div>
       </div>
-    </div>
+        </div>
   </section><!-- end of bg-video -->
 
 
@@ -175,7 +175,7 @@ get_header();
             <h3>Instagram</h3>
             <?php
             echo do_shortcode("[instagram-feed feed=1]")
-              ?>
+            ?>
           </div>
 
         </section>
@@ -193,7 +193,7 @@ get_header();
             <h3>Youtube</h3>
             <?php
             echo do_shortcode("[youtube-feed feed=3]")
-              ?>
+            ?>
           </div>
 
         </section>
@@ -215,7 +215,4 @@ get_footer();
 
 
 
-/* Validation Check, Please Do Not Remove */
-/*-----------------------------------------
-HTML validated 04/05/24
------------------------------------------*/
+

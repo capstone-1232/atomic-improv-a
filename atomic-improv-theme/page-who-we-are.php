@@ -121,7 +121,7 @@ get_header();
 
     </div>
 
-  </section>
+  </section> <!-- eo section -->
 
   <!-- donovan section -->
   <section class="donovan">
@@ -225,10 +225,7 @@ get_header();
     <div class="container">
       <h2>See us in action!</h2>
       <div class="vid">
-        <iframe src="https://www.youtube.com/embed/Vkwthc6cyBY?si=CcRySMFZteAcGHAF" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Vkwthc6cyBY?si=CcRySMFZteAcGHAF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
 
