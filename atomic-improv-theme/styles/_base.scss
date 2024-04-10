@@ -1,4 +1,4 @@
-@use "variables";
+@use "variables" as *;
 
 
 // This is where the over all styles that will be applied to every page.
@@ -27,10 +27,18 @@ body {
 }
 
 
+.skinny-container {
+  max-width: 630px;
+  margin: 0 auto; 
+  padding: 0 1.5rem;
+}
+
 img,
 iframe {
   max-width:100% !important;
   display:block;
+  height:auto;
+  margin: 0 auto;
 }
 
 div.center-container {
@@ -46,8 +54,8 @@ div.center-container {
   line-height:1.5rem;
   color: #ffffff;
   text-decoration: none;
-  background-color: #cc0033;
-  box-shadow: 0 0 5px #cc0033;
+  background-color: $red;
+  box-shadow: 0 0 5px $red;
   border-radius: 3px;
   padding: 0.75rem;
   margin: 0 auto;
@@ -56,4 +64,14 @@ div.center-container {
   &:hover{
     box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
   }
+}
+
+input,
+select,
+optgroup,
+textarea {
+  color: $bg !important;
+  font-family: "Montserrat", sans-serif;
+  line-height:1.5;
+  letter-spacing:1px;
 }

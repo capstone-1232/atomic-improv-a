@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as *;
 
 section {
   margin-bottom:3rem;
@@ -78,7 +78,12 @@ div.flex {
   }
 }
 
-@media screen and (min-width: 60rem) {
+.card {
+  margin:0 auto 3rem;
+  max-width:30rem;
+}
+
+@media screen and (min-width: 52rem) {
   .socialflex {
     display: flex;
     gap: 1.5rem;
@@ -88,5 +93,17 @@ div.flex {
       width: 0;
       flex: 1;
     }
+  }
+
+  .content-flex{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items:center;
+  }
+
+  .flex-item{
+    max-width:calc(50% - 0.75rem);
+    flex: 1 0 50%;
   }
 }
