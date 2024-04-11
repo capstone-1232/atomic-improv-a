@@ -47,6 +47,10 @@ iframe {
   margin: 0 auto;
 }
 
+img {
+  height:auto;
+}
+
 iframe {
   height:250px;
 }
@@ -85,7 +89,7 @@ div.center-container {
   }
 
   iframe {
-    width:600px;
+    max-width:600px;
     height:400px;
   }
 
