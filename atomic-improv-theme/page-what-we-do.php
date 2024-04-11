@@ -10,7 +10,7 @@ get_header();
 
 
 <main id="primary" class="site-main">
-  <section class="corporate-events">
+  <section class="top">
     <?php
     $whatwedo_hero_query = new WP_Query(
       array(

@@ -1,17 +1,20 @@
 @use "variables" as *;
 
 section {
-  margin-bottom:3rem;
+  margin-bottom: 3rem;
 }
 
 div.hero {
   padding: 1.5rem;
   background: local center / cover;
+
   div.hero-content {
-    text-align:center;
+    text-align: center;
+
     h1 {
-      margin-bottom:12rem;
+      margin-bottom: 12rem;
     }
+
     p {
       color: $orange;
       text-shadow: 0 0 10px #c97d12;
@@ -20,10 +23,11 @@ div.hero {
 }
 
 a.img-link {
-  display:block;
-  border-bottom:2px solid $text-white;
-  border-top:2px solid $text-white;
-  box-shadow: 0 0px 5px #ffffff;
+  img {
+    border: 2px solid $text-white;
+    box-shadow: 0 0px 5px #ffffff;
+    width: calc(100% - 4px);
+  }
 }
 
 
@@ -39,21 +43,24 @@ section.community-socials {
     section {
       div.social-content {
         margin: 0 auto 1.5rem;
-        width:80%;
-        & > div {
+        max-width: 400px;
+        width: 80%;
+
+        &>div {
           background: $text-white;
           border-radius: 1rem;
           padding: 0.75rem !important;
-          height:600px;
-          overflow:auto;
+          height: 600px;
+          overflow: auto;
 
           a.sbi_photo {
-            margin-bottom:0.75rem;
+            margin-bottom: 0.75rem;
           }
 
           h3 {
             color: $bg-pattern;
           }
+
           div.cff-visual-header {
             display: none;
           }
@@ -67,43 +74,73 @@ iframe {
   margin: 0 auto 1.5rem;
 }
 
-div.flex {
-  display:flex;
-  gap:1.5rem;
-  align-items:center;
-  margin-bottom:1.5rem;
+div.icon-flex {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
   * {
-    width:0;
-    flex:1;
+    width: 0;
+    flex: 1;
   }
 }
 
-.card {
-  margin:0 auto 3rem;
-  max-width:30rem;
-}
-
 @media screen and (min-width: 52rem) {
-  .socialflex {
+
+  section.top {
+    background:$bg;
+    div.hero {
+      max-width:960px;
+      margin: 0 auto;
+      h1 {
+        margin-bottom:18rem;
+      }
+    }
+  }
+
+  section.what-we-do,
+  section.about-atomic-improv {
+    border-top:2px solid $text-white;
+  }
+
+  section.what-we-do {
+    margin-top:6rem;
+  }
+
+  a.img-link {
+    display: none;
+  }
+
+  .content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    align-items: center;
+  }
+
+  .flex-item {
+    max-width: calc(50% - 0.75rem);
+    flex: 1 0 50%;
+  }
+
+  div.icon-flex {
+    display:block;
+    margin-bottom:0;
+    * {
+      width:auto;
+    }
+  }
+
+  div.socialflex {
     display: flex;
     gap: 1.5rem;
     width: 100%;
+
     /* padding: 1rem; */
     section {
       width: 0;
       flex: 1;
     }
-  }
-
-  .content-flex{
-    display:flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    align-items:center;
-  }
-
-  .flex-item{
-    max-width:calc(50% - 0.75rem);
-    flex: 1 0 50%;
   }
 }

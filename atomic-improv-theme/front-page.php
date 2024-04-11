@@ -7,7 +7,7 @@
 get_header();
 ?>
 <main id="primary" class="site-main">
-  <section class="frontpage-top">
+  <section class="top">
     <!-- background video -->
     <?php
     // Querying the hero image gif using a post.
@@ -77,45 +77,48 @@ get_header();
     </div>
     <div class="container">
       <!-- poster -->
-      <section>
-        <h3>Customized shows</h3>
-        <p>Atomic Improv is Canada's Premier two-man Improv duo that has been creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-        <p>3-time World Improv champions and headliners of Montreal's Just for Laughs can help turn your event from humdrum to hilarious!</p>
-        <div class="center-container">
-          <a href="what-we-do" class="button-style">Learn More</a>
-        </div>
-      </section>
-      <!-- Power Of Yes -->
-      <section>
-        <!-- Power of Yes poster-->
-        <h3>Corporate Workshops</h3>
-        <?php
-        $powerofyes_query = new WP_Query(
-          array(
-            "post_type" => "image",
-            "posts_per_page" => 1,
-            "tag" => "powerofyes"
-          )
-        );
-        if ($powerofyes_query->have_posts()):
-          while ($powerofyes_query->have_posts()):
-            $powerofyes_query->the_post();
-            $powerofyes_url = get_field("image");
-            ?>
-            <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>" style="margin-bottom:1.5rem;"
-                alt="Poster of 'Power of Yes' workshop with Atomic Improv and Graham Neil"></a>
-            <?php
-          endwhile;
-          wp_reset_postdata();
-        endif;
-        ?>
-        <p>Unlock your teams full potential with the <span class="pos">Power of Yes!</span> our customizable
-          corporate workshop that can help teams
-          boost their creativity and communication skills.</p>
-        <div class="center-container">
-          <a href="what-we-do" class="button-style">Learn More</a>
-        </div>
-      </section>
+      <div class="content-flex">
+        <section class="flex-item">
+          <h3>Customized shows</h3>
+          <p>Atomic Improv is Canada's Premier two-man Improv duo that has been creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+          <p>3-time World Improv champions and headliners of Montreal's Just for Laughs can help turn your event from humdrum to hilarious!</p>
+          <div class="center-container">
+            <a href="what-we-do" class="button-style">Learn More</a>
+          </div>
+        </section>
+        <!-- Power Of Yes -->
+        <section class="flex-item">
+          <!-- Power of Yes poster-->
+          <h3>Corporate Workshops</h3>
+          <?php
+          $powerofyes_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "powerofyes"
+            )
+          );
+          if ($powerofyes_query->have_posts()):
+            while ($powerofyes_query->have_posts()):
+              $powerofyes_query->the_post();
+              $powerofyes_url = get_field("image");
+              ?>
+              <a href="what-we-do"><img src="<?php echo $powerofyes_url ?>" style="margin-bottom:1.5rem;"
+                  alt="Poster of 'Power of Yes' workshop with Atomic Improv and Graham Neil"></a>
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
+          <p>Unlock your teams full potential with the <span class="pos">Power of Yes!</span> our customizable
+            corporate workshop that can help teams
+            boost their creativity and communication skills.</p>
+          <div class="center-container">
+            <a href="what-we-do" class="button-style">Learn More</a>
+          </div>
+        </section>
+
+      </div>
 
 
     </div> <!-- end of container -->
@@ -146,7 +149,7 @@ get_header();
     <div class="center-container">
       <h2 class="frontpage-h2">Who We Are</h2>
     </div>
-    <div class="container">
+    <div class="skinny-container">
       <!-- About poster -->
       <p>Atomic Improv is Canada's premier two man improv troupe that has been
         creating comedy on the spot based entirely on audience suggestion since 1990.</p>
