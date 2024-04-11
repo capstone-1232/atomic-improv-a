@@ -44,7 +44,7 @@
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation">
-						<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" tabindex="0">
+						<a class="menu-toggle" role="button" aria-controls="primary-menu" aria-expanded="false" tabindex="0">
 							<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px">
 								<g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
 									<g transform="scale(5.12,5.12)">

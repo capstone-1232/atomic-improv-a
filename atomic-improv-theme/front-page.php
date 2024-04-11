@@ -66,7 +66,7 @@ get_header();
         $frontpage_whatwedo_url = get_field("image");
         ?>
         <a href="what-we-do" class="img-link"><img src="<?php echo $frontpage_whatwedo_url ?>"
-            alt="Image of Atomic Improv, Donovan Workun and Chris Borger being silly."></a>
+            alt="Image of Atomic Improv, Donovan Workun and Chris Borger."></a>
         <?php
       endwhile;
       wp_reset_postdata();
@@ -162,7 +162,7 @@ get_header();
         $frontpage_whoweare_url = get_field("image");
         ?>
         <a class="img-link" href="who-we-are"><img src="<?php echo $frontpage_whoweare_url ?>"
-            alt="Image of Donovan Workun and Chris Borger being silly."></a>
+            alt="Image of Donovan Workun and Chris Borger."></a>
         <?php
       endwhile;
       wp_reset_postdata();
@@ -188,7 +188,7 @@ get_header();
               $whoweare_section_url = get_field("image");
               ?>
               <a href="who-we-are"><img src="<?php echo $whoweare_section_url ?>"
-                  alt="Image of Donovan Workun and Chris Borger being silly."></a>
+                  alt="Image of Donovan Workun and Chris Borger."></a>
               <?php
             endwhile;
             wp_reset_postdata();

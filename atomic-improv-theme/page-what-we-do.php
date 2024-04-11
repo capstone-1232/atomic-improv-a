@@ -52,7 +52,7 @@ get_header();
             $events_query->the_post();
             $events_url = get_field("image");
             ?>
-            <div class="flex-item"><img src="<?php echo $events_url ?>"></div>
+            <div class="flex-item"><img src="<?php echo $events_url ?>" alt="Donovan and Chris sitting in front of a brick wall with a rubber chicken."></div>
 
             <?php
           endwhile;
@@ -94,7 +94,7 @@ get_header();
             $workshop_url = get_field("image");
             ?>
             <div class="flex-item item-2">
-              <img src="<?php echo $workshop_url ?>">
+              <img src="<?php echo $workshop_url ?>" alt="Donovan peeking over Graham Neil's shoulder with the Power of Yes Logo.">
 
               <div class="vid">
                 <iframe src="https://www.youtube.com/embed/WLpsNkCDZMA" title="Power of Yes" frameborder="0"

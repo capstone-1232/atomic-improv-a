@@ -51,7 +51,7 @@ get_header();
               $thatfunnysanta_corporate_query->the_post();
               $thatfunnysanta_corporate_url = get_field("image");
               ?>
-              <img src="<?php echo $thatfunnysanta_corporate_url ?>" alt="Santa sittng in a throne">
+              <img src="<?php echo $thatfunnysanta_corporate_url ?>" alt="Santa sitting in a throne">
               <?php
             endwhile;
             wp_reset_postdata();
@@ -110,7 +110,7 @@ get_header();
             $thatfunnysanta_community_query->the_post();
             $thatfunnysanta_community_url = get_field("image");
             ?>
-            <img src="<?php echo $thatfunnysanta_community_url ?>" alt="Santa in Banff">
+            <img src="<?php echo $thatfunnysanta_community_url ?>" alt="An up close shot of Santa and Mrs. Claus.">
             <?php
           endwhile;
           wp_reset_postdata();

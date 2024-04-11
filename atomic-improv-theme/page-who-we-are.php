@@ -64,7 +64,7 @@ get_header();
                 $justforlaughs_query->the_post();
                 $justforlaughs_url = get_field("image");
                 ?>
-                <img src="<?php echo $justforlaughs_url ?>">
+                <img src="<?php echo $justforlaughs_url ?>" alt="Just for Laughs logo.">
                 <?php
               endwhile;
               wp_reset_postdata();
@@ -84,7 +84,7 @@ get_header();
                 $canadiancomedyawards_query->the_post();
                 $canadiancomedyawards_url = get_field("image");
                 ?>
-                <img src="<?php echo $canadiancomedyawards_url ?>">
+                <img src="<?php echo $canadiancomedyawards_url ?>" alt="Canadian Comedy Awards logo.">
                 <?php
               endwhile;
               wp_reset_postdata();
@@ -156,7 +156,7 @@ get_header();
               $donovanheadshot_query->the_post();
               $donovanheadshot_url = get_field("image");
               ?>
-              <img src="<?php echo $donovanheadshot_url ?>">
+              <img src="<?php echo $donovanheadshot_url ?>" alt="Portrait shot of Donovan in a dress shirt smiling.">
               <?php
             endwhile;
             wp_reset_postdata();
@@ -190,7 +190,7 @@ get_header();
               $irrelevantshow_query->the_post();
               $irrelevantshow_url = get_field("image");
               ?>
-              <img src="<?php echo $irrelevantshow_url ?>">
+              <img src="<?php echo $irrelevantshow_url ?>" alt="CBC Radio One Irrelevant Show poster.">
               <?php
             endwhile;
             wp_reset_postdata();
@@ -235,7 +235,7 @@ get_header();
               $chrisheadshot_query->the_post();
               $chrisheadshot_url = get_field("image");
               ?>
-              <img src="<?php echo $chrisheadshot_url ?>">
+              <img src="<?php echo $chrisheadshot_url ?>" alt="Portrait shot of Chris in a white dress shirt smiling.">
               <?php
             endwhile;
             wp_reset_postdata();
