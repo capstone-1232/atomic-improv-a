@@ -23,7 +23,6 @@ div.hero {
 }
 
 a.img-link {
-
   img {
     border: 2px solid $text-white;
     box-shadow: 0 0px 5px #ffffff;
@@ -44,7 +43,7 @@ section.community-socials {
     section {
       div.social-content {
         margin: 0 auto 1.5rem;
-        max-width:400px;
+        max-width: 400px;
         width: 80%;
 
         &>div {
@@ -75,7 +74,7 @@ iframe {
   margin: 0 auto 1.5rem;
 }
 
-div.flex {
+div.icon-flex {
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -88,7 +87,52 @@ div.flex {
 }
 
 @media screen and (min-width: 52rem) {
-  .socialflex {
+
+  section.top {
+    background:$bg;
+    div.hero {
+      max-width:960px;
+      margin: 0 auto;
+      h1 {
+        margin-bottom:18rem;
+      }
+    }
+  }
+
+  section.what-we-do,
+  section.about-atomic-improv {
+    border-top:2px solid $text-white;
+  }
+
+  section.what-we-do {
+    margin-top:6rem;
+  }
+
+  a.img-link {
+    display: none;
+  }
+
+  .content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    align-items: center;
+  }
+
+  .flex-item {
+    max-width: calc(50% - 0.75rem);
+    flex: 1 0 50%;
+  }
+
+  div.icon-flex {
+    display:block;
+    margin-bottom:0;
+    * {
+      width:auto;
+    }
+  }
+
+  div.socialflex {
     display: flex;
     gap: 1.5rem;
     width: 100%;
