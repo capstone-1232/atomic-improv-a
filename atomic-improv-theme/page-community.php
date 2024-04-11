@@ -21,7 +21,7 @@ get_header();
   <section>
     <div class="container">
       <h1 class="margin-top-h1">In the community</h1>
-      <div class="card-container">
+      <div class="content-flex">
         <?php
         $community_card_query = new WP_Query(
           array(
@@ -34,7 +34,7 @@ get_header();
             $community_card_query->the_post();
             $link = get_field("link");
             ?>
-            <div class="card">
+            <div class="flex-item">
               <a href="<?php echo $link; ?>">
                 <?php the_post_thumbnail(); ?>
               </a>

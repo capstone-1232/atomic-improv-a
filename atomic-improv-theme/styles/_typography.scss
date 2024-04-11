@@ -41,6 +41,7 @@ h1 {
       font-size: clamp(1.5rem, 0.4677rem + 5.1613vw, 2.5rem);
     }
   }
+
   &.margin-top-h1 {
     margin-top: 1.5rem;
   }
@@ -49,13 +50,14 @@ h1 {
 h2 {
   font-size: clamp(2rem, 0.9677rem + 5.1613vw, 3rem);
   line-height: clamp(3rem, 1.4516rem + 7.7419vw, 4.5rem);
+
   &.frontpage-h2 {
     margin-top: -1.5rem;
     background-color: $bg;
     z-index: 1;
     position: relative;
     display: inline-block;
-    padding: 0.4rem 0.75rem 0;
+    padding: 0.4rem 1.25rem 0;
     border-radius: 3px;
     border: 2px solid $text-white;
     box-shadow: 0 0 10px $text-white;
@@ -74,6 +76,7 @@ p {
   line-height: 1.5rem;
   color: $text-white;
   margin: 1.5rem 0;
+
   &.socialhandle {
     font-family: "Teko", sans-serif;
     text-align: center;
@@ -104,4 +107,15 @@ nav {
 
 .pos {
   font-weight: bold;
+}
+
+@media screen and (min-width:52rem) {
+
+  h2 {
+    text-align:left;
+    &.frontpage-h2 {
+      margin-top: -3rem;
+      margin-left:7.5rem;
+    }
+  }
 }

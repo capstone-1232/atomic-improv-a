@@ -10,7 +10,7 @@ get_header();
 
 
 <main id="primary" class="site-main">
-  <section class="corporate-events">
+  <section class="top">
     <?php
     $whatwedo_hero_query = new WP_Query(
       array(
@@ -121,7 +121,6 @@ get_header();
           </div>
 
         </div>
-     
       </div>
       <div class="vid">
         <iframe src="https://www.youtube.com/embed/WLpsNkCDZMA" title="Power of Yes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

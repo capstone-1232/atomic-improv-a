@@ -11,18 +11,24 @@ body {
   font-size: 100%;
   line-height: 1.5rem;
 
-   /*visual grid;*/
+  /*visual grid;*/
   // background-image: linear-gradient(#0ff 1px, transparent 1px);
   // background-size: auto 24px;
   /*typographic scale*/
   /* 12, 14, 16, 18, 21, 24, 36, 48, 60, 72*/
   // background-color: rgb(205, 205, 205);
-  margin:0;
+  margin: 0;
 }
 
 .container {
   max-width: 960px;
-  margin: 0 auto; 
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.skinny-container {
+  max-width: 630px;
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
@@ -35,23 +41,33 @@ body {
 
 img,
 iframe {
-  max-width:100% !important;
-  display:block;
-  height:auto;
+  width: 100%;
+  max-width: 400px;
+  display: block;
   margin: 0 auto;
 }
 
-div.center-container {
-  text-align:center;
+img {
+  height:auto;
 }
 
-.button-style{
+iframe {
+  height:250px;
+}
+
+div.center-container {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.button-style {
   font-family: "Teko", sans-serif;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.5rem;
-  line-height:1.5rem;
+  line-height: 1.5rem;
   color: #ffffff;
   text-decoration: none;
   background-color: $red;
@@ -59,9 +75,9 @@ div.center-container {
   border-radius: 3px;
   padding: 0.75rem;
   margin: 0 auto;
-  display:inline-block;
+  display: inline-block;
 
-  &:hover{
+  &:hover {
     box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
   }
 }
@@ -83,4 +99,22 @@ textarea {
 
 .vid{
   margin-top: 3rem;
+
+@media screen and (min-width:52rem) {
+  
+  img {
+    max-width:100%;
+  }
+
+  iframe {
+    max-width:600px;
+    height:400px;
+  }
+
+  section.what-we-do,
+  section.about-atomic-improv {
+    &>div.center-container {
+      text-align: left;
+    }
+  }
 }
