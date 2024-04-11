@@ -8,12 +8,14 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-  <section class="success">
+  <section class="skinny-container">
     <div class="container">
       <h1>Thank you!</h1>
+      <div class="center-container">
       <p>Your email has been sent!</p>
-
       <p>Keep an eye on your inbox. You can expect a response in 24hours.</p>
+      </div>
+      
     </div>
   </section>
 </main><!-- #main -->

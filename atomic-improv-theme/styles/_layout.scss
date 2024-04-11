@@ -10,7 +10,6 @@ div.hero {
 
   div.hero-content {
     text-align: center;
-
     h1 {
       margin-bottom: 12rem;
     }
@@ -29,8 +28,6 @@ a.img-link {
     width: calc(100% - 4px);
   }
 }
-
-
 
 section.socialmedia,
 section.community-socials {
@@ -79,7 +76,6 @@ div.icon-flex {
   gap: 1.5rem;
   align-items: center;
   margin-bottom: 1.5rem;
-
   * {
     width: 0;
     flex: 1;
@@ -142,5 +138,30 @@ div.icon-flex {
       width: 0;
       flex: 1;
     }
+  }
+
+  .content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .flex-item {
+    max-width: calc(50% - 0.75rem);
+    flex: 1 0 50%;
+  }
+
+  .item-1 {
+    order: 2;
+  }
+
+  .item-2 {
+    order: 1;
+  }
+
+  .item-3{
+    order: 3;
+    
   }
 }

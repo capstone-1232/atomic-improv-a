@@ -8,20 +8,21 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-  <section class="contact-us">
-
-
-    <section class="contact-info">
-      <div class="container">
-        <h1 class="margin-top-h1">Contact Us</h1>
+<h1 class="margin-top-h1">Contact Us</h1>
+  <section class="contact-us container content-flex">
+ 
+    <section class="flex-item">
+      <div class="container contact-info">
         <h2>Donovan Workun</h2>
-        <p><a href="tel:780-995-3663">Phone: (780)995-3663</a></p>
-        <p><a href="mailto:donovan@atomicimprov.ca">Email: donovan@atomicimprov.ca</a></p>
-
-      </div>
+        <div class="center-container">
+        <p><a href="tel:780-995-3663" class="contact-link">Phone: (780) 995-3663</a></p>
+        <p><a href="mailto:donovan@atomicimprov.ca" class="contact-link">Email: donovan@atomicimprov.ca</a></p>
+        </div>
+       
+      </div>class="contact-link"
     </section>
-    <section class="get-in-touch">
-      <div class="container">
+    <section class="get-in-touch flex-item">
+      <div class="container skinny-container">
         <h2>Get in Touch</h2>
         <?php echo do_shortcode('[forminator_form id="69"]'); ?>
       </div>

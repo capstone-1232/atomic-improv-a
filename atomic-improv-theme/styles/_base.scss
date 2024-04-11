@@ -82,6 +82,24 @@ div.center-container {
   }
 }
 
+input,
+select,
+optgroup,
+textarea {
+  color: $bg !important;
+  font-family: "Montserrat", sans-serif;
+  line-height:1.5;
+  letter-spacing:1px;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.vid{
+  margin-top: 3rem;
+
 @media screen and (min-width:52rem) {
   
   img {
