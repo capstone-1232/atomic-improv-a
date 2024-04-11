@@ -141,8 +141,7 @@ get_header();
       <!-- title -->
       <h2>Donovan Workun</h2>
       <div class="content-flex">
-        <div class="flex-item">
-          <p class="socialhandle">@atomicimprov</p>
+        <div class="flex-item item-1">
 
           <?php
           $donovanheadshot_query = new WP_Query(
@@ -163,8 +162,10 @@ get_header();
             wp_reset_postdata();
           endif;
           ?>
+
+          <p class="socialhandle">@atomicimprov</p>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-2">
           <p>Donovan Workun is a world-renowned Improviser and founding member of Atomic Improv. With over 30 years of
             comedy under his belt, Donovan has toured all over the world amazing audiences with his brilliant comedic
             timing, wit, and hilarious characters. </p>
@@ -175,7 +176,7 @@ get_header();
             childhood
             idols Dave Thomas and Joe Flaherty of S.C.T.V.</p>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-4">
           <?php
           $irrelevantshow_query = new WP_Query(
             array(
@@ -196,7 +197,7 @@ get_header();
           endif;
           ?>
         </div>
-        <div class="flex-item">
+        <div class="flex-item item-3">
 
           <p>For fourteen years, from 2003 to 2017, Donovan graced the airwaves with his wit and humor on the CBC Radio
             One
@@ -221,7 +222,6 @@ get_header();
       <div class="content-flex">
         <div class="flex-item">
 
-          <p class="socialhandle">@thecheeseborger</p>
           <?php
           $chrisheadshot_query = new WP_Query(
             array(
@@ -241,6 +241,7 @@ get_header();
             wp_reset_postdata();
           endif;
           ?>
+          <p class="socialhandle">@thecheeseborger</p>
         </div>
         <div class="flex-item">
           <p>Chris Borger has worked as a professional improviser since 2011.</p>

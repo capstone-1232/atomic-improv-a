@@ -75,13 +75,16 @@ p {
   font-size: clamp(1.125rem, 0.996rem + 0.6452vw, 1.25rem);
   line-height: 1.5rem;
   color: $text-white;
-  margin: 1.5rem 0;
+  margin: 0 0 1.5rem;
 
   &.socialhandle {
     font-family: "Teko", sans-serif;
     text-align: center;
     font-weight: normal;
     text-transform: uppercase;
+    margin-top:1.5rem;
+    font-size:2rem;
+    line-height:3rem;
   }
 }
 

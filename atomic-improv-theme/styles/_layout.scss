@@ -140,28 +140,25 @@ div.icon-flex {
     }
   }
 
-  .content-flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-  }
-
-  .flex-item {
-    max-width: calc(50% - 0.75rem);
-    flex: 1 0 50%;
+  .contact-us {
+    align-items:flex-start;
   }
 
   .item-1 {
-    order: 2;
+    order: 1;
   }
 
   .item-2 {
-    order: 1;
+    order: 2;
   }
 
   .item-3{
     order: 3;
     
+  }
+
+  .item-4 {
+
+    order: 4;
   }
 }

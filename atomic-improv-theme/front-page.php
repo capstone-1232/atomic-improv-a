@@ -46,7 +46,7 @@ get_header();
           <a href="contact-us" class="button-style">Book Us</a>
         </div>
       </div>
-        </div>
+    </div>
   </section><!-- end of bg-video -->
 
 
@@ -80,8 +80,30 @@ get_header();
       <div class="content-flex">
         <section class="flex-item">
           <h3>Customized shows</h3>
-          <p>Atomic Improv is Canada's Premier two-man Improv duo that has been creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-          <p>3-time World Improv champions and headliners of Montreal's Just for Laughs can help turn your event from humdrum to hilarious!</p>
+          <?php
+          $events_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "events"
+            )
+          );
+          if ($events_query->have_posts()):
+            while ($events_query->have_posts()):
+              $events_query->the_post();
+              $events_url = get_field("image");
+              ?>
+              <a href="what-we-do"><img src="<?php echo $events_url ?>" style="margin-bottom:1.5rem;"
+                  alt="Poster of 'Power of Yes' workshop with Atomic Improv and Graham Neil"></a>
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
+          <p>Atomic Improv is Canada's Premier two-man Improv duo that has been creating comedy on the spot based
+            entirely on audience suggestion since 1990.</p>
+          <p>3-time World Improv champions and headliners of Montreal's Just for Laughs can help turn your event from
+            humdrum to hilarious!</p>
           <div class="center-container">
             <a href="what-we-do" class="button-style">Learn More</a>
           </div>
@@ -149,14 +171,41 @@ get_header();
     <div class="center-container">
       <h2 class="frontpage-h2">Who We Are</h2>
     </div>
-    <div class="skinny-container">
-      <!-- About poster -->
-      <p>Atomic Improv is Canada's premier two man improv troupe that has been
-        creating comedy on the spot based entirely on audience suggestion since 1990.</p>
-      <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn
-        your event from humdrum to hilarious!</p>
-      <div class="center-container">
-        <a href="who-we-are" class="button-style">More About Us</a>
+    <div class="container">
+      <div class="content-flex">
+        <div class="flex-item">
+          <?php
+          $whoweare_section_query = new WP_Query(
+            array(
+              "post_type" => "image",
+              "posts_per_page" => 1,
+              "tag" => "whoweare_section"
+            )
+          );
+          if ($whoweare_section_query->have_posts()):
+            while ($whoweare_section_query->have_posts()):
+              $whoweare_section_query->the_post();
+              $whoweare_section_url = get_field("image");
+              ?>
+              <a href="who-we-are"><img src="<?php echo $whoweare_section_url ?>"
+                  alt="Image of Donovan Workun and Chris Borger being silly."></a>
+              <?php
+            endwhile;
+            wp_reset_postdata();
+          endif;
+          ?>
+        </div>
+        <div class="flex-item">
+          <!-- About poster -->
+          <p>Atomic Improv is Canada's premier two man improv troupe that has been
+            creating comedy on the spot based entirely on audience suggestion since 1990.</p>
+          <p>These 3-time World Improv Champions and main stage performer at Montreal's Just For Laughs can help turn
+            your event from humdrum to hilarious!</p>
+          <div class="center-container">
+            <a href="who-we-are" class="button-style">More About Us</a>
+          </div>
+
+        </div>
       </div>
     </div><!-- end of container -->
   </section><!-- end of About section -->
@@ -174,7 +223,7 @@ get_header();
             <h3>Instagram</h3>
             <?php
             echo do_shortcode("[instagram-feed feed=1]")
-            ?>
+              ?>
           </div>
 
         </section>
@@ -192,7 +241,7 @@ get_header();
             <h3>Youtube</h3>
             <?php
             echo do_shortcode("[youtube-feed feed=3]")
-            ?>
+              ?>
           </div>
 
         </section>

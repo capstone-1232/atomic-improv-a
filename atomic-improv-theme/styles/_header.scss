@@ -16,8 +16,9 @@ header {
       a {
         display: block;
         img {
-          max-height: 96px;
+          height: 96px;
           max-width: 100px !important;
+          margin:0;
         }
       }
     }

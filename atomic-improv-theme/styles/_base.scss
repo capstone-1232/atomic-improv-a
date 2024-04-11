@@ -1,6 +1,5 @@
 @use "variables" as *;
 
-
 // This is where the over all styles that will be applied to every page.
 
 body {
@@ -32,10 +31,9 @@ body {
   padding: 0 1.5rem;
 }
 
-
-.skinny-container {
+.contact-container {
   max-width: 630px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0 1.5rem;
 }
 
@@ -48,11 +46,12 @@ iframe {
 }
 
 img {
-  height:auto;
+  height: auto;
+  margin-bottom:1.5rem;
 }
 
 iframe {
-  height:250px;
+  height: 250px;
 }
 
 div.center-container {
@@ -78,7 +77,10 @@ div.center-container {
   display: inline-block;
 
   &:hover {
-    box-shadow: 0 0 10px $red, 0 0 20px $red, 0 0 20px $text-white inset;
+    box-shadow:
+      0 0 10px $red,
+      0 0 20px $red,
+      0 0 20px $text-white inset;
   }
 }
 
@@ -88,32 +90,37 @@ optgroup,
 textarea {
   color: $bg !important;
   font-family: "Montserrat", sans-serif;
-  line-height:1.5;
-  letter-spacing:1px;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
-.contact-link{
+.contact-link {
   text-decoration: none;
   color: #ffffff;
 }
 
-.vid{
-  margin-top: 3rem;
+.vid {
+  margin-top: 1.5rem;
+  max-height: 300px;
+}
 
-@media screen and (min-width:52rem) {
+@media screen and (min-width: 52rem) {
+  .contact-container {
+    max-width:960px;
+  }
   
   img {
-    max-width:100%;
+    max-width: 100%;
   }
 
   iframe {
-    max-width:600px;
-    height:400px;
+    max-width: 600px;
+    max-height: 400px;
   }
 
   section.what-we-do,
   section.about-atomic-improv {
-    &>div.center-container {
+    & > div.center-container {
       text-align: left;
     }
   }
