@@ -29,8 +29,10 @@ body {
 
 img,
 iframe {
-  max-width:100% !important;
+  width:100%;
+  max-width:400px;
   display:block;
+  margin: 0 auto;
 }
 
 div.center-container {

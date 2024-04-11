@@ -19,8 +19,10 @@ body {
 
 img,
 iframe {
-  max-width: 100% !important;
+  width: 100%;
+  max-width: 400px;
   display: block;
+  margin: 0 auto;
 }
 
 div.center-container {
@@ -270,11 +272,10 @@ div.hero div.hero-content p {
   text-shadow: 0 0 10px #c97d12;
 }
 
-a.img-link {
-  display: block;
-  border-bottom: 2px solid #fffcf5;
-  border-top: 2px solid #fffcf5;
+a.img-link img {
+  border: 2px solid #fffcf5;
   box-shadow: 0 0px 5px #ffffff;
+  width: calc(100% - 4px);
 }
 
 section.socialmedia div.social-media-title-container,
@@ -285,6 +286,7 @@ section.community-socials div.social-media-title-container {
 section.socialmedia div.socialflex section div.social-content,
 section.community-socials div.socialflex section div.social-content {
   margin: 0 auto 1.5rem;
+  max-width: 400px;
   width: 80%;
 }
 section.socialmedia div.socialflex section div.social-content > div,
@@ -323,7 +325,7 @@ div.flex * {
   flex: 1;
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 52rem) {
   .socialflex {
     display: flex;
     gap: 1.5rem;
