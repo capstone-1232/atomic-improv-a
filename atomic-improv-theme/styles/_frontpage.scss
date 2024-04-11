@@ -8,21 +8,21 @@
 }
 
 .full-screen-video-container {
-    // background-image: url('http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
+  // background-image: url('http://atomic-improv-a.web.dmitcapstone.ca/wp-content/themes/atomic-improv-theme/images/atomic-bg.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .full-screen-video-container img {
-    display: block;
-    margin: 0 auto;
-    width: 50px;
-    height: 50px;
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
 }
 
 .content-flex {
@@ -115,33 +115,26 @@
 section.socialmedia,
 section.community-socials {
   div.social-media-title-container {
-section.socialmedia,
-section.community-socials {
-  div.social-media-title-container {
     margin: 0 auto;
     max-width: 350px;
-
-    
   }
-
-  
 
   div.socialflex {
     section {
       div.social-content {
         margin: 0 auto 1.5rem;
-        width:80%;
+        width: 80%;
         margin: 0 auto 1.5rem;
-        width:80%;
+        width: 80%;
         & > div {
           background: $text-white;
           border-radius: 1rem;
           padding: 0.75rem !important;
-          height:600px;
-          overflow:auto;
+          height: 600px;
+          overflow: auto;
 
           a.sbi_photo {
-            margin-bottom:0.75rem;
+            margin-bottom: 0.75rem;
           }
 
           h3 {
@@ -220,15 +213,13 @@ section.community-socials {
     margin: 0 auto;
     section {
       div.social-content {
-        width:unset !important;
+        width: unset !important;
       }
-      
     }
     section {
       div.social-content {
-        width:unset !important;
+        width: unset !important;
       }
-      
     }
   }
 }
