@@ -82,7 +82,7 @@ get_header();
         <p>Atomic Improv is Canada's Premier two-man Improv duo that has been creating comedy on the spot based entirely on audience suggestion since 1990.</p>
         <p>3-time World Improv champions and headliners of Montreal's Just for Laughs can help turn your event from humdrum to hilarious!</p>
         <div class="center-container">
-          <a href="what-we-do" class="button-style">Learn More</a>
+          <a href="what-we-do" class="button-style">Our Shows</a>
         </div>
       </section>
       <!-- Power Of Yes -->
@@ -113,7 +113,7 @@ get_header();
           corporate workshop that can help teams
           boost their creativity and communication skills.</p>
         <div class="center-container">
-          <a href="what-we-do" class="button-style">Learn More</a>
+          <a href="what-we-do" class="button-style">Our Workshop</a>
         </div>
       </section>
 

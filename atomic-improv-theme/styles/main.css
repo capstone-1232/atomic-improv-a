@@ -17,10 +17,18 @@ body {
   padding: 0 1.5rem;
 }
 
+.skinny-container {
+  max-width: 630px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 img,
 iframe {
   max-width: 100% !important;
   display: block;
+  height: auto;
+  margin: 0 auto;
 }
 
 div.center-container {
@@ -45,6 +53,25 @@ div.center-container {
 }
 .button-style:hover {
   box-shadow: 0 0 10px #cc0033, 0 0 20px #cc0033, 0 0 20px #fffcf5 inset;
+}
+
+input,
+select,
+optgroup,
+textarea {
+  color: #131313 !important;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.vid {
+  margin-top: 3rem;
 }
 
 body,
@@ -323,7 +350,12 @@ div.flex * {
   flex: 1;
 }
 
-@media screen and (min-width: 60rem) {
+.card {
+  margin: 0 auto 3rem;
+  max-width: 30rem;
+}
+
+@media screen and (min-width: 52rem) {
   .socialflex {
     display: flex;
     gap: 1.5rem;
@@ -334,39 +366,26 @@ div.flex * {
     width: 0;
     flex: 1;
   }
-}
-.card {
-  margin-bottom: 3rem;
-}
-
-.card img {
-  display: block;
-  margin: 0 auto;
-  height: auto;
-}
-
-@media screen and (min-width: 52rem) {
-  .card-container {
+  .content-flex {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     align-items: center;
   }
-  .card {
+  .flex-item {
     max-width: calc(50% - 0.75rem);
     flex: 1 0 50%;
   }
+  .item-1 {
+    order: 2;
+  }
+  .item-2 {
+    order: 1;
+  }
+  .item-3 {
+    order: 3;
+  }
 }
-input,
-select,
-optgroup,
-textarea {
-  color: #131313 !important;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
-  letter-spacing: 1px;
-}
-
 footer {
   background: #131313;
 }
