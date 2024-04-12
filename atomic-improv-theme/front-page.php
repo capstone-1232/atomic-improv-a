@@ -105,7 +105,7 @@ get_header();
           <p>3-time World Improv champions and headliners of Montreal's Just for Laughs can help turn your event from
             humdrum to hilarious!</p>
           <div class="center-container">
-            <a href="what-we-do" class="button-style">Learn More</a>
+            <a href="what-we-do" class="button-style">Learn about our events</a>
           </div>
         </section>
         <!-- Power Of Yes -->
@@ -136,7 +136,7 @@ get_header();
             corporate workshop that can help teams
             boost their creativity and communication skills.</p>
           <div class="center-container">
-            <a href="what-we-do" class="button-style">Learn More</a>
+            <a href="what-we-do" class="button-style">Learn about workshops</a>
           </div>
         </section>
 

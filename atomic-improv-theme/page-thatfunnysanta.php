@@ -70,7 +70,7 @@ get_header();
     </div>
   </section>
   <div class="container">
-    <div class="content-flex">
+    <div class="content-flex contact-us">
       <section class="flex-item">
         <h2>Adventures in Banff</h2>
         <?php
@@ -133,7 +133,7 @@ get_header();
     <section>
       <p>Contact his elf helper Donovan for more information</p>
       <div class="center-container">
-        <a href="contact-us" class="button-style">Book Your Santa</a>
+        <a href="contact-us" class="button-style">Book Santa</a>
       </div>
     </section>
   </div>
