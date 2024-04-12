@@ -59,7 +59,7 @@ get_header();
           ?>
         </div>
         <div class="flex-item">
-          <p>That funny Santa brings his holly jolly magic to corporate events every Christmas. From office parties to
+          <p>That Funny Santa brings his holly jolly magic to corporate events every Christmas. From office parties to
             corporate gatherings, our Santa brings a unique blend of festive spirit and comedic flair to every event.
             Has
             your staff been naughty or nice? Let @thatsfunnysanta help dish out the coal and the humor at your next
@@ -92,7 +92,7 @@ get_header();
           wp_reset_postdata();
         endif;
         ?>
-        <p>@thatfunnysanta can often be found visiting Banff at the Fairmont Banff Springs Hotel where he brings holiday
+        <p>That Funny Santa can often be found visiting Banff at the Fairmont Banff Springs Hotel where he brings holiday
           cheers to guest and visitors alike. </p>
       </section>
       <section class="flex-item">
@@ -116,15 +116,8 @@ get_header();
           wp_reset_postdata();
         endif;
         ?>
-        <p>In December 2023, over 500 children and parents from Ukraine experienced a heartwarming celebration with
-          Santa
-          Claus for the first time. Lillia Vovk, a mother who fled the war in Ukraine with her three children, expressed
-          how Santa brought warmth and joy to their new home in Canada, creating magical moments for the kids. Janice
-          Krissa, co-founder of the FreeStore for Ukrainian Newcomers, praised "ThatFunnySanta" for his ability to turn
-          a
-          difficult time into a magical visit, making hundreds feel important and cherished with memories that will
-          endure
-          forever.</p>
+        <p>In December 2023, That Funny Santa celebrated with over 500 children and parents from Ukraine who got to experience Santa for the first time. </p>
+        <p>Janice Krissa, co-founder of the FreeStore for Ukrainian Newcomers, praised "ThatFunnySanta" for his ability to turn a difficult time into a magical visit, helping to make memories that will be cherished forever.</p>
     </div>
     </section>
 
