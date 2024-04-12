@@ -26,6 +26,7 @@ a.img-link {
     border: 2px solid $text-white;
     box-shadow: 0 0px 5px #ffffff;
     width: calc(100% - 4px);
+    margin-bottom:-0.75rem;
   }
 }
 
@@ -82,10 +83,20 @@ div.icon-flex {
   }
 }
 
+video {
+  position:absolute;
+  top:144px;
+  left:0;
+  z-index:-1;
+  width:100vw;
+  height:clamp(28.5rem, 25.4032rem + 15.4839vw, 31.5rem);
+  object-fit:cover;
+  max-width:960px;
+}
+
 @media screen and (min-width: 52rem) {
 
   section.top {
-    background:$bg;
     div.hero {
       max-width:960px;
       margin: 0 auto;
@@ -106,6 +117,15 @@ div.icon-flex {
 
   a.img-link {
     display: none;
+  }
+
+  video {
+    height:36.375rem;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    text-align:center;
+    z-index:-1;
   }
 
   .content-flex {

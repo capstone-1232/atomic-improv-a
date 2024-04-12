@@ -9,35 +9,7 @@ get_header();
 <main id="primary" class="site-main">
   <section class="top">
     <!-- background video -->
-    <?php
-    // Querying the hero image gif using a post.
-    // This makes it easy to switch out in the future.
-    $frontpage_hero_query = new WP_Query(
-      array(
-        "post_type" => "image",
-        "posts_per_page" => 1,
-        "tag" => "frontpage_hero"
-      )
-    );
-    // Testing if the given query has posts via alternate syntax.
-    if ($frontpage_hero_query->have_posts()):
-      // Looping through the posts using alternate syntax.
-      while ($frontpage_hero_query->have_posts()):
-        $frontpage_hero_query->the_post();
-        // Getting image URL.
-        $frontpage_hero_url = get_field("image");
-        ?>
-        <!-- Displaying queried image in img tag. -->
-        <div class="hero" style="background-image: url('<?php echo $frontpage_hero_url; ?>');">
-          <!-- bg-gif -->
-          <?php
-        // Ending the loop
-      endwhile;
-      // Resetting post data for the next query.
-      wp_reset_postdata();
-      // Moving on.
-    endif;
-    ?>
+    <div class="hero">
       <!-- bg content -->
       <div class="hero-content">
         <h1 class="frontpage-h1">Atomic<br><span>Improv</span></h1>
@@ -46,6 +18,53 @@ get_header();
           <a href="contact-us" class="button-style">Book Us</a>
         </div>
       </div>
+      <?php
+      $frontpage_video_placeholder_query = new WP_Query(
+        array(
+          "post_type" => "image",
+          "posts_per_page" => 1,
+          "tag" => "frontpage_video_placeholder"
+        )
+      );
+      if ($frontpage_video_placeholder_query->have_posts()):
+        while ($frontpage_video_placeholder_query->have_posts()):
+          $frontpage_video_placeholder_query->the_post();
+          $frontpage_video_placeholder_url = get_field("image");
+          ?>
+          <video autoplay loop muted poster="<?php echo $frontpage_video_placeholder_url; ?>">
+            <?php
+        endwhile;
+        wp_reset_postdata();
+      endif;
+      ?>
+        <?php
+        // Querying the hero image gif using a post.
+        // This makes it easy to switch out in the future.
+        $frontpage_hero_query = new WP_Query(
+          array(
+            "post_type" => "image",
+            "posts_per_page" => 1,
+            "tag" => "frontpage_hero"
+          )
+        );
+        // Testing if the given query has posts via alternate syntax.
+        if ($frontpage_hero_query->have_posts()):
+          // Looping through the posts using alternate syntax.
+          while ($frontpage_hero_query->have_posts()):
+            $frontpage_hero_query->the_post();
+            // Getting image URL.
+            $frontpage_hero_url = get_field("image");
+            ?>
+            <source src="<?php echo $frontpage_hero_url; ?>" type="video/mp4">
+            <?php
+            // Ending the loop
+          endwhile;
+          // Resetting post data for the next query.
+          wp_reset_postdata();
+          // Moving on.
+        endif;
+        ?>
+      </video>
     </div>
   </section><!-- end of bg-video -->
 
