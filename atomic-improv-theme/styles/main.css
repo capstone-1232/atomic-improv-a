@@ -228,6 +228,7 @@ header .header-flex div.site-branding a {
 }
 header .header-flex div.site-branding a img {
   height: 96px;
+  width: 103px;
   margin: 0;
 }
 header .header-flex nav {
