@@ -132,6 +132,7 @@ get_header();
     </div>
 
   </section>
+  
   <section>
     <div class="skinny-container">
       <h2>More Options</h2>

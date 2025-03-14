@@ -88,6 +88,14 @@ p {
   }
 }
 
+a{
+  text-decoration: none;
+  }
+  
+  a:visited{
+    color: $text-white;
+  }
+
 section.socialmedia p.latestfrom {
   font-size: clamp(1.25rem, 0.9919rem + 1.2903vw, 1.5rem);
   margin-top: 1.5rem;
