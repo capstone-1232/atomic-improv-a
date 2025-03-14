@@ -184,6 +184,14 @@ p.socialhandle {
   line-height: 3rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fffcf5;
+}
+
 section.socialmedia p.latestfrom {
   font-size: clamp(1.25rem, 0.9919rem + 1.2903vw, 1.5rem);
   margin-top: 1.5rem;
@@ -396,6 +404,13 @@ div.icon-flex {
 div.icon-flex * {
   width: 0;
   flex: 1;
+}
+
+.heckle-img {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 video {

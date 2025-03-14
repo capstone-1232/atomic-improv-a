@@ -62,7 +62,7 @@ get_header();
           <p>That Funny Santa brings his holly jolly magic to corporate events every Christmas. From office parties to
             corporate gatherings, our Santa brings a unique blend of festive spirit and comedic flair to every event.
             Has
-            your staff been naughty or nice? Let @thatsfunnysanta help dish out the coal and the humor at your next
+            your staff been naughty or nice? Let @thatfunnysanta help dish out the coal and the humor at your next
             event!
           </p>
         </div>
